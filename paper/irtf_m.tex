@@ -17,6 +17,8 @@
 
 %
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{txfonts}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,12 +33,15 @@
 % Dealing with ``too many unprocessed floats'' use it with \clearpage 
 \usepackage[section] {placeins}
 
+% For marginal notes
+\usepackage{marginnote}
+
 \begin{document} 
 
 
-   \title{Effective temperatures, gravities and metallicities for M type stars in the IPAC database.}
+   \title{Effective temperatures, gravities and metallicities for M type stars in the IRTF database.}
 
-   \subtitle{I. The I band perspective}
+   \subtitle{I. An approach from the Machine Learning Arena}
 
    \author{L. Sarro-Baro \inst{1}  
           \and
@@ -109,7 +114,9 @@
 
    \keywords{class M stars --
                 dynamic feature selection --
-                physical parameter identification
+                physical parameter identification --
+                Temperature, gravity and metalicity Modelling --
+                Learning from BT-Settl spectra library
                }
 
    \maketitle
@@ -130,7 +137,8 @@
 %\cite{2009ApJS..185..289R} %IRTF library of cool star
 
 %\cite{2012ApJ...748...93R} % Metall. and Teff indicators in the K band! :(
-
+\section{Literature Review}
+% To be done by LSB
 
 \section{Experimental work}
 \input{exp_work}
@@ -139,13 +147,17 @@
 \input{regression}
 
 
-\section{Physical parameters for the sample of IPAC M-type stars}
+\section{Physical parameters foreseen for IRTF M-type stars}
 % \input{ipac}
 
 \section{Conclusions}
 
 \begin{acknowledgements}
-This research has benefitted from the M, L, T, and Y dwarf compendium housed at DwarfArchives.org. 
+This research has benefitted from the M, L, T, and Y dwarf compendium housed at DwarfArchives.org.
+The authors also thanks to the Spanish Ministery for Economy and Innovation because of the 
+support obtained through the project with ID: AyA2011-24052. IRTF library provided by the 
+University of Hawaii under Cooperative Agreement no. NNX-08AE38A with the National 
+Aeronautics and Space Administration, Science Mission Directorate, Planetary Astronomy Program.
 \end{acknowledgements}
 
 %-------------------------------------------------------------------

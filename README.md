@@ -14,6 +14,7 @@ some hints:
    git remote remove name(origin)
 3) Add or update content
    git add file filename
+   git add .
    git commit -m "reasons"  // git commit -am "reasons"
    git push
 
