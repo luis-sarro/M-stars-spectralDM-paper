@@ -1,41 +1,12 @@
-{
-This research, in accordance with the goals depicted in the previous section,
-started by considering the collection of M stars provided by
-DwarfArchives.org, a compendium of L, M and T dwarfs, 
-maintained by Chris Gelino, Davy Kirkpatrick and Adam Burgasser.
-}
 
-\subsection{Dataset Selection.}
-\label{subsec:DS}
-{
-The M dwarf database includes around 68 spectra with spectroscopic 
-observations obtained at Infrared Telescope Facility (IRTF) on Mauna Kea Hawaii, 
-with the medium-resolution spectrograph, SpeX, at the NASA. 
-The IRTF Spectral Library is a collection of 0.8 $\sim$ 5.0 $\mu$m mostly stellar 
-spectra observed at a resolving power of R $\equiv \lambda / \Delta \lambda \sim 2000$.
-\cite{2009ApJS..185..289R}. \footnote{Hay una mejor descripci\'{o}n de la librer\'{i}a IRTF en Cesetti et al., 
-pero no se si merece la pena copiar su texto aqu\'{i}}
-}
+% Comment. I move the description of the IRTF data to the point where these are actually used.
 
-{
-Features of the library include:
-\begin{itemize}
- \item {A spectral range of 0.8 to 2.5 $\mu$m.}
- \item {S/N $\sim 100 $ at $\lambda < 4 \mu$m.}
- \item {Spectral continuum shape is preserved.}
- \item {Absolutely flux calibrated using Two Micron All Sky Survey (2MASS)  photometry.}
-\end{itemize}
-}
+{ As the goal was to develop a procedure to identify suitable
+  reference bands for signal and continuum in this particular class of
+  stars, we decided to use synthetic spectra. We have choosed the
+  library BT-Settl (\cite{2013MSAIS..24..128A}) where several
+  pre-processing operations have been performed.  }
 
-{
-As the goal was to develop a procedure making possible to identify suitable 
-reference bands for signal and continuum in this particular class of stars, 
-it was decided to use synthetic spectra. We have choosed the library BT-Settl
-(\cite{2013MSAIS..24..128A}) where several operations have been performed.
-}
-
-\subsection {Reshape of the theoretical library.}
-\label{subsec:RTL}
 {
 Firstly a filterage looking for spectra between 2000 and 4200K was performed over 
 the whole BT-Settl dataset, considering log(gravitiy) in range (-4, -6) dex 
@@ -54,16 +25,14 @@ normalization the area under spectrum has been performed to value of one.
 }
 
 
-{
-The authors have conducted also an interpolation procedure to increase the number 
-of available learning patterns.
-To be sure that interpolation was a valid solution to inferre new synthetic spectra,
-a formal destillation of some spectra by using the 
-PHOENIX code (\cite{fuhrmeister2005phoenix}) 
-was performed and then, compared to the one obtained by interpollating in accordance 
-to the inverse square of the distance among the closest neighborgs available 
-(see Fig.~\ref{fig:comp_gen_inter}).
-}
+{ In order to increase the density of examples in parameter space, we
+  introduce an interpolation procedure. To be sure that interpolation
+  was a valid solution to infer new synthetic spectra, a formal
+  destillation of some spectra by using the PHOENIX code
+  (\cite{fuhrmeister2005phoenix}) was performed and then, compared to
+  the one obtained by interpollating in accordance to the inverse
+  square of the distance among the closest neighborgs available (see
+  Fig.~\ref{fig:comp_gen_inter}).  }
 
 \begin {figure}
  \begin{center}
@@ -86,14 +55,13 @@ closer to the original BT-Settl source, most of the analyses have been
 performed with the original 535 spectra dataset.
 }
 
-{
-The synthetic spectra are theoretical and they are noise free but it 
-does not happen with real spectra, the IRTF dataset in our case.
-To increase similarities gaussian noise have been added with two 
-different Signal to Noise Ratio(SNR). The selected SNR were 10 and 50.
-}
+{ The synthetic spectra are theoretical and they are noise free but it
+  does not happen with real spectra.  To increase similarity with real
+  observed spectra, gaussian noise has been added with two different
+  Signal to Noise Ratios(SNR). The selected SNR were 10 and 50. {\bf
+    Quizás deberíamos citar el trabajo de Ana como in preparation} }
 
-\subsection{Feature definition}
+\subsection{Feature definition and selection}
 \label{subsec:FD}
 {
 It is well known that due to the special characteristics of 
@@ -165,8 +133,6 @@ which become a guarantee avoiding any overlap
 and a minimum size for both signal and continuum bandpasses.
 }
 
-\subsection{Determination of Features}
-\label{subsec:DF}
 {
 Search for those features will depend on which specific physical parameter is 
 under consideration but, the proposed methodology will look for those values 
@@ -178,42 +144,37 @@ To accomplish such optimization problem involving the selection of variable
 subsets, the use of the Genetic Algorithms technique was accepted. 
 }
 
-{
-It was proposed to use the software tools R(\cite{R2013}).
-There are different statistics to identify features 
-that are differentially expressed between
-two or more groups of samples and then uses the most differentially
-expressed to construct a statistical model.
-}
+{ It was proposed to use the software tools R(\cite{R2013}).  There
+  are different statistics to identify features that are
+  differentially expressed between two or more groups of samples and
+  then uses the most differentially expressed to construct a
+  statistical model.  }
 
-{
-These methods have 
-demonstrated to perform well, however, in some cases they can be ineffective
-regardless of the classification method used. An obvious conceptual limitation
-of univariate approaches is also the lack of consideration that features works in
-the contexts of interconnected pathways and therefore it is their behavior as
-a group that may be predictive of the phenotypic variables. Multivariate
-selection methods may seem to be more suitable for the analysis of 
-data since variables are tested in
-combination to identify interactions between features. However, the extremely
-large number of models that can be constructed from different combination of
-thousands of features cannot be extensively evaluated using standard
-computational resources.
-}
+{ These methods have demonstrated to perform well, however, in some
+  cases they can be ineffective regardless of the classification
+  method used. An obvious conceptual limitation of univariate
+  approaches is also the lack of consideration that features works in
+  the contexts of interconnected pathways and therefore it is their
+  behavior as a group that may be predictive of the phenotypic
+  variables. Multivariate selection methods may seem to be more
+  suitable for the analysis of data since variables are tested in
+  combination to identify interactions between features. However, the
+  extremely large number of models that can be constructed from
+  different combination of thousands of features cannot be extensively
+  evaluated using standard computational resources.  }
 
-{
-For the sake of simplicity let us define 
-Genetic Algorithms (GAs) are variable search procedures that are based on
-the principle of evolution by natural selection. The procedure works by
-evolving sets of variables (chromosomes) that fit certain criteria from an initial
-random population via cycles of differential replication, recombination and
-mutation of the fittest chromosomes. The concept of using in-silico evolution
-for the solution of optimization problems has been introduced by John
-Holland in 1975 (\cite{holland1975adaptation}). Although their application has been
-reasonably widespread (see Goldberg\textquoteright s 
-book (\cite{goldberg1989genetic}), they became
-very popular only when sufficiently powerful computers became available.
-}
+{ For the sake of simplicity let us define Genetic Algorithms (GAs)
+  are variable search procedures that are based on the principle of
+  evolution by natural selection. The procedure works by evolving sets
+  of variables (chromosomes) that fit certain criteria from an initial
+  random population via cycles of differential replication,
+  recombination and mutation of the fittest chromosomes. The concept
+  of using in-silico evolution for the solution of optimization
+  problems has been introduced by John Holland in 1975
+  (\cite{holland1975adaptation}). Although their application has been
+  reasonably widespread (see Goldberg\textquoteright s book
+  (\cite{goldberg1989genetic}), they became very popular only when
+  sufficiently powerful computers became available.  }
 
 {
 The implementation of the GA follows the next steps:
@@ -236,32 +197,35 @@ parent chromosomes are used to create two new chromosomes.}
   enough accuracy is obtained or the maximum of iterations is attained.}
 \end{itemize}
 
-The features were built in our case as indicated in \ref{eq:feature} and 
-they were named according to the ordinal of the wavelength step both for signal and
-continuum. The name includes also the number of ofset induced because of the constraint \ref{eq:cons1}.
-Polulation size was choosed as one thousand individuals and accepted iterations were four thousand.
-Three randomly started different repetions where produced bringing the opportunity for enough variety
-and probabilities were established as 0.85 to corossover and 0.35 to mutation. The elitism was fixed to be 0.15.
-Fitness for features were established as related to the Akaike Criterion (-AIC) 
-for linearity between the potential feature against the physical parameter.
-The most frequent and efficient features were suggeswted as candidates to describe the behavior of specific 
-physical parameters. 
+The features were constructed as indicated above and named according
+to the ordinal of the wavelength step both for signal and
+continuum. The name includes also the number of ofset induced because
+of the constraint \ref{eq:cons1}.  Polulation size was choosed as one
+thousand individuals and accepted iterations were four thousand.
+Three randomly started different repetions where produced bringing the
+opportunity for enough variety and probabilities were established as
+0.85 to corossover and 0.35 to mutation. The elitism was fixed to be
+0.15.  Fitness for features were established as related to the Akaike
+Criterion (-AIC) for linearity between the potential feature against
+the physical parameter.  The most frequent and efficient features were
+suggeswted as candidates to describe the behavior of specific physical
+parameters.
 
-From the implementation point of view a binarized codification was selected in accordance to the naming convention
-and in order to speed up the computation, a parallel implementation from a farm of fifteen connected computers were used
-for each of the physical parameters.
-}
+From the implementation point of view a binarized codification was
+selected in accordance to the naming convention and in order to speed
+up the computation, a parallel implementation from a farm of fifteen
+connected computers were used for each of the physical parameters.  }
 
 
-{
-The GA procedure provides us with a large collection of chromosomes.
-Although these are all potential solutions of the problem, it is not clear which one
-should be chosen for developing a model becoming for interpretation. 
-For this reason there is a need to
-develop a single model that is, to some extent, representative of the
-population. The simpler strategy to follow is to use the frequency of the chromosme in
-the population of chromosomes as criteria for inclusion in a forward selection
-strategy, however for this particular applciation, the choice was to include features based on their highest fitness.
+{ The GA procedure provides us with a large collection of chromosomes.
+  Although these are all potential solutions of the problem, it is not
+  clear which one should be chosen for developing a model becoming for
+  interpretation.  For this reason there is a need to develop a single
+  model that is, to some extent, representative of the population. The
+  simpler strategy to follow is to use the frequency of the chromosme
+  in the population of chromosomes as criteria for inclusion in a
+  forward selection strategy, however for this particular applciation,
+  the choice was to include features based on their highest fitness.
 
 After applying this technique the recommended features for temperature 
 can be found in Table~\ref{tab:tab_NC_T}. 
