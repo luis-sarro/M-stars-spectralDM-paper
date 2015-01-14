@@ -39,12 +39,9 @@
 \begin{document} 
 
 
-   \title{Effective temperatures, gravities and metallicities for M type stars in the IRTF database.}
+   \title{Physical parameter estimates of M-type stars: a machine learning perspective.}
 
-   \subtitle{I. An approach from the Machine Learning Arena}
-
-   \author{L. Sarro-Baro \inst{1}  
-          \and
+   \author{
           J. Ordieres-Mere \inst{2} 
           \and
           A. Bello-Garcia\inst{3} 
@@ -52,6 +49,8 @@
           A. Gonzalez-Marcos\inst{4} 
           \and
           M.B. Prendes-Gero\inst{3} 
+          \and
+          L. M. Sarro \inst{1}  
           }
 
    \institute{ 
@@ -123,12 +122,11 @@
 %
 
 \section{Introduction}
+\label{sec:intro}
 
 % The importance of M stars
-
-
-% The problem of estimation of stellar parameters in the M regime. who and what. Teff calibrations
-
+% The problem of estimation of stellar parameters in the M regime: bands, no continuum...
+% who and what. Teff calibrations
 % \cite{rajpurohit}
 % \cite{amelia}
 
@@ -137,18 +135,20 @@
 %\cite{2009ApJS..185..289R} %IRTF library of cool star
 
 %\cite{2012ApJ...748...93R} % Metall. and Teff indicators in the K band! :(
-\section{Literature Review}
-% To be done by LSB
 
-\section{Experimental work}
+% Summary of spectral diagnostics in the IR for M stars
+
+
+\section{Regression models for physical parameter estimation.}
+
+\subsection{Methodology for spectral band selection.}
 \input{exp_work}
 
-\section{Regression models for parameter estimation}
+\section{Training and validation of the regression models.}
 \input{regression}
 
-
-\section{Physical parameters foreseen for IRTF M-type stars}
-% \input{ipac}
+\section{Distribution of predicted parameters.}
+\input{predictions}
 
 \section{Conclusions}
 
