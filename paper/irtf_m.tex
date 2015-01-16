@@ -50,7 +50,7 @@
           \and
           M.B. Prendes-Gero\inst{3} 
           \and
-          L. Sarro-Baro \inst{1}  
+          L. M. Sarro \inst{1}  
           }
 
    \institute{ 
@@ -122,9 +122,11 @@
 %
 
 \section{Introduction}
+\label{sec:intro}
 
 % The importance of M stars
-% The problem of estimation of stellar parameters in the M regime. who and what. Teff calibrations
+% The problem of estimation of stellar parameters in the M regime: bands, no continuum...
+% who and what. Teff calibrations
 % \cite{rajpurohit}
 % \cite{amelia}
 
@@ -134,16 +136,25 @@
 
 %\cite{2012ApJ...748...93R} % Metall. and Teff indicators in the K band! :(
 
-\section{Regression models for physical parameter estimation.}
+% Summary of spectral diagnostics in the IR for M stars
 
-\subsection{Methodology for spectral band selection.}
-\input{exp_work}
 
-\section{Training and validation of the regression models.}
-\input{regression}
+\section{Methodology.}
+\input{meth}
 
-\section{Distribution of predicted parameters.}
-\input{predictions}
+\section{Physical parameters of the IPAC collection of spectra.}
+\input{ipac}
+\subsection{Spectral bands selected}
+\input{ipac.fs}
+\subsection{Regression models}
+\input{ipac.rm}
+
+\section{Physical parameters of the IRTF collection of spectra.}
+\input{irtf}
+\subsection{Spectral bands selected}
+\input{irtf.fs}
+\subsection{Regression models}
+\input{irtf.rm}
 
 \section{Conclusions}
 
