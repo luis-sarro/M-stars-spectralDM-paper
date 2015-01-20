@@ -101,18 +101,35 @@ stellar spectra (a strong feature) and thus, it was estimated first,
 and then used as in the regression models for the gravity and
 metalicity.}
 
-The kind of spectral features that were evaluated took the form of
-flux ratios between two spectral bands (from $\lambda_1$ to
-$\lambda_2$, and from $\lambda_3$ to $\lambda_4$):
+Here, a feature $F$ is defined as
 
 \begin{equation}\label{eq:feature}
   F = \frac{ \int_{\lambda_{1}}^{\lambda_{2}}f(\lambda) \cdot {\rm d}{\lambda}}
                {\int_{\lambda_{3}}^{\lambda_{4}} f(\lambda) \cdot {\rm d}{\lambda}} 
 \end{equation}
 
-where $f(\lambda)$ denotes the normalized flux. We will search for the
-band boundaries that produce physical parameter predicitions with the
-smallest errors.
+where $f(\lambda)$ denotes the normalized flux from the star at
+wavelength $\lambda$, and $\lambda_1, \lambda_2, \lambda_3$, and
+$lambda_4$ delimit two spectral bands such that the quotient of the
+integrated fluxes in the two bands is hoped to be a good predictor
+(alone or in combination with other features) of the star atmospheric
+physical parameters. We will search for the band boundaries that
+produce physical parameter predictions with the smallest errors.
+
+{\bf Aquí he omitido los detalles sobre las restricciones a las bandas
+porque no lo entiendo bien. ¿Podrías explicarlo con palabras en lugar
+de items?}
+
+%\begin{itemize} \item { $ \vert \lambda_{2k(i)}
+% - \lambda_{1k(i)} \vert = 30 $ pixels of spectrum $ \quad \forall
+% i \in [1 \ldots N]$ and $ k \in \{s,c\} $ .}  \item { $ min
+% ( \lambda_{1k(i)}, \lambda_{1k(j)} ) = 5 $ pixels of spectrum
+% $ \quad \forall i,j \in [1 \ldots N] $ ; $ i \neq j $ and $
+% k \in \{s,c\} $ .}  \item {
+% $ \overline{\lambda_{2}(i)\lambda_{1}(i)} \bigcap \overline{\lambda_{2c}(i)\lambda_{1c}(i)}
+% = \emptyset \quad \forall i \in [1 \ldots N]$.}  \end{itemize}
+%which become a guarantee avoiding any overlap 
+%and a minimum size for both signal and continuum bandpasses.
 
 Other types of features defined as
 
@@ -126,17 +143,6 @@ definition produced somewhat poorer results at least when applied to
 the lower resolution IPAC spectra (see below). We interpret this as a
 result of the difficulty in defining a continuum in very late-type
 spectra. 
-
-%\begin{itemize} \item { $ \vert \lambda_{2k(i)}
-% - \lambda_{1k(i)} \vert = 30 $ pixels of spectrum $ \quad \forall
-% i \in [1 \ldots N]$ and $ k \in \{s,c\} $ .}  \item { $ min
-% ( \lambda_{1k(i)}, \lambda_{1k(j)} ) = 5 $ pixels of spectrum
-% $ \quad \forall i,j \in [1 \ldots N] $ ; $ i \neq j $ and $
-% k \in \{s,c\} $ .}  \item {
-% $ \overline{\lambda_{2}(i)\lambda_{1}(i)} \bigcap \overline{\lambda_{2c}(i)\lambda_{1c}(i)}
-% = \emptyset \quad \forall i \in [1 \ldots N]$.}  \end{itemize}
-%which become a guarantee avoiding any overlap 
-%and a minimum size for both signal and continuum bandpasses.
 
 We used Genetic Algorithms to solve the optimization problem described
 above, that is, the problem of finding the features (band boundaries)
@@ -217,11 +223,10 @@ hay que añadir un párrafo en el que expliquemos con detalle el
 regresor utilizado para medir la fitness. Y sobre todo, aclarar si el
 cromosoma codifica sólo una feature o un conjunto de features.} The
 most frequent and efficient features were selected as candidates to
-predictive variables of the physical parameters in regression models.
-
-From the implementation point of view, we used a binary codification
-of the chromosomes and a parallel implementation of the GA in a farm
-of fifteen computers per physical parameter.
+predictive variables of the physical parameters in regression
+models. We used a binary codification of the chromosomes and a
+parallel implementation of the GA in a farm of fifteen computers per
+physical parameter.
 
 The GA procedure provides us with a large collection of chromosomes.
 Although these are all potential solutions of the problem, it is not
