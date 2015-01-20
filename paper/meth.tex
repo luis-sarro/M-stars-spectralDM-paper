@@ -1,6 +1,3 @@
-
-% Comment. I move the description of the IRTF data to the point where these are actually used.
-
 { The objective addressed in this Section is to develop a procedure to
   identify spectral bands that yield good temperature, gravity and
   metallicity diagnostics. Given the lack of a calibration set of
@@ -27,13 +24,16 @@ in steps of 0.5 dex. The metallicity of the representative spectra was
 restricted to the set 0, 0.5 and -1 dex.  This yields a total set
 size of 535 available spectra.
 
-The spectral resolution was degraded to the IRTF resolution factor (R
-~ 2000) by convolving with a Gaussian. Then, the spectra were trimmed
-to produce valid segments between 8145.92 and 24106.85{\AA}, which is
-the spectral range common to all M stars in the IRTF library. Finally,
-all spectra were divided by the total integrated flux in this range in
-order to factor out the stellar distance.}
-
+{A series of preprocessing steps were then carried out in order to
+match the spectral resolution and wavelength coverage and sampling of
+the synthetic library to that of the collection of observed spectra
+(IPAC or IRTF, see below). This required the definition of a common
+wavelength range present in all available observed spectra, and the
+subsequent trimming to match that range. A unique wavelength sampling
+was also defined and all spectra (synthetic and observed) interpolated
+to match the sampling. Finally, all spectra, both synthetic and
+observed were divided by the integrated flux in order to factor out
+the stellar distance.}
 
 { In order to increase the density of examples in parameter space, we
   introduced interpolated spectra in the BT-Settl grid. Interpolation
@@ -177,8 +177,10 @@ solution of optimization problems was introduced
 by \cite{holland1975adaptation}. Although its application is now
 reasonably widespread \citep[see e.g. ]{goldberg1989genetic}), they
 became very popular only when sufficiently powerful computers became
-available.
-
+available. {\bf Aquí hay que citar trabajos en astrofísica que
+utilicen GA y, en particular, un artículo de Charbonneau
+http://adsabs.harvard.edu/abs/1995ApJS..101..309C en 1995 que fue como
+la presentación en sociedad.}
 
 The implementation of the GA comprises the following steps:
 
@@ -202,6 +204,10 @@ selected parent chromosomes are used to create two new chromosomes.}
   a target accuracy is achieved or the maximum number of iterations is
   attained.}
 \end{itemize}
+
+{\bf Es muy importante definir la codificación del cromosoma. ¿Es la
+codificación de un único feature? ¿un subconjunto de features? ¿de qué
+tamaño?}
 
 There are different statistics that can be used to identify features
 that are differentially expressed between two or more groups of
