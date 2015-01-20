@@ -8,22 +8,24 @@ the IRTF library. Finally, all spectra were divided by the total
 integrated flux in this range in order to factor out the stellar
 distance.}
 
-The application of the GAs to the IRTF wavelength range and resolution
-results in included in Table~\ref{tab:tab_NC_T}. Features are ordered
-by the fitness value (the AIC) and we only consider features that are
-present in at least 5 sets.
+The application of the GAs to the selection of features for the
+prediction of effective temperature from noiseless spectra with the
+IRTF wavelength range and resolution results in the features included
+in Table~\ref{tab:tab_NC_T}. Features are ordered by the fitness value
+(the AIC) and we only consider features that are present in at least 5
+sets.
 
 \begin{table}
 \begin{center}
 \begin{tabular}{rrrrrrr}
   \hline
- & Signal From & Signal To & Continuum From & Continuum To & Fitness & Freq \\ 
+ & $\lambda_1$ & $\lambda_2$ & $\lambda_3$ & $\lambda_4 $ & Fitness (AIC) & Freq. \\ 
   \hline
- Feature 1 & 8376.10 & 8433.91 & 9346.13 & 9403.92 & -6693.10 & 319 \\ 
-  Feature 2 & 8385.99 & 8443.94 & 9346.13 & 9403.92 & -6700.15 &   6 \\ 
-  Feature 3 & 8195.96 & 8254.03 & 9386.01 & 9444.05 & -6887.55 &  44 \\ 
-  Feature 4 & 8186.06 & 8243.98 & 9235.98 & 9294.01 & -7056.23 &  19 \\ 
-  Feature 5 & 8406.00 & 8464.07 & 9515.96 & 9574.13 & -7068.86 &  34 \\ 
+Feature 1 & 8376.10 & 8433.91 & 9346.13 & 9403.92 & -6693.10 & 319 \\ 
+Feature 2 & 8385.99 & 8443.94 & 9346.13 & 9403.92 & -6700.15 &   6 \\ 
+Feature 3 & 8195.96 & 8254.03 & 9386.01 & 9444.05 & -6887.55 &  44 \\ 
+Feature 4 & 8186.06 & 8243.98 & 9235.98 & 9294.01 & -7056.23 &  19 \\ 
+Feature 5 & 8406.00 & 8464.07 & 9515.96 & 9574.13 & -7068.86 &  34 \\ 
 %  Feature 6 & 9326.07 & 9384.15 & 8406.00 & 8464.07 & -7349.99 &  18 \\ 
 %  Feature 7 & 8496.05 & 8554.06 & 9576.03 & 9634.04 & -7505.21 &  38 \\ 
 %  Feature 8 & 9036.07 & 9094.04 & 9075.93 & 9133.98 & -7535.71 &  15 \\ 
@@ -41,16 +43,19 @@ present in at least 5 sets.
 %  Feature 20 & 8536.03 & 8594.06 & 8496.05 & 8554.06 & -8337.36 &  31 \\ 
    \hline
 \end{tabular}
-\caption {Recommended features and Continuum bandpass for predicting $ T_{eff} $ 
-      by using BT\_Settl with SNR= $ {\infty} $ . 
-      The Fitness and frequency of occurence are also included.} \label{tab:tab_NC_T} 
+\caption {Features selected by the GA for predicting $T_{eff}$ 
+      using BT\_Settl noiseless synthetic
+      spectra. } \label{tab:tab_NC_T}
 \end{center}
 \end{table}
 
-The authors have estimated the suggested features when theoretical BT\_Settl 
-is noised with different SNR and following tables \ref{tab:tab_SNR10_T} 
-and \ref{tab:tab_SNR50_T} sumarize the findings.
+{\bf TBD by Luis: interpret the features.}
 
+When noise is added to the BT-Settl spectra, we obtain 
+
+%The authors have estimated the suggested features when theoretical BT\_Settl 
+%is noised with different SNR and following tables \ref{tab:tab_SNR10_T} 
+%and \ref{tab:tab_SNR50_T} sumarize the findings.
 
 \begin{table}
 \begin{center}
@@ -59,10 +64,10 @@ and \ref{tab:tab_SNR50_T} sumarize the findings.
  & Signal From & Signal To & Continuum From & Continuum To & Fitness & Freq \\ 
   \hline
 Feature 1 & 8385.99 & 8443.94 & 9395.94 & 9454.03 & -6734.59 & 136 \\ 
-  Feature 2 & 8186.06 & 8243.98 & 9536.15 & 9593.96 & -6857.65 &   7 \\ 
-  Feature 3 & 8186.06 & 8243.98 & 9376.07 & 9433.92 & -6947.54 &   7 \\ 
-  Feature 4 & 8286.01 & 8343.92 & 9206.05 & 9264.00 & -7123.10 &  10 \\ 
-  Feature 5 & 8355.96 & 8414.03 & 9066.05 & 9124.05 & -7207.55 &  37 \\ 
+Feature 2 & 8186.06 & 8243.98 & 9536.15 & 9593.96 & -6857.65 &   7 \\ 
+Feature 3 & 8186.06 & 8243.98 & 9376.07 & 9433.92 & -6947.54 &   7 \\ 
+Feature 4 & 8286.01 & 8343.92 & 9206.05 & 9264.00 & -7123.10 &  10 \\ 
+Feature 5 & 8355.96 & 8414.03 & 9066.05 & 9124.05 & -7207.55 &  37 \\ 
  % Feature 6 & 9276.00 & 9333.87 & 8415.91 & 8473.96 & -7436.13 &  32 \\ 
  % Feature 7 & 8455.96 & 8513.93 & 9055.94 & 9114.07 & -7476.12 &  32 \\ 
  % Feature 8 & 8616.00 & 8673.98 & 9576.03 & 9634.04 & -7491.24 &   6 \\ 
