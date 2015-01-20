@@ -1,6 +1,0 @@
-load("BT_SETTL_pb_clean.RData")
-plot(bp_clean[[1]]$data,xlim=c(8600, 8650),ty="l")
-for (i in 1:length(bp_clean)){
-  lines(bp_clean[[i]]$data)
-}
-
