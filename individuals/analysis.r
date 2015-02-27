@@ -24,7 +24,7 @@ for (i in 1:length(bp_clean))
 
 load("../sptype-teff/Teffs.RData")
 #HD35601
-star <- which(grepl("HD35601",names))
+star <- which(grepl("HD35601",names) & !(grepl("ext",names)))
 
 for (i in 1:length(star)) print(bf_clean[[star[1]]]$name)
 #Input
@@ -32,15 +32,14 @@ new <- data.frame(x = 11.5)
 teff <- predict.lm(m,new,se.fit=TRUE)
 print(teff[1])
 #Input
-idcs <- which(grd[,1]==3600 & grd[,3]==0)
-
+idcs <- which(grd[,1]== 3700& grd[,3]==0 & grd[,2]==3)
 plt("HD35601")
 for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
 for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
 
 # HD339034
 
-star <- which(grepl("HD339034",names))
+star <- which(grepl("HD339034",names) & !(grepl("ext",names)))
 
 for (i in 1:length(star)) print(bf_clean[[star[1]]]$name)
 #Input
@@ -48,11 +47,10 @@ new <- data.frame(x = 11)
 teff <- predict.lm(m,new,se.fit=TRUE)
 print(teff[1])
 #Input
-idcs <- which(grd[,1]==3700 & grd[,3]==0)
-
-plt("HD339034")
-for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
-for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
+idcs <- which(grd[,1] == 4000 & grd[,3]==0 & grd[,2]==2)
+plt("HD339034") # Full BTSettl models
+for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2) # Plot observed spectra (blue, green...)
+for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2) # Plot in red sptype models
 
 # HD69243
 
@@ -64,7 +62,7 @@ new <- data.frame(x = 19)
 teff <- predict.lm(m,new,se.fit=TRUE)
 print(teff[1])
 #Input
-idcs <- which(grd[,1]==2000 & grd[,3]==0)
+idcs <- which(grd[,1]==2000 & grd[,3]==0 & grd[,2] == 3)
 
 plt("HD69243")
 for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
@@ -76,7 +74,7 @@ star <- which(grepl("IRAS01037",names))
 
 for (i in 1:length(star)) print(bf_clean[[star[1]]]$name)
 #Input
-new <- data.frame(x = 18)
+new <- data.frame(x = 20)
 teff <- predict.lm(m,new,se.fit=TRUE)
 print(teff[1])
 #Input
@@ -96,7 +94,7 @@ new <- data.frame(x = 15)
 teff <- predict.lm(m,new,se.fit=TRUE)
 print(teff[1])
 #Input
-idcs <- which(grd[,1]==2500 & grd[,3]==0)
+idcs <- which(grd[,1]==2300 & grd[,3]==0)
 
 plt("HD14386")
 for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
@@ -147,5 +145,53 @@ print(teff[1])
 idcs <- which(grd[,1]==2500 & grd[,3]==0)
 
 plt("BRIB0021-0214")
+for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
+for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
+
+# BRIB1219-1336
+
+star <- which(grepl("BRIB1219-1336",names))
+
+for (i in 1:length(star)) print(bf_clean[[star[i]]]$name)
+#Input
+new <- data.frame(x = 19)
+teff <- predict.lm(m,new,se.fit=TRUE)
+print(teff[1])
+#Input
+idcs <- which(grd[,1]==2300 & grd[,3]==0)
+
+plt("BRIB1219-1336")
+for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
+for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
+
+# HD108849
+
+star <- which(grepl("HD108849",names))
+
+for (i in 1:length(star)) print(bf_clean[[star[1]]]$name)
+#Input
+new <- data.frame(x = 17)
+teff <- predict.lm(m,new,se.fit=TRUE)
+print(teff[1])
+#Input
+idcs <- which(grd[,1]==2500 & grd[,3]==0)
+
+plt("HD108849")
+for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
+for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
+
+# IRAS15060+0947
+
+star <- which(grepl("IRAS15060",names))
+
+for (i in 1:length(star)) print(bf_clean[[star[1]]]$name)
+#Input
+new <- data.frame(x = 19)
+teff <- predict.lm(m,new,se.fit=TRUE)
+print(teff[1])
+#Input
+idcs <- which(grd[,1]==2000 & grd[,3]==0)
+
+plt("IRAS15060+0947")
 for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
 for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
