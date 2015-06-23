@@ -195,3 +195,36 @@ idcs <- which(grd[,1]==2000 & grd[,3]==0)
 plt("IRAS15060+0947")
 for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
 for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
+
+# IRAS14086-0703
+
+star <- which(grepl("IRAS14086",names))
+
+for (i in 1:length(star)) print(bf_clean[[star[1]]]$name)
+#Input
+new <- data.frame(x = 20)
+teff <- predict.lm(m,new,se.fit=TRUE)
+print(teff[1])
+#Input
+idcs <- which(grd[,1]==2000 & grd[,3]==0)
+
+plt("IRAS14086-0703")
+for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
+for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
+
+# HD156014
+
+star <- which(grepl("HD156014",names))
+
+for (i in 1:length(star)) print(bf_clean[[star[1]]]$name)
+#Input
+new <- data.frame(x = 15)
+teff <- predict.lm(m,new,se.fit=TRUE)
+print(teff[1])
+#Input
+idcs <- which(grd[,1]==2800 & grd[,3]==0 & grd[,2] == 4)
+
+plt("HD156014")
+for (i in 1:length(star)) lines(bf_clean[[star[i]]]$data[[1]],col=i+2)
+for (i in 1:length(idcs)) lines(bp_clean[[idcs[i]]]$data[[1]],col=2)
+
