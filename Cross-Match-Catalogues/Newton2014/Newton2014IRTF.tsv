@@ -1,0 +1,906 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2015-06-23T10:09:21 [V1.99+ (14-Oct-2013)]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	votable-version=1.99+ (14-Oct-2013)	
+#INFO	-ref=VIZ55881f322129	
+#INFO	-out.max=unlimited	
+#INFO	queryParameters=29	
+#-oc.form=dec
+#-nav=cat:J/AJ/147/20&tab:{J/AJ/147/20/table6}&key:source=J/AJ/147/20/table6&HTTPPRM:&&-ref=VIZ55881f322129&-oc.form=sexa&-c.r=  2&-c.geom=r&-order=I&-out=LSPM&-out=R&-out=m_LSPM&-out=RAJ2000&-out=DEJ2000&-out=pmRA&-out=pmDE&-out=Kmag&-out=SpT&-out=SpTp&-out=EWNa&-out=EWCa&-out=H2O-K2&-out=[Fe/H]&-out=RV&-out=RVp&-out=Dist&-out=PMSU&-out=2M&-ignore=2M=*&2M=2M&-out=Simbad&Simbad=Simbad&-file=-c&-meta.ucd=2&-meta=1&-meta.foot=1&-usenav=1&-bmark=POST&-out.max=50&-out.form=HTML Table&-c.eq=J2000&-c.u=arcmin&
+#-c.r=  2
+#-c.geom=r
+#-source=J/AJ/147/20/table6
+#-order=I
+#-out=LSPM
+#-out=R
+#-out=m_LSPM
+#-out=RAJ2000
+#-out=DEJ2000
+#-out=pmRA
+#-out=pmDE
+#-out=Kmag
+#-out=SpT
+#-out=SpTp
+#-out=EWNa
+#-out=EWCa
+#-out=H2O-K2
+#-out=[Fe/H]
+#-out=RV
+#-out=RVp
+#-out=Dist
+#-out=PMSU
+#-out=2M
+#-out=Simbad
+#-out.max=unlimited
+#-c.eq=J2000
+#-c.u=arcmin
+#
+
+#RESOURCE=yCat_51470020
+#Name: J/AJ/147/20
+#Title: Spectroscopy of 447 nearby M dwarfs (Newton+, 2014)
+#Coosys	J2000_2000.000:	eq_FK5 J2000
+#INFO	-c=338.649746+00.595176,rm=2.	
+#HD 213893
+#
+#Table	J_AJ_147_20_table6:
+#Name: J/AJ/147/20/table6
+#Title: All stars from our rotation and nearby samples
+#Column	LSPM	(a23)	Name in LSPM Catalog (Lepine et al., 2005, cat. I/298)	[ucd=meta.id;meta.main]
+#Column	R	(I1)	{\bf 2} for stars studied here and in Rojas-Ayala et al. (2012, cat. J/ApJ/748/93; in table7) [NULL integer written as an empty string]	[ucd=meta.ref.url]
+#Column	m_LSPM	(A2)	Binary component (1)	[ucd=meta.code.multip]
+#Column	RAJ2000	(A11)	Hour of Right Ascension (J2000) (2)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(A11)	Degree of Declination (J2000) (2)	[ucd=pos.eq.dec;meta.main]
+#Column	pmRA	(F6.3)	Proper motion along Right Ascension (2)	[ucd=pos.pm;pos.eq.ra]
+#Column	pmDE	(F6.3)	Proper motion along Declination (2)	[ucd=pos.pm;pos.eq.dec]
+#Column	Kmag	(F6.3)	? Apparent 2MASS Ks magnitude (cat. II/246)	[ucd=phot.mag;em.IR.K]
+#Column	SpT	(A5)	Near-infrared spectral type (5)	[ucd=src.spType]
+#Column	SpTp	(A5)	Spectral type from PMSU survey (G2)	[ucd=src.spType]
+#Column	EWNa	(F5.2)	Na line equivalent width (2.21{mu}m); in {AA}	[ucd=spect.line.eqWidth]
+#Column	EWCa	(F5.2)	Ca line equivalent width (2.26{mu}m); in {AA}	[ucd=spect.line.eqWidth]
+#Column	H2O-K2	(F6.3)	Value of the H_2_O-K2 index	[ucd=spect.index]
+#Column	[Fe/H]	(F5.2)	Iron abundance with respect to solar	[ucd=phys.abund.Fe]
+#Column	RV	(I4)	Radial Velocity measured from NIR spectral	[ucd=phys.veloc;pos.heliocentric]
+#Column	RVp	(F6.1)	? Radial velocity from PMSU survey (G2)	[ucd=phys.veloc;pos.heliocentric]
+#Column	Dist	(I2)	? Distance estimate using H2O-K2 index (7) [NULL integer written as an empty string]	[ucd=pos.distance;pos.heliocentric]
+#Column	PMSU	(I3)	Cross-match with Palomar/MSU catalog (Hawley et al., 1997, cat. III/198) within 20" [NULL integer written as an empty string]	[ucd=meta.ref.url]
+#Column	2M	(A2)	Display the 2MASS data (Cutri et al. 2003, Cat. II/246) for the secondary	[ucd=meta.ref.url]
+#Column	Simbad	(a6)	ask the {\bf\fg{FireBrick}Simbad} data-base about this object	[ucd=meta.ref.url]
+#INFO	Target=338.649746+00.595176,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.611403+01.965175,rm=2.	
+#HD 19305
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=046.611403+01.965175,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=019.973412+58.308539,rm=2.	
+#HD 236697
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=019.973412+58.308539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=330.542808+01.400230,rm=2.	
+#HD 209290
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=330.542808+01.400230,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=297.549712+24.923388,rm=2.	
+#HD 339034
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=297.549712+24.923388,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.426711+57.862812,rm=2.	
+#HD 14404
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=035.426711+57.862812,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=088.792939+07.407064,rm=2.	
+#HD 39801
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=088.792939+07.407064,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.487064+23.638838,rm=2.	
+#HD 204724
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=322.487064+23.638838,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=092.644231-21.864642,rm=2.	
+#HD 42581
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=092.644231-21.864642,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=081.792574+29.921054,rm=2.	
+#HD 35601
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=081.792574+29.921054,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=023.387729+61.558536,rm=2.	
+#BD +60 265
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=023.387729+61.558536,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=082.864150-03.677231,rm=2.	
+#HD 36395
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=082.864150-03.677231,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=325.876921+58.780045,rm=2.	
+#HD 206936
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=325.876921+58.780045,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=025.796280+48.516767,rm=2.	
+#HD 10465
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=025.796280+48.516767,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=057.380333+65.525973,rm=2.	
+#HD 23475
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=057.380333+65.525973,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=206.855798-17.859839,rm=2.	
+#HD 120052
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=206.855798-17.859839,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=165.834142+35.969880,rm=2.	
+#HD 95735
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=165.834142+35.969880,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=311.267076+44.499073,rm=2.	
+#Gl 806
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=311.267076+44.499073,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=349.436030+49.015300,rm=2.	
+#HD 219734
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=349.436030+49.015300,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=153.019563-02.684742,rm=2.	
+#Gl 381
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=153.019563-02.684742,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=229.861763-07.722281,rm=2.	
+#Gl 581
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=229.861763-07.722281,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=307.210796+39.981785,rm=2.	
+#RW Cyg
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=307.210796+39.981785,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=115.260956-31.683085,rm=2.	
+#CD -31 4916
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=115.260956-31.683085,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.528725+56.604129,rm=2.	
+#HD 14469
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=035.528725+56.604129,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=089.983747+45.936735,rm=2.	
+#HD 40239
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=089.983747+45.936735,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=087.857284+32.124692,rm=2.	
+#HD 39045
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=087.857284+32.124692,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=154.901154+19.870017,rm=2.	
+#Gl 388
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=154.901154+19.870017,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.601238+57.109544,rm=2.	
+#HD 14488
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=035.601238+57.109544,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=067.412253+05.164266,rm=2.	
+#HD 28487
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=067.412253+05.164266,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=111.852082+05.225787,rm=2.	
+#Gl 273
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=111.852082+05.225787,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+LSPM|R|m_LSPM|RAJ2000|DEJ2000|pmRA|pmDE|Kmag|SpT|SpTp|EWNa|EWCa|H2O-K2|[Fe/H]|RV|RVp|Dist|PMSU|2M|Simbad
+ | | |"h:m:s"|"d:m:s"|arcsec/yr|arcsec/yr|mag| | |0.1nm|0.1nm| |[Sun]|km/s|km/s|pc| | |
+-----------------------|-|--|-----------|-----------|------|------|------|-----|-----|-----|-----|------|-----|----|------|--|---|--|------
+J0727+0513             |2|  |07 27 24.51|+05 13 32.5| 0.574|-3.691| 4.857|M4V  |M3.5V| 4.65| 2.98| 0.902|-0.04|  15|  29.6| 3|  0|2M|Simbad
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.294141+38.840276,rm=2.	
+#HD 19058
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=046.294141+38.840276,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=339.658012+56.795634,rm=2.	
+#HD 214665
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=339.658012+56.795634,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=011.637326+15.475505,rm=2.	
+#HD 4408
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=011.637326+15.475505,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=065.172277-16.829975,rm=2.	
+#HD 27598
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=065.172277-16.829975,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=085.538615+12.489340,rm=2.	
+#Gl 213
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=085.538615+12.489340,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=122.989896+08.772792,rm=2.	
+#Gl 299
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=122.989896+08.772792,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+LSPM|R|m_LSPM|RAJ2000|DEJ2000|pmRA|pmDE|Kmag|SpT|SpTp|EWNa|EWCa|H2O-K2|[Fe/H]|RV|RVp|Dist|PMSU|2M|Simbad
+ | | |"h:m:s"|"d:m:s"|arcsec/yr|arcsec/yr|mag| | |0.1nm|0.1nm| |[Sun]|km/s|km/s|pc| | |
+-----------------------|-|--|-----------|-----------|------|------|------|-----|-----|-----|-----|------|-----|----|------|--|---|--|------
+J0811+0846             |2|  |08 11 57.56|+08 46 22.9| 1.099|-5.123| 7.660|M5V  |M4.5V| 2.91| 1.51| 0.851|-0.56|  13|  -3.7| 9|  0|2M|Simbad
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.249076+22.179435,rm=2.	
+#HD 204585
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=322.249076+22.179435,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=258.661996+14.390281,rm=2.	
+#HD 156014
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=258.661996+14.390281,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=283.833759+43.946092,rm=2.	
+#HD 175865
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=283.833759+43.946092,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=015.832167+62.365472,rm=2.	
+#Gl 51
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=015.832167+62.365472,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+LSPM|R|m_LSPM|RAJ2000|DEJ2000|pmRA|pmDE|Kmag|SpT|SpTp|EWNa|EWCa|H2O-K2|[Fe/H]|RV|RVp|Dist|PMSU|2M|Simbad
+ | | |"h:m:s"|"d:m:s"|arcsec/yr|arcsec/yr|mag| | |0.1nm|0.1nm| |[Sun]|km/s|km/s|pc| | |
+-----------------------|-|--|-----------|-----------|------|------|------|-----|-----|-----|-----|------|-----|----|------|--|---|--|------
+J0103+6221             |2|  |01 03 19.82|+62 21 55.8| 0.739| 0.086| 7.718|M5V  |M5V  | 6.64| 3.28| 0.822| 0.27|  -4|   4.4| 7|  1|2M|Simbad
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.006121+06.185369,rm=2.	
+#HD 94705
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=164.006121+06.185369,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=309.478034+18.268581,rm=2.	
+#HD 196610
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=309.478034+18.268581,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=043.952075+18.331640,rm=2.	
+#HD 18191
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=043.952075+18.331640,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.120271+07.014658,rm=2.	
+#Gl 406
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=164.120271+07.014658,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+LSPM|R|m_LSPM|RAJ2000|DEJ2000|pmRA|pmDE|Kmag|SpT|SpTp|EWNa|EWCa|H2O-K2|[Fe/H]|RV|RVp|Dist|PMSU|2M|Simbad
+ | | |"h:m:s"|"d:m:s"|arcsec/yr|arcsec/yr|mag| | |0.1nm|0.1nm| |[Sun]|km/s|km/s|pc| | |
+-----------------------|-|--|-----------|-----------|------|------|------|-----|-----|-----|-----|------|-----|----|------|--|---|--|------
+J1056+0700             |2|  |10 56 28.91|+07 00 53.2|-3.842|-2.725| 6.084|M7V  |M5.5V| 7.20| 2.13| 0.777| 0.30|  23|  21.0| 2|  0|2M|Simbad
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=127.455604+26.776039,rm=2.	
+#GJ 1111
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=127.455604+26.776039,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=034.836634-02.977638,rm=2.	
+#HD 14386
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=034.836634-02.977638,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=187.587551+04.416434,rm=2.	
+#HD 108849
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=187.587551+04.416434,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=326.632698-02.212759,rm=2.	
+#HD 207076
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=326.632698-02.212759,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=253.897054-08.394475,rm=2.	
+#Gl 644C
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=253.897054-08.394475,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=343.632137+60.827469,rm=2.	
+#MY Cep
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=343.632137+60.827469,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=124.140950+11.726238,rm=2.	
+#HD 69243
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=124.140950+11.726238,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=355.511458-04.518022,rm=2.	
+#BRI B2339-0447
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=355.511458-04.518022,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=016.608267+12.598069,rm=2.	
+#IRAS 01037+1219
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=016.608267+12.598069,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=289.240092+05.150606,rm=2.	
+#Gl 752B
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=289.240092+05.150606,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+LSPM|R|m_LSPM|RAJ2000|DEJ2000|pmRA|pmDE|Kmag|SpT|SpTp|EWNa|EWCa|H2O-K2|[Fe/H]|RV|RVp|Dist|PMSU|2M|Simbad
+ | | |"h:m:s"|"d:m:s"|arcsec/yr|arcsec/yr|mag| | |0.1nm|0.1nm| |[Sun]|km/s|km/s|pc| | |
+-----------------------|-|--|-----------|-----------|------|------|------|-----|-----|-----|-----|------|-----|----|------|--|---|--|------
+J1916+0509             |1|  |19 16 57.60|+05 09 01.6|-0.614|-1.368| 8.765|M8/9V|M8cV | 5.27| 1.01| 0.694| 0.09|  29|  36.0| 5|  1|2M|Simbad
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=050.248554+18.906475,rm=2.	
+#LP 412-31
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=050.248554+18.906475,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.777125-07.572361,rm=2.	
+#IRAS 21284-0747
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=322.777125-07.572361,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=221.576708-07.263833,rm=2.	
+#IRAS 14436-0703
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=221.576708-07.263833,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=218.249525-10.934333,rm=2.	
+#IRAS 14303-1042
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=218.249525-10.934333,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=227.107358+09.605053,rm=2.	
+#IRAS 15060+0947
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=227.107358+09.605053,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=054.896750-35.428914,rm=2.	
+#LP 944-20
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=054.896750-35.428914,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=133.400817-03.492253,rm=2.	
+#LHS 2065
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=133.400817-03.492253,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=217.180138+33.177539,rm=2.	
+#LHS 2924
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=217.180138+33.177539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=006.102650-01.972261,rm=2.	
+#BRI B0021-0214
+#
+#Table	J_AJ_147_20_table6:J_AJ_147_20_table6
+#Name: J/AJ/147/20/table6
+#Title:
+#INFO	Target=006.102650-01.972261,rm=2.	
+#      MatchedRows=0
+#
