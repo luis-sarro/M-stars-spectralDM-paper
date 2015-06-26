@@ -1,0 +1,1 @@
+grep -A 5 -B 8 "_r" RA-IPAC.tsv | grep -v "#Table" | grep -v "Name" | grep -v "Title" | grep -v INFO | grep -v "MatchedRows" | grep -v "_r" | grep -v ^$ | grep -v '^#$' | grep -v ^arcmin | grep -v '^-' > RA-IPAC-cleaned.tsv
