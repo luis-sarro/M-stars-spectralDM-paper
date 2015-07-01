@@ -1,0 +1,926 @@
+#
+#   VizieR Astronomical Server vizier.u-strasbg.fr
+#    Date: 2015-06-26T06:30:36 [V1.99+ (14-Oct-2013)]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	votable-version=1.99+ (14-Oct-2013)	
+#INFO	-ref=VIZ558ce43534d2	
+#INFO	-out.max=unlimited	
+#INFO	queryParameters=27	
+#-oc.form=dec
+#-out.add=_r
+#-out.add=_RAJ,_DEJ
+#-sort=_r
+#-nav=cat:J/A+A/551/A36&tab:{J/A+A/551/A36/table2}&key:source=J/A+A/551/A36/table2&HTTPPRM:&&-ref=VIZ558ce43534d2&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-oc.form=dec&-c.r=  2&-c.geom=r&-order=I&-out=Star&-out=n_Star&-out=RAJ2000&-out=DEJ2000&-out=plx&-out=e_plx&-out=r_plx&-out=SpType&-out=Vmag&-out=Ksmag&-out=e_Ksmag&-out=Mass&-out=e_Mass&-out=[Fe/H]&-out=SimbadName&-file=-c&-meta.ucd=2&-meta=1&-meta.foot=1&-usenav=1&-bmark=POST&-out.max=unlimited&-out.form=| -Separated-Values&-c.eq=J2000&-c.u=arcmin&
+#-c.r=  2
+#-c.geom=r
+#-source=J/A+A/551/A36/table2
+#-order=I
+#-out=Star
+#-out=n_Star
+#-out=RAJ2000
+#-out=DEJ2000
+#-out=plx
+#-out=e_plx
+#-out=r_plx
+#-out=SpType
+#-out=Vmag
+#-out=Ksmag
+#-out=e_Ksmag
+#-out=Mass
+#-out=e_Mass
+#-out=[Fe/H]
+#-out=SimbadName
+#-out.max=unlimited
+#-c.eq=J2000
+#-c.u=arcmin
+#
+
+#RESOURCE=yCat_35510036
+#Name: J/A+A/551/A36
+#Title: Metallicity of M dwarfs. III. (Neves+, 2013)
+#INFO	-c=338.649746+00.595176,rm=2.	
+#HD 213893
+#
+#Table	J_A_A_551_A36_table2:
+#Name: J/A+A/551/A36/table2
+#Title: HARPS M dwarf sample, sorted by right ascension
+#Column	_r	(F5.3)	Distance from center (22 34 36+00 35 43)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	_RAJ2000	(F7.3)	Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)	[ucd=pos.eq.ra]
+#Column	_DEJ2000	(F7.3)	Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)	[ucd=pos.eq.dec]
+#Column	Star	(a10)	Star name	[ucd=meta.id;meta.main]
+#Column	n_Star	(A1)	[+] Note on Gl803 (1)	[ucd=meta.note]
+#Column	RAJ2000	(A8)	Right ascension (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(A9)	Declination (J2000)	[ucd=pos.eq.dec;meta.main]
+#Column	plx	(F5.1)	Parallax	[ucd=pos.parallax.trig]
+#Column	e_plx	(F4.1)	rms uncertainty on plx	[ucd=stat.error;pos.parallax]
+#Column	r_plx	(A3)	Reference for plx (G1)	[ucd=meta.ref;pos.frame]
+#Column	SpType	(a6)	MK spectral type	[ucd=src.spType]
+#Column	Vmag	(F4.1)	V magnitude	[ucd=phot.mag;em.opt.V]
+#Column	Ksmag	(F6.3)	Ks magnitude	[ucd=phot.mag;em.IR.K]
+#Column	e_Ksmag	(F6.3)	rms uncertainty on Ksmag	[ucd=stat.error;phot.mag;em.IR.K]
+#Column	Mass	(F5.2)	Mass	[ucd=phys.mass]
+#Column	e_Mass	(F5.2)	rms uncertainty on Mass	[ucd=stat.error;phys.mass]
+#Column	[Fe/H]	(F5.2)	Metallicity	[ucd=phys.abund.Z]
+#Column	SimbadName	(a10)	Designation understandable by the {\bf\fg{FireBrick}Simbad} data-base	[ucd=meta.id]
+#INFO	Target=338.649746+00.595176,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.611403+01.965175,rm=2.	
+#HD 19305
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=046.611403+01.965175,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=019.973412+58.308539,rm=2.	
+#HD 236697
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=019.973412+58.308539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=330.542808+01.400230,rm=2.	
+#HD 209290
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=330.542808+01.400230,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|-------|-------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.070|330.5417| +1.4000|Gl846     | |22 02 10|+01 24 00| 97.6| 1.5|H  |M0.5V | 9.2| 5.322| 0.023| 0.60| 0.03| 0.06|Gl846
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=297.549712+24.923388,rm=2.	
+#HD 339034
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=297.549712+24.923388,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.426711+57.862812,rm=2.	
+#HD 14404
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=035.426711+57.862812,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=088.792939+07.407064,rm=2.	
+#HD 39801
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=088.792939+07.407064,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.487064+23.638838,rm=2.	
+#HD 204724
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=322.487064+23.638838,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=092.644231-21.864642,rm=2.	
+#HD 42581
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=092.644231-21.864642,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.143|092.6417|-21.8647|Gl229     | |06 10 34|-21 51 53|173.8| 1.0|H  |M1V   | 8.2| 4.166| 0.232| 0.58| 0.06|-0.01|Gl229
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=081.792574+29.921054,rm=2.	
+#HD 35601
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=081.792574+29.921054,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=023.387729+61.558536,rm=2.	
+#BD +60 265
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=023.387729+61.558536,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=082.864150-03.677231,rm=2.	
+#HD 36395
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=082.864150-03.677231,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.119|082.8625| -3.6783|Gl205     | |05 31 27|-03 40 42|176.8| 1.2|H  |M1.5V | 8.0| 4.039| 0.260| 0.60| 0.07| 0.22|Gl205
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=325.876921+58.780045,rm=2.	
+#HD 206936
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=325.876921+58.780045,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=025.796280+48.516767,rm=2.	
+#HD 10465
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=025.796280+48.516767,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=057.380333+65.525973,rm=2.	
+#HD 23475
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=057.380333+65.525973,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=206.855798-17.859839,rm=2.	
+#HD 120052
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=206.855798-17.859839,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=165.834142+35.969880,rm=2.	
+#HD 95735
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=165.834142+35.969880,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=311.267076+44.499073,rm=2.	
+#Gl 806
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=311.267076+44.499073,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=349.436030+49.015300,rm=2.	
+#HD 219734
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=349.436030+49.015300,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=153.019563-02.684742,rm=2.	
+#Gl 381
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=153.019563-02.684742,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=229.861763-07.722281,rm=2.	
+#Gl 581
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=229.861763-07.722281,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.211|229.8583| -7.7214|Gl581     | |15 19 26|-07 43 17|160.9| 2.6|H  |M2.5V |10.6| 5.837| 0.023| 0.30| 0.02|-0.21|Gl581
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=307.210796+39.981785,rm=2.	
+#RW Cyg
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=307.210796+39.981785,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=115.260956-31.683085,rm=2.	
+#CD -31 4916
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=115.260956-31.683085,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.528725+56.604129,rm=2.	
+#HD 14469
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=035.528725+56.604129,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=089.983747+45.936735,rm=2.	
+#HD 40239
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=089.983747+45.936735,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=087.857284+32.124692,rm=2.	
+#HD 39045
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=087.857284+32.124692,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=154.901154+19.870017,rm=2.	
+#Gl 388
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=154.901154+19.870017,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.065|154.9000|+19.8700|Gl388     | |10 19 36|+19 52 12|204.6| 2.8|H  |M4.5  | 9.4| 4.593| 0.017| 0.42| 0.03| 0.07|Gl388
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.601238+57.109544,rm=2.	
+#HD 14488
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=035.601238+57.109544,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=067.412253+05.164266,rm=2.	
+#HD 28487
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=067.412253+05.164266,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=111.852082+05.225787,rm=2.	
+#Gl 273
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=111.852082+05.225787,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.133|111.8500| +5.2250|Gl273     | |07 27 24|+05 13 30|263.0| 1.4|H  |M3.5V | 9.8| 4.857| 0.023| 0.29| 0.02|-0.01|Gl273
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.294141+38.840276,rm=2.	
+#HD 19058
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=046.294141+38.840276,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=339.658012+56.795634,rm=2.	
+#HD 214665
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=339.658012+56.795634,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=011.637326+15.475505,rm=2.	
+#HD 4408
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=011.637326+15.475505,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=065.172277-16.829975,rm=2.	
+#HD 27598
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=065.172277-16.829975,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=085.538615+12.489340,rm=2.	
+#Gl 213
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=085.538615+12.489340,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.069|085.5375|+12.4897|Gl213     | |05 42 09|+12 29 23|171.6| 4.0|H  |M4V   |11.5| 6.389| 0.016| 0.22| 0.02|-0.11|Gl213
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=122.989896+08.772792,rm=2.	
+#Gl 299
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=122.989896+08.772792,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.143|122.9875| +8.7731|Gl299     | |08 11 57|+08 46 23|146.3| 3.1|H  |M4V   |12.8| 7.660| 0.026| 0.14| 0.01|-0.50|Gl299
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.249076+22.179435,rm=2.	
+#HD 204585
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=322.249076+22.179435,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=258.661996+14.390281,rm=2.	
+#HD 156014
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=258.661996+14.390281,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=283.833759+43.946092,rm=2.	
+#HD 175865
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=283.833759+43.946092,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=015.832167+62.365472,rm=2.	
+#Gl 51
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=015.832167+62.365472,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.006121+06.185369,rm=2.	
+#HD 94705
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=164.006121+06.185369,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=309.478034+18.268581,rm=2.	
+#HD 196610
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=309.478034+18.268581,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=043.952075+18.331640,rm=2.	
+#HD 18191
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=043.952075+18.331640,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.120271+07.014658,rm=2.	
+#Gl 406
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=164.120271+07.014658,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+0.039|164.1208| +7.0150|Gl406     | |10 56 29|+07 00 54|419.1| 2.1|H  |M6V   |13.4| 6.084| 0.017| 0.10| 0.00| 0.18|Gl406
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=127.455604+26.776039,rm=2.	
+#GJ 1111
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=127.455604+26.776039,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=034.836634-02.977638,rm=2.	
+#HD 14386
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=034.836634-02.977638,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=187.587551+04.416434,rm=2.	
+#HD 108849
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=187.587551+04.416434,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=326.632698-02.212759,rm=2.	
+#HD 207076
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=326.632698-02.212759,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=253.897054-08.394475,rm=2.	
+#Gl 644C
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=253.897054-08.394475,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=343.632137+60.827469,rm=2.	
+#MY Cep
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=343.632137+60.827469,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=124.140950+11.726238,rm=2.	
+#HD 69243
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=124.140950+11.726238,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=355.511458-04.518022,rm=2.	
+#BRI B2339-0447
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=355.511458-04.518022,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=016.608267+12.598069,rm=2.	
+#IRAS 01037+1219
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=016.608267+12.598069,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=289.240092+05.150606,rm=2.	
+#Gl 752B
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=289.240092+05.150606,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Star|n_Star|RAJ2000|DEJ2000|plx|e_plx|r_plx|SpType|Vmag|Ksmag|e_Ksmag|Mass|e_Mass|[Fe/H]|SimbadName
+arcmin|deg|deg| | |"h:m:s"|"d:m:s"|mas|mas| | |mag|mag|mag|Msun|Msun|[Sun]|
+-----|--------|--------|----------|-|--------|---------|-----|----|---|------|----|------|------|-----|-----|-----|----------
+1.234|289.2292| +5.1681|Gl752A    | |19 16 55|+05 10 05|170.4| 1.0|H  |M3V   | 9.1| 4.673| 0.020| 0.48| 0.03| 0.06|Gl752A
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=050.248554+18.906475,rm=2.	
+#LP 412-31
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=050.248554+18.906475,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.777125-07.572361,rm=2.	
+#IRAS 21284-0747
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=322.777125-07.572361,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=221.576708-07.263833,rm=2.	
+#IRAS 14436-0703
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=221.576708-07.263833,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=218.249525-10.934333,rm=2.	
+#IRAS 14303-1042
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=218.249525-10.934333,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=227.107358+09.605053,rm=2.	
+#IRAS 15060+0947
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=227.107358+09.605053,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=054.896750-35.428914,rm=2.	
+#LP 944-20
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=054.896750-35.428914,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=133.400817-03.492253,rm=2.	
+#LHS 2065
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=133.400817-03.492253,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=217.180138+33.177539,rm=2.	
+#LHS 2924
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=217.180138+33.177539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=006.102650-01.972261,rm=2.	
+#BRI B0021-0214
+#
+#Table	J_A_A_551_A36_table2:J_A_A_551_A36_table2
+#Name: J/A+A/551/A36/table2
+#Title:
+#INFO	Target=006.102650-01.972261,rm=2.	
+#      MatchedRows=0
+#

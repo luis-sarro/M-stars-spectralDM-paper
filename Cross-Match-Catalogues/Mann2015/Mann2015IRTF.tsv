@@ -1,0 +1,964 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2015-06-23T10:19:21 [V1.99+ (14-Oct-2013)]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	votable-version=1.99+ (14-Oct-2013)	
+#INFO	-ref=VIZ5589327d5296	
+#INFO	-out.max=unlimited	
+#INFO	queryParameters=41	
+#-oc.form=dec
+#-nav=cat:J/ApJ/804/64&tab:{J/ApJ/804/64/para}&key:source=J/ApJ/804/64&HTTPPRM:&&-ref=VIZ5589327d5296&-oc.form=sexa&-c.r=  2&-c.geom=r&-order=I&-out=ori&-out=Name&-out=CNS3&-out=RAJ2000&-out=DEJ2000&-out=Fbol&-out=Teff&-out=R&-out=M&-out=[Fe/H]&-out=SpType&-out=Bmag&-out=Vmag&-out=Rcmag&-out=Icmag&-out=gmag&-out=rmag&-out=imag&-out=zmag&-out=Jmag&-out=Hmag&-out=Ksmag&-out=Gaiamag&-out=BPmag&-out=RPmag&-out=ModFbol&-out=ModTeff&-out=ModR&-out=ModM&-out=ModAge&-out=chisq&-out=SimbadName&-file=-c&-meta.ucd=2&-meta=1&-meta.foot=1&-usenav=1&-bmark=POST&-out.max=50&-out.form=HTML Table&-c.eq=J2000&-c.u=arcmin&
+#-c.r=  2
+#-c.geom=r
+#-source=J/ApJ/804/64/para
+#-order=I
+#-out=ori
+#-out=Name
+#-out=CNS3
+#-out=RAJ2000
+#-out=DEJ2000
+#-out=Fbol
+#-out=Teff
+#-out=R
+#-out=M
+#-out=[Fe/H]
+#-out=SpType
+#-out=Bmag
+#-out=Vmag
+#-out=Rcmag
+#-out=Icmag
+#-out=gmag
+#-out=rmag
+#-out=imag
+#-out=zmag
+#-out=Jmag
+#-out=Hmag
+#-out=Ksmag
+#-out=Gaiamag
+#-out=BPmag
+#-out=RPmag
+#-out=ModFbol
+#-out=ModTeff
+#-out=ModR
+#-out=ModM
+#-out=ModAge
+#-out=chisq
+#-out=SimbadName
+#-out.max=unlimited
+#-c.eq=J2000
+#-c.u=arcmin
+#
+
+#RESOURCE=yCat_18040064
+#Name: J/ApJ/804/64
+#Title: Empirical and model parameters of 183 M dwarfs (Mann+, 2015)
+#INFO	-c=338.649746+00.595176,rm=2.	
+#HD 213893
+#
+#Table	J_ApJ_804_64_para:
+#Name: J/ApJ/804/64/para
+#Title: Data on all 183 stars (tables 5-7 of the paper)
+#Column	ori	(I3)	link to the three catalogs used for Name [NULL integer written as an empty string]	[ucd=meta.ref;pos.frame]
+#Column	Name	(A16)	LG11, CONCH-Shell, or LSPM Name (1)	[ucd=meta.id;meta.main]
+#Column	CNS3	(a10)	Gliese or GJ name	[ucd=meta.id]
+#Column	RAJ2000	(F9.5)	Right Ascension in decimal degrees (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F9.5)	Declination in decimal degrees (J2000)	[ucd=pos.eq.dec;meta.main]
+#Column	Fbol	(F8.5)	Bolometric Flux	[ucd=phot.flux.bol]
+#Column	Teff	(I4)	Stellar effective temperature	[ucd=phys.temperature.effective]
+#Column	R	(F7.4)	Stellar Radius	[ucd=phys.size.radius]
+#Column	M	(F7.4)	Stellar Mass	[ucd=phys.mass]
+#Column	[Fe/H]	(F5.2)	Metallicity	[ucd=phys.abund.Z]
+#Column	SpType	(A6)	MK spectral Type	[ucd=src.spType]
+#Column	Bmag	(F6.3)	Synthetic Johnson B magnitude	[ucd=phot.mag;em.opt.B]
+#Column	Vmag	(F6.3)	Synthetic Johnson V magnitude	[ucd=phot.mag;em.opt.V]
+#Column	Rcmag	(F6.3)	Synthetic Cousins R magnitude	[ucd=phot.mag;em.opt.R]
+#Column	Icmag	(F6.3)	Synthetic Cousins I magnitude	[ucd=phot.mag;em.opt.I]
+#Column	gmag	(F6.3)	Synthetic SDSS g magnitude	[ucd=phot.mag;em.opt.B]
+#Column	rmag	(F6.3)	Synthetic SDSS r magnitude	[ucd=phot.mag;em.opt.R]
+#Column	imag	(F6.3)	Synthetic SDSS i magnitude	[ucd=phot.mag;em.opt.I]
+#Column	zmag	(F6.3)	Synthetic SDSS z magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Jmag	(F6.3)	Synthetic 2MASS J magnitude	[ucd=phot.mag;em.IR.J]
+#Column	Hmag	(F6.3)	Synthetic 2MASS H magnitude	[ucd=phot.mag;em.IR.H]
+#Column	Ksmag	(F6.3)	Synthetic 2MASS Ks magnitude	[ucd=phot.mag;em.IR.K]
+#Column	Gaiamag	(F6.3)	Synthetic Gaia G magnitude	[ucd=phot.mag;em.opt.R]
+#Column	BPmag	(F6.3)	Synthetic Gaia BP magnitude	[ucd=phot.mag;em.opt.V]
+#Column	RPmag	(F6.3)	Synthetic Gaia RP magnitude	[ucd=phot.mag;em.opt.I]
+#Column	ModFbol	(F8.5)	? Model inferred Bolometric Flux	[ucd=phot.flux.bol;meta.modelled]
+#Column	ModTeff	(I4)	? Model inferred effective temperature [NULL integer written as an empty string]	[ucd=phys.temperature.effective;meta.modelled]
+#Column	ModR	(F7.4)	? Model inferred Stellar Radius	[ucd=phys.size.radius;meta.modelled]
+#Column	ModM	(F7.4)	? Model inferred Stellar Mass	[ucd=phys.mass]
+#Column	ModAge	(F5.2)	? Model inferred Age	[ucd=time.age;meta.modelled]
+#Column	chisq	(F6.3)	? Chi squared for model comparison	[ucd=stat.fit.chi2]
+#Column	SimbadName	(a24)	Designation understandable by the {\bf\fg{FireBrick}Simbad} data-base	[ucd=meta.id]
+#INFO	Target=338.649746+00.595176,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.611403+01.965175,rm=2.	
+#HD 19305
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=046.611403+01.965175,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=019.973412+58.308539,rm=2.	
+#HD 236697
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=019.973412+58.308539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=330.542808+01.400230,rm=2.	
+#HD 209290
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=330.542808+01.400230,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I22021+0124  |Gl 846    |330.54288|+01.40027| 1.79100|3848| 0.5460| 0.5900| 0.02|M0.6  |10.623| 9.179| 8.226| 7.238| 9.982| 8.576| 7.841| 7.437| 6.207| 5.530| 5.347| 8.671| 9.573| 7.449| 1.79100|3875| 0.5380| 0.5710| 9.43| 0.444|Gl 846
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=297.549712+24.923388,rm=2.	
+#HD 339034
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=297.549712+24.923388,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.426711+57.862812,rm=2.	
+#HD 14404
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=035.426711+57.862812,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=088.792939+07.407064,rm=2.	
+#HD 39801
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=088.792939+07.407064,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.487064+23.638838,rm=2.	
+#HD 204724
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=322.487064+23.638838,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=092.644231-21.864642,rm=2.	
+#HD 42581
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=092.644231-21.864642,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=081.792574+29.921054,rm=2.	
+#HD 35601
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=081.792574+29.921054,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=023.387729+61.558536,rm=2.	
+#BD +60 265
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=023.387729+61.558536,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=082.864150-03.677231,rm=2.	
+#HD 36395
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=082.864150-03.677231,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  1|PM I05314-0340  |Gl 205    |082.86417|-03.67722| 6.34000|3801| 0.5810| 0.6330| 0.49|M1.5  | 9.432| 7.932| 7.008| 5.931| 8.767| 7.376| 6.566| 6.096| 4.796| 4.123| 3.856| 7.416| 8.354| 6.161| 6.34000|3805| 0.5790| 0.6130| 9.41| 0.655|Gl 205
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=325.876921+58.780045,rm=2.	
+#HD 206936
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=325.876921+58.780045,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=025.796280+48.516767,rm=2.	
+#HD 10465
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=025.796280+48.516767,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=057.380333+65.525973,rm=2.	
+#HD 23475
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=057.380333+65.525973,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=206.855798-17.859839,rm=2.	
+#HD 120052
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=206.855798-17.859839,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=165.834142+35.969880,rm=2.	
+#HD 95735
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=165.834142+35.969880,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I11033+3558  |Gl 411    |165.83423|+35.97054|10.82100|3563| 0.3890| 0.3860|-0.38|M1.9  | 9.019| 7.498| 6.475| 5.275| 8.333| 6.898| 5.938| 5.419| 4.167| 3.601| 3.361| 6.854| 7.912| 5.522|10.82000|3637| 0.3720| 0.3960| 9.54| 3.187|Gl 411
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=311.267076+44.499073,rm=2.	
+#Gl 806
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=311.267076+44.499073,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I20450+4429  |Gl 806    |311.26700|+44.49903| 0.58540|3542| 0.4430| 0.4320|-0.15|M2.0  |12.280|10.721| 9.676| 8.474|11.593|10.097| 9.136| 8.604| 7.317| 6.729| 6.531|10.057|11.137| 8.716| 0.58500|3640| 0.4160| 0.4440| 9.47| 4.747|Gl 806
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=349.436030+49.015300,rm=2.	
+#HD 219734
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=349.436030+49.015300,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=153.019563-02.684742,rm=2.	
+#Gl 381
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=153.019563-02.684742,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=229.861763-07.722281,rm=2.	
+#Gl 581
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=229.861763-07.722281,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  2|PM I15194-0743E |Gl 581    |229.86194|-07.72227| 0.96090|3395| 0.3110| 0.2920|-0.15|M3.2  |12.159|10.581| 9.448| 8.024|11.438| 9.970| 8.754| 8.083| 6.716| 6.132| 5.897| 9.740|11.008| 8.292| 0.96100|3457| 0.2990| 0.3060| 9.44| 2.120|Gl 581
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=307.210796+39.981785,rm=2.	
+#RW Cyg
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=307.210796+39.981785,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=115.260956-31.683085,rm=2.	
+#CD -31 4916
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=115.260956-31.683085,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.528725+56.604129,rm=2.	
+#HD 14469
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=035.528725+56.604129,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=089.983747+45.936735,rm=2.	
+#HD 40239
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=089.983747+45.936735,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=087.857284+32.124692,rm=2.	
+#HD 39045
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=087.857284+32.124692,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=154.901154+19.870017,rm=2.	
+#Gl 388
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=154.901154+19.870017,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I10196+1952  |Gl 388    |154.90117|+19.87002| 2.94000|3370| 0.4350| 0.4060| 0.15|M3.4  |10.918| 9.411| 8.286| 6.834|10.224| 8.814| 7.576| 6.885| 5.502| 4.890| 4.664| 8.559| 9.826| 7.108| 2.94000|3492| 0.4020| 0.4270| 9.46| 8.070|Gl 388
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.601238+57.109544,rm=2.	
+#HD 14488
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=035.601238+57.109544,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=067.412253+05.164266,rm=2.	
+#HD 28487
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=067.412253+05.164266,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=111.852082+05.225787,rm=2.	
+#Gl 273
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=111.852082+05.225787,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I07274+0513  |Gl 273    |111.85200|+05.22630| 2.39500|3317| 0.3150| 0.2830|-0.11|M3.8  |11.417| 9.892| 8.683| 7.098|10.690| 9.298| 7.875| 7.089| 5.683| 5.123| 4.892| 8.893|10.313| 7.374| 2.39500|3438| 0.2930| 0.2980| 9.44| 7.787|Gl 273
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.294141+38.840276,rm=2.	
+#HD 19058
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=046.294141+38.840276,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=339.658012+56.795634,rm=2.	
+#HD 214665
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=339.658012+56.795634,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=011.637326+15.475505,rm=2.	
+#HD 4408
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=011.637326+15.475505,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=065.172277-16.829975,rm=2.	
+#HD 27598
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=065.172277-16.829975,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=085.538615+12.489340,rm=2.	
+#Gl 213
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=085.538615+12.489340,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I05421+1229  |Gl 213    |085.53833|+12.48956| 0.60020|3250| 0.2640| 0.2290|-0.22|M4.0  |13.178|11.580|10.264| 8.621|12.440|10.918| 9.413| 8.605| 7.161| 6.613| 6.355|10.460|11.994| 8.904| 0.60000|3370| 0.2430| 0.2340| 9.41| 7.212|Gl 213
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=122.989896+08.772792,rm=2.	
+#Gl 299
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=122.989896+08.772792,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.249076+22.179435,rm=2.	
+#HD 204585
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=322.249076+22.179435,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=258.661996+14.390281,rm=2.	
+#HD 156014
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=258.661996+14.390281,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=283.833759+43.946092,rm=2.	
+#HD 175865
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=283.833759+43.946092,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=015.832167+62.365472,rm=2.	
+#Gl 51
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=015.832167+62.365472,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.006121+06.185369,rm=2.	
+#HD 94705
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=164.006121+06.185369,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=309.478034+18.268581,rm=2.	
+#HD 196610
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=309.478034+18.268581,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=043.952075+18.331640,rm=2.	
+#HD 18191
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=043.952075+18.331640,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.120271+07.014658,rm=2.	
+#Gl 406
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=164.120271+07.014658,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  2|PM I10564+0700  |Gl 406    |164.12042|+07.01472| 0.57980|2818| 0.1348| 0.0997| 0.25|M5.9  |15.518|13.520|11.612| 9.366|14.582|12.774|10.376| 8.977| 7.074| 6.462| 6.147|11.395|13.993| 9.581| 0.58000|2808| 0.1350| 0.1050| 9.45| 0.504|Gl 406
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=127.455604+26.776039,rm=2.	
+#GJ 1111
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=127.455604+26.776039,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I08298+2646  |GJ 1111   |127.45563|+26.77604| 0.20160|2800| 0.1226| 0.0937|-0.15|M6.7  |16.227|14.834|12.974|10.611|15.557|14.253|11.674|10.166| 8.220| 7.617| 7.237|12.643|15.233|10.810|        |    |       |       |     |      |GJ 1111
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=034.836634-02.977638,rm=2.	
+#HD 14386
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=034.836634-02.977638,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=187.587551+04.416434,rm=2.	
+#HD 108849
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=187.587551+04.416434,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=326.632698-02.212759,rm=2.	
+#HD 207076
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=326.632698-02.212759,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=253.897054-08.394475,rm=2.	
+#Gl 644C
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=253.897054-08.394475,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  1|PM I16555-0823  |Gl 644 C  |253.89705|-08.39448| 0.04725|2700| 0.1131| 0.0841|-0.07|M7.0  |18.663|16.758|14.577|12.127|17.662|16.019|13.212|11.690| 9.777| 9.197| 8.832|14.204|17.215|12.341|        |    |       |       |     |      |Gl 644 C
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=343.632137+60.827469,rm=2.	
+#MY Cep
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=343.632137+60.827469,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=124.140950+11.726238,rm=2.	
+#HD 69243
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=124.140950+11.726238,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=355.511458-04.518022,rm=2.	
+#BRI B2339-0447
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=355.511458-04.518022,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=016.608267+12.598069,rm=2.	
+#IRAS 01037+1219
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=016.608267+12.598069,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=289.240092+05.150606,rm=2.	
+#Gl 752B
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=289.240092+05.150606,rm=2.	
+#      MatchedRows=2147483647 (upper limit)
+#
+ori|Name|CNS3|RAJ2000|DEJ2000|Fbol|Teff|R|M|[Fe/H]|SpType|Bmag|Vmag|Rcmag|Icmag|gmag|rmag|imag|zmag|Jmag|Hmag|Ksmag|Gaiamag|BPmag|RPmag|ModFbol|ModTeff|ModR|ModM|ModAge|chisq|SimbadName
+ | | |deg|deg|10pW/m+2|K|Rsun|Msun|[-]| |mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|mag|10pW/m+2|K|Rsun|Msun|[yr]| |
+---|----------------|----------|---------|---------|--------|----|-------|-------|-----|------|------|------|------|------|------|------|------|------|------|------|------|------|------|------|--------|----|-------|-------|-----|------|------------------------
+  3|PM I19169+0510  |Gl 752A   |289.23032|+05.16909| 3.01700|3558| 0.4740| 0.4750| 0.10|M2.6  |10.621| 9.141| 8.077| 6.744| 9.940| 8.553| 7.454| 6.813| 5.543| 4.917| 4.696| 8.394| 9.551| 6.999| 3.01700|3619| 0.4570| 0.4880| 9.45| 2.200|Gl 752A
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=050.248554+18.906475,rm=2.	
+#LP 412-31
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=050.248554+18.906475,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.777125-07.572361,rm=2.	
+#IRAS 21284-0747
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=322.777125-07.572361,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=221.576708-07.263833,rm=2.	
+#IRAS 14436-0703
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=221.576708-07.263833,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=218.249525-10.934333,rm=2.	
+#IRAS 14303-1042
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=218.249525-10.934333,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=227.107358+09.605053,rm=2.	
+#IRAS 15060+0947
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=227.107358+09.605053,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=054.896750-35.428914,rm=2.	
+#LP 944-20
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=054.896750-35.428914,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=133.400817-03.492253,rm=2.	
+#LHS 2065
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=133.400817-03.492253,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=217.180138+33.177539,rm=2.	
+#LHS 2924
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=217.180138+33.177539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=006.102650-01.972261,rm=2.	
+#BRI B0021-0214
+#
+#Table	J_ApJ_804_64_para:J_ApJ_804_64_para
+#Name: J/ApJ/804/64/para
+#Title:
+#INFO	Target=006.102650-01.972261,rm=2.	
+#      MatchedRows=0
+#

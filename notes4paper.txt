@@ -1,0 +1,18 @@
+
+
+On the importance of M stars for exoplanetary science.
+
+According to the intro in paper by Rojas-Ayala, Mould 1976 proved the
+metallicity sensitivity of TiO bands, and the CaH gravity
+dependence. TiO and CaH indicators used to detect low metallicity M
+dwarfs.
+
+High metal. M dwarfs are good targets for earth like planet hosts.
+
+Rojas-Ayala propose a series of indicators for K band spectra of
+moderate resolution (?: 2700, between 1 and 2.4um) They call them
+H2O-K2 NaI and CaI.
+
+IRTF is R~2000 between 0.8 and 2.5, so this is equivalent.
+
+

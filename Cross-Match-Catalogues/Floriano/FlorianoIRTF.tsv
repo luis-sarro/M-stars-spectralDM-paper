@@ -1,0 +1,958 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2015-06-23T10:26:32 [V1.99+ (14-Oct-2013)]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	votable-version=1.99+ (14-Oct-2013)	
+#INFO	-ref=VIZ5589343105e9	
+#INFO	-out.max=unlimited	
+#INFO	queryParameters=25	
+#-oc.form=dec
+#-out.add=_r
+#-out.add=_RAJ,_DEJ
+#-sort=_r
+#-nav=cat:J/A+A/577/A128&tab:{J/A+A/577/A128/tablea1}&key:source=J/A+A/577/A128/tablea1&HTTPPRM:&&-ref=VIZ5589343105e9&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-oc.form=sexa&-c.r=  2&-c.geom=r&-order=I&-out=No&-out=Karmn&-out=Name&-out=Gl/GJ&-out=RAJ2000&-out=DEJ2000&-out=Jmag&-out=Date&-out=Nexp&-out=texp&-out=Nexp2&-out=texp2&-out=SimbadName&-file=-c&-meta.ucd=2&-meta=1&-meta.foot=1&-usenav=1&-bmark=POST&-out.max=50&-out.form=HTML Table&-c.eq=J2000&-c.u=arcmin&
+#-c.r=  2
+#-c.geom=r
+#-source=J/A+A/577/A128/tablea1
+#-order=I
+#-out=No
+#-out=Karmn
+#-out=Name
+#-out=Gl/GJ
+#-out=RAJ2000
+#-out=DEJ2000
+#-out=Jmag
+#-out=Date
+#-out=Nexp
+#-out=texp
+#-out=Nexp2
+#-out=texp2
+#-out=SimbadName
+#-out.max=unlimited
+#-c.eq=J2000
+#-c.u=arcmin
+#
+
+#RESOURCE=yCat_35770128
+#Name: J/A+A/577/A128
+#Title: CARMENES input catalogue of M dwarfs. I (Alonso-Floriano+, 2015)
+#INFO	-c=338.649746+00.595176,rm=2.	
+#HD 213893
+#
+#Table	J_A_A_577_A128_tablea1:
+#Name: J/A+A/577/A128/tablea1
+#Title: Basic star data, observing date and exposure time
+#Column	_r	(F6.4)	Distance from center (22 34 35.94+00 35 42.63)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	_RAJ2000	(F9.5)	Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)	[ucd=pos.eq.ra]
+#Column	_DEJ2000	(F9.5)	Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)	[ucd=pos.eq.dec]
+#Column	No	(I3)	[1/753] Our star number	[ucd=meta.id]
+#Column	Karmn	(a13)	Our CARMENES star identification (JHHMMm+DDdAAA) \linkRole{spectral indices and spectral types }	[ucd=meta.id;meta.main]
+#Column	Name	(a23)	Discovery or most common name	[ucd=meta.id]
+#Column	Gl/GJ	(a8)	Gliese or Gliese & Jahreiss star number	[ucd=meta.id]
+#Column	RAJ2000	(A11)	Right ascension (J2000.0)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(A12)	Declination (J2000.0)	[ucd=pos.eq.dec;meta.main]
+#Column	Jmag	(F5.2)	? J-band magnitude	[ucd=phot.mag;em.IR.J]
+#Column	Date	(A10)	Date of CAFOS observation	[ucd=time.epoch]
+#Column	Nexp	(I1)	Number of exposure	[ucd=meta.number]
+#Column	texp	(F6.1)	Exposure time	[ucd=time.duration;obs.exposure]
+#Column	Nexp2	(I1)	? Second number of exposure [NULL integer written as an empty string]	[ucd=meta.number]
+#Column	texp2	(I4)	? Second exposure time [NULL integer written as an empty string]	[ucd=time.duration;obs.exposure]
+#Column	SimbadName	(a23)	Designation understandable by the {\bf\fg{FireBrick}Simbad} data-base	[ucd=meta.id]
+#INFO	Target=338.649746+00.595176,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.611403+01.965175,rm=2.	
+#HD 19305
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=046.611403+01.965175,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=019.973412+58.308539,rm=2.	
+#HD 236697
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=019.973412+58.308539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=330.542808+01.400230,rm=2.	
+#HD 209290
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=330.542808+01.400230,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0011|330.54279| +1.40022|700|J22021+014   |HD 209290              |846     |22 02 10.27|+01 24 00.80| 6.20|2012-08-05|1|  60.0| |    |HD 209290
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=297.549712+24.923388,rm=2.	
+#HD 339034
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=297.549712+24.923388,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.426711+57.862812,rm=2.	
+#HD 14404
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=035.426711+57.862812,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=088.792939+07.407064,rm=2.	
+#HD 39801
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=088.792939+07.407064,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.487064+23.638838,rm=2.	
+#HD 204724
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=322.487064+23.638838,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=092.644231-21.864642,rm=2.	
+#HD 42581
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=092.644231-21.864642,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=081.792574+29.921054,rm=2.	
+#HD 35601
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=081.792574+29.921054,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=023.387729+61.558536,rm=2.	
+#BD +60 265
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=023.387729+61.558536,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=082.864150-03.677231,rm=2.	
+#HD 36395
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=082.864150-03.677231,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0405|082.86396| -3.67658|206|J05314-036   |HD 36395               |205     |05 31 27.35|-03 40 35.70| 5.00|2011-12-14|1| 300.0| |    |HD 36395
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=325.876921+58.780045,rm=2.	
+#HD 206936
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=325.876921+58.780045,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=025.796280+48.516767,rm=2.	
+#HD 10465
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=025.796280+48.516767,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=057.380333+65.525973,rm=2.	
+#HD 23475
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=057.380333+65.525973,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=206.855798-17.859839,rm=2.	
+#HD 120052
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=206.855798-17.859839,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=165.834142+35.969880,rm=2.	
+#HD 95735
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=165.834142+35.969880,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0101|165.83433|+35.96994|390|J11033+359   |HD 95735               |411     |11 03 20.24|+35 58 11.80| 4.20|2011-03-18|1|  10.0| |    |HD 95735
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=311.267076+44.499073,rm=2.	
+#Gl 806
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=311.267076+44.499073,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=349.436030+49.015300,rm=2.	
+#HD 219734
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=349.436030+49.015300,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0006|349.43604|+49.01531|730|J23177+490   |8 And                  |        |23 17 44.65|+49 00 55.10| 1.62|2012-01-11|1|   1.0| |    |8 And
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=153.019563-02.684742,rm=2.	
+#Gl 381
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=153.019563-02.684742,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0129|153.01942| -2.68458|367|J10120-026AB |LP 609-71              |381 AB  |10 12 04.66|-02 41 04.50| 7.02|2011-11-14|1| 300.0| |    |LP 609-71
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=229.861763-07.722281,rm=2.	
+#Gl 581
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=229.861763-07.722281,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=307.210796+39.981785,rm=2.	
+#RW Cyg
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=307.210796+39.981785,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=115.260956-31.683085,rm=2.	
+#CD -31 4916
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=115.260956-31.683085,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.528725+56.604129,rm=2.	
+#HD 14469
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=035.528725+56.604129,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=089.983747+45.936735,rm=2.	
+#HD 40239
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=089.983747+45.936735,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=087.857284+32.124692,rm=2.	
+#HD 39045
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=087.857284+32.124692,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=154.901154+19.870017,rm=2.	
+#Gl 388
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=154.901154+19.870017,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0173|154.90146|+19.87006|371|J10196+198AB |AD Leo                 |388 AB  |10 19 36.35|+19 52 12.20| 5.45|2012-03-06|1|  40.0| |    |AD Leo
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.601238+57.109544,rm=2.	
+#HD 14488
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=035.601238+57.109544,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=067.412253+05.164266,rm=2.	
+#HD 28487
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=067.412253+05.164266,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=111.852082+05.225787,rm=2.	
+#Gl 273
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=111.852082+05.225787,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0011|111.85208| +5.22581|282|J07274+052   |Luyten's star          |273     |07 27 24.50|+05 13 32.90| 5.71|2011-11-12|1| 180.0| |    |Luyten's star
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.294141+38.840276,rm=2.	
+#HD 19058
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=046.294141+38.840276,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=339.658012+56.795634,rm=2.	
+#HD 214665
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=339.658012+56.795634,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0005|339.65800|+56.79564|711|J22386+567   |V416 Lac               |        |22 38 37.92|+56 47 44.30| 1.09|2012-01-04|1|   2.0| |    |V416 Lac
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=011.637326+15.475505,rm=2.	
+#HD 4408
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=011.637326+15.475505,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=065.172277-16.829975,rm=2.	
+#HD 27598
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=065.172277-16.829975,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0009|065.17229|-16.82997|145|J04206-168   |DG Eri                 |        |04 20 41.35|-16 49 47.90| 2.99|2011-12-13|1|  10.0| |    |DG Eri
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=085.538615+12.489340,rm=2.	
+#Gl 213
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=085.538615+12.489340,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0932|085.53742|+12.49036|214|J05421+124   |V1352 Ori              |213     |05 42 08.98|+12 29 25.30| 7.12|2012-01-11|1| 300.0| |    |V1352 Ori
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=122.989896+08.772792,rm=2.	
+#Gl 299
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=122.989896+08.772792,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.249076+22.179435,rm=2.	
+#HD 204585
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=322.249076+22.179435,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=258.661996+14.390281,rm=2.	
+#HD 156014
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=258.661996+14.390281,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=283.833759+43.946092,rm=2.	
+#HD 175865
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=283.833759+43.946092,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=015.832167+62.365472,rm=2.	
+#Gl 51
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=015.832167+62.365472,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0000|015.83217|+62.36547| 47|J01033+623   |V388 Cas               |51 B    |01 03 19.72|+62 21 55.70| 8.61|2012-02-10|1| 700.0| |    |V388 Cas
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.006121+06.185369,rm=2.	
+#HD 94705
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=164.006121+06.185369,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0005|164.00612| +6.18536|384|J10560+061   |56 Leo                 |        |10 56 01.47|+06 11 07.30| 0.43|2011-12-08|1|   3.0| |    |56 Leo
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=309.478034+18.268581,rm=2.	
+#HD 196610
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=309.478034+18.268581,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=043.952075+18.331640,rm=2.	
+#HD 18191
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=043.952075+18.331640,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0005|043.95208|+18.33164| 87|J02558+183   |rho^02^ Ari            |        |02 55 48.50|+18 19 53.90| 0.23|2011-12-08|1|   2.0| |    |* rho02 Ari
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.120271+07.014658,rm=2.	
+#Gl 406
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=164.120271+07.014658,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0013|164.12025| +7.01467|386|J10564+070   |CN Leo                 |406     |10 56 28.86|+07 00 52.80| 7.09|2012-01-02|1| 600.0| |    |CN Leo
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=127.455604+26.776039,rm=2.	
+#GJ 1111
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=127.455604+26.776039,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0388|127.45625|+26.77633|315|J08298+267   |DX Cnc                 |1111    |08 29 49.50|+26 46 34.80| 8.24|2011-11-14|1|1200.0| |    |DX Cnc
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=034.836634-02.977638,rm=2.	
+#HD 14386
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=034.836634-02.977638,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=187.587551+04.416434,rm=2.	
+#HD 108849
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=187.587551+04.416434,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=326.632698-02.212759,rm=2.	
+#HD 207076
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=326.632698-02.212759,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=253.897054-08.394475,rm=2.	
+#Gl 644C
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=253.897054-08.394475,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0008|253.89704| -8.39447|547|J16555-083   |V1054 Oph D (vB 8)     |644 C   |16 55 35.29|-08 23 40.10| 9.78|2012-08-02|2|1200.0|1| 900|vB 8
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=343.632137+60.827469,rm=2.	
+#MY Cep
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=343.632137+60.827469,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=124.140950+11.726238,rm=2.	
+#HD 69243
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=124.140950+11.726238,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=355.511458-04.518022,rm=2.	
+#BRI B2339-0447
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=355.511458-04.518022,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=016.608267+12.598069,rm=2.	
+#IRAS 01037+1219
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=016.608267+12.598069,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=289.240092+05.150606,rm=2.	
+#Gl 752B
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=289.240092+05.150606,rm=2.	
+#      MatchedRows=2
+#
+_r|_RAJ2000|_DEJ2000|No|Karmn|Name|Gl/GJ|RAJ2000|DEJ2000|Jmag|Date|Nexp|texp|Nexp2|texp2|SimbadName
+arcmin|deg|deg| | | | |"h:m:s"|"d:m:s"|mag|"Y:M:D"| |s| |s|
+------|---------|---------|---|-------------|-----------------------|--------|-----------|------------|-----|----------|-|------|-|----|-----------------------
+0.0006|289.24008| +5.15061|628|J19169+051S  |V1298 Aql (vB 10)      |752 B   |19 16 57.62|+05 09 02.20| 9.91|2012-08-03|3|1200.0|1| 900|V1298 Aql
+1.2535|289.23025| +5.16906|627|J19169+051N  |V1428 Aql              |752 A   |19 16 55.26|+05 10 08.60| 5.58|2012-08-05|1|  70.0| |    |V1428 Aql
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=050.248554+18.906475,rm=2.	
+#LP 412-31
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=050.248554+18.906475,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.777125-07.572361,rm=2.	
+#IRAS 21284-0747
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=322.777125-07.572361,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=221.576708-07.263833,rm=2.	
+#IRAS 14436-0703
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=221.576708-07.263833,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=218.249525-10.934333,rm=2.	
+#IRAS 14303-1042
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=218.249525-10.934333,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=227.107358+09.605053,rm=2.	
+#IRAS 15060+0947
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=227.107358+09.605053,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=054.896750-35.428914,rm=2.	
+#LP 944-20
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=054.896750-35.428914,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=133.400817-03.492253,rm=2.	
+#LHS 2065
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=133.400817-03.492253,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=217.180138+33.177539,rm=2.	
+#LHS 2924
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=217.180138+33.177539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=006.102650-01.972261,rm=2.	
+#BRI B0021-0214
+#
+#Table	J_A_A_577_A128_tablea1:J_A_A_577_A128_tablea1
+#Name: J/A+A/577/A128/tablea1
+#Title:
+#INFO	Target=006.102650-01.972261,rm=2.	
+#      MatchedRows=0
+#

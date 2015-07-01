@@ -1,0 +1,965 @@
+#
+#   VizieR Astronomical Server vizier.u-strasbg.fr
+#    Date: 2015-06-26T05:23:53 [V1.99+ (14-Oct-2013)]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	votable-version=1.99+ (14-Oct-2013)	
+#INFO	-ref=VIZ558cd7bb36b6	
+#INFO	-out.max=unlimited	
+#INFO	queryParameters=34	
+#-oc.form=dec
+#-out.add=_r
+#-out.add=_RAJ,_DEJ
+#-sort=_r
+#-nav=cat:J/ApJ/748/93&tab:{J/ApJ/748/93/stars}&key:source=J/ApJ/748/93&HTTPPRM:&&-ref=VIZ558cd7bb36b6&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-oc.form=dec&-c.r=  2&-c.geom=r&-order=I&-out=Name&-out=Dist&-out=Vmag&-out=Ksmag&-out=Date&-out=S/N&-ignore=Sp=*&Sp=Sp&FITS=FITS&-out=EWNaI&-out=EWCaI&-out=H2O-K2&-out=SpT&-out=Teff&-out=[M/H]&-out=[Fe/H]&-out=SimbadName&-out=_RA&-out=_DE&-file=-c&-meta.ucd=2&-meta=1&-meta.foot=1&-usenav=1&-bmark=POST&-out.max=unlimited&-out.form=| -Separated-Values&-c.eq=J2000&-c.u=arcmin&
+#-c.r=  2
+#-c.geom=r
+#-source=J/ApJ/748/93/stars
+#-order=I
+#-out=Name
+#-out=Dist
+#-out=Vmag
+#-out=Ksmag
+#-out=Date
+#-out=S/N
+#-out=EWNaI
+#-out=e_EWNaI
+#-out=EWCaI
+#-out=e_EWCaI
+#-out=H2O-K2
+#-out=e_H2O-K2
+#-out=SpT
+#-out=Teff
+#-out=e_Teff
+#-out=[M/H]
+#-out=e_[M/H]
+#-out=[Fe/H]
+#-out=e_[Fe/H]
+#-out=SimbadName
+#-out=_RA
+#-out=_DE
+#-out.max=unlimited
+#-c.eq=J2000
+#-c.u=arcmin
+#
+
+#RESOURCE=yCat_17480093
+#Name: J/ApJ/748/93
+#Title: K-band spectra for 133 nearby M dwarfs (Rojas-Ayala+, 2012)
+#INFO	-c=338.649746+00.595176,rm=2.	
+#HD 213893
+#
+#Table	J_ApJ_748_93_stars:
+#Name: J/ApJ/748/93/stars
+#Title: TripleSpec nearby M dwarf sample: properties {\em (table 1)} and spectral measurements {\em (table 3)}
+#Column	_r	(F6.4)	Distance from center (338.64975+00.59518)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	_RAJ2000	(F9.5)	Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)	[ucd=pos.eq.ra]
+#Column	_DEJ2000	(F9.5)	Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data)	[ucd=pos.eq.dec]
+#Column	Name	(a12)	Star name	[ucd=meta.id;meta.main]
+#Column	Dist	(F4.1)	[1.8/41.9]? Star's distance	[ucd=pos.distance;pos.heliocentric]
+#Column	Vmag	(F5.2)	[7.49/19.74] V-band magnitude	[ucd=phot.mag;em.opt.V]
+#Column	Ksmag	(F6.3)	[3/11] 2MASS Ks-band magnitude	[ucd=phot.mag;em.IR.K]
+#Column	Date	(A10)	Spectrum observation date	[ucd=time.epoch;obs]
+#Column	S/N	(I4)	[201/2079] Average signal-to-noise ratio obtained in the K-band continuum	[ucd=stat.snr]
+#Column	EWNaI	(F6.3)	NaI equivalent width	[ucd=spect.line.eqWidth]
+#Column	e_EWNaI	(F6.3)	EWNaI uncertainty	[ucd=stat.error]
+#Column	EWCaI	(F6.3)	CaI equivalent width	[ucd=spect.line.eqWidth]
+#Column	e_EWCaI	(F6.3)	EWCaI uncertainty	[ucd=stat.error]
+#Column	H2O-K2	(F6.3)	H_2_O-K2 index (2)	[ucd=spect.index]
+#Column	e_H2O-K2	(F6.3)	H20-K2 uncertainty	[ucd=stat.error]
+#Column	SpT	(I1)	[0/9] M-spectral subtype	[ucd=src.spType]
+#Column	Teff	(I4)	[2492/4031]? Effective temperature [NULL integer written as an empty string]	[ucd=phys.temperature.effective]
+#Column	e_Teff	(I3)	[15/106]? Teff uncertainty [NULL integer written as an empty string]	[ucd=stat.error;phys.temperature.effective]
+#Column	[M/H]	(F5.2)	[-0.45/0.33] Overall metallicity (3)	[ucd=phys.abund.Z]
+#Column	e_[M/H]	(F5.2)	[0.12] [M/H] uncertainty	[ucd=stat.error;phys.abund]
+#Column	[Fe/H]	(F5.2)	[-0.64/0.46] [Fe/H] metallicity	[ucd=phys.abund.Z]
+#Column	e_[Fe/H]	(F5.2)	[0.17/0.18] [Fe/H] uncertainty	[ucd=stat.error;phys.abund.Fe]
+#Column	SimbadName	(a23)	Designation understandable by the {\bf\fg{FireBrick}Simbad} data-base	[ucd=meta.id]
+#Column	_RA	(F9.5)	Positions from SIMBAD database (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Positions from SIMBAD database (declination part)	[ucd=pos.eq.dec;meta.main]
+#INFO	Target=338.649746+00.595176,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.611403+01.965175,rm=2.	
+#HD 19305
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=046.611403+01.965175,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=019.973412+58.308539,rm=2.	
+#HD 236697
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=019.973412+58.308539,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=330.542808+01.400230,rm=2.	
+#HD 209290
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=330.542808+01.400230,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=297.549712+24.923388,rm=2.	
+#HD 339034
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=297.549712+24.923388,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.426711+57.862812,rm=2.	
+#HD 14404
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=035.426711+57.862812,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=088.792939+07.407064,rm=2.	
+#HD 39801
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=088.792939+07.407064,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.487064+23.638838,rm=2.	
+#HD 204724
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=322.487064+23.638838,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=092.644231-21.864642,rm=2.	
+#HD 42581
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=092.644231-21.864642,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=081.792574+29.921054,rm=2.	
+#HD 35601
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=081.792574+29.921054,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=023.387729+61.558536,rm=2.	
+#BD +60 265
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=023.387729+61.558536,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=082.864150-03.677231,rm=2.	
+#HD 36395
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=082.864150-03.677231,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|082.86415|-03.67723|Gl 205      | 5.7| 7.97| 4.039|2009-09-30| 652| 7.636| 0.043| 6.105| 0.043| 1.032| 0.002|0|4012|106| 0.25| 0.12| 0.35| 0.17|Gl 205                 |082.86415|-03.67723
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=325.876921+58.780045,rm=2.	
+#HD 206936
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=325.876921+58.780045,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=025.796280+48.516767,rm=2.	
+#HD 10465
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=025.796280+48.516767,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=057.380333+65.525973,rm=2.	
+#HD 23475
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=057.380333+65.525973,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=206.855798-17.859839,rm=2.	
+#HD 120052
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=206.855798-17.859839,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=165.834142+35.969880,rm=2.	
+#HD 95735
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=165.834142+35.969880,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|165.83414|+35.96988|Gl 411      | 2.5| 7.49| 3.254|2009-02-05| 444| 3.115| 0.065| 2.623| 0.059| 0.945| 0.002|2|3526| 18|-0.28| 0.12|-0.41| 0.17|Gl 411                 |165.83414|+35.96988
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=311.267076+44.499073,rm=2.	
+#Gl 806
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=311.267076+44.499073,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|311.26708|+44.49907|LHS 3577    |12.5|10.79| 6.533|2009-07-20| 311| 4.704| 0.095| 3.919| 0.085| 0.968| 0.003|2|3621| 19|-0.07| 0.12|-0.11| 0.17|LHS 3577               |311.26708|+44.49907
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=349.436030+49.015300,rm=2.	
+#HD 219734
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=349.436030+49.015300,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=153.019563-02.684742,rm=2.	
+#Gl 381
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=153.019563-02.684742,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=229.861763-07.722281,rm=2.	
+#Gl 581
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=229.861763-07.722281,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.1704|229.86462|-07.72207|Gl 581      | 6.3|10.57| 5.837|2009-02-05| 359| 4.965| 0.078| 3.656| 0.077| 0.947| 0.003|2|3534| 18|-0.06| 0.12|-0.10| 0.17|Gl 581                 |229.86462|-07.72207
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=307.210796+39.981785,rm=2.	
+#RW Cyg
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=307.210796+39.981785,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=115.260956-31.683085,rm=2.	
+#CD -31 4916
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=115.260956-31.683085,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.528725+56.604129,rm=2.	
+#HD 14469
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=035.528725+56.604129,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=089.983747+45.936735,rm=2.	
+#HD 40239
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=089.983747+45.936735,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=087.857284+32.124692,rm=2.	
+#HD 39045
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=087.857284+32.124692,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=154.901154+19.870017,rm=2.	
+#Gl 388
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=154.901154+19.870017,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|154.90115|+19.87002|Gl 388      | 4.9| 9.40| 4.593|2009-02-05| 260| 6.523| 0.107| 5.105| 0.098| 0.915| 0.003|3|3390| 19| 0.20| 0.12| 0.28| 0.17|Gl 388                 |154.90115|+19.87002
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=035.601238+57.109544,rm=2.	
+#HD 14488
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=035.601238+57.109544,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=067.412253+05.164266,rm=2.	
+#HD 28487
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=067.412253+05.164266,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=111.852082+05.225787,rm=2.	
+#Gl 273
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=111.852082+05.225787,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|111.85208|+05.22579|Gl 273      | 3.8| 9.84| 4.857|2009-02-04| 327| 4.667| 0.085| 2.915| 0.104| 0.896| 0.003|3|3293| 26|-0.12| 0.12|-0.17| 0.17|Gl 273                 |111.85208|+05.22579
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=046.294141+38.840276,rm=2.	
+#HD 19058
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=046.294141+38.840276,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=339.658012+56.795634,rm=2.	
+#HD 214665
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=339.658012+56.795634,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=011.637326+15.475505,rm=2.	
+#HD 4408
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=011.637326+15.475505,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=065.172277-16.829975,rm=2.	
+#HD 27598
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=065.172277-16.829975,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=085.538615+12.489340,rm=2.	
+#Gl 213
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=085.538615+12.489340,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|085.53862|+12.48934|Gl 213      | 5.8|11.56| 6.389|2009-02-04| 318| 4.358| 0.088| 2.443| 0.086| 0.874| 0.003|4|3167| 47|-0.17| 0.12|-0.25| 0.17|Gl 213                 |085.53862|+12.48934
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=122.989896+08.772792,rm=2.	
+#Gl 299
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=122.989896+08.772792,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|122.98990|+08.77279|Gl 299      | 6.8|12.83| 7.660|2009-02-04| 858| 3.354| 0.035| 1.456| 0.032| 0.839| 0.002|5|3021| 49|-0.32| 0.12|-0.46| 0.17|Gl 299                 |122.98990|+08.77279
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.249076+22.179435,rm=2.	
+#HD 204585
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=322.249076+22.179435,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=258.661996+14.390281,rm=2.	
+#HD 156014
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=258.661996+14.390281,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=283.833759+43.946092,rm=2.	
+#HD 175865
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=283.833759+43.946092,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=015.832167+62.365472,rm=2.	
+#Gl 51
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=015.832167+62.365472,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|015.83217|+62.36547|V* V388 Cas |    |13.78| 7.718|2007-11-17| 410| 7.326| 0.067| 3.737| 0.066| 0.845| 0.002|5|3039| 56| 0.21| 0.12| 0.28| 0.17|V* V388 Cas            |015.83217|+62.36547
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.006121+06.185369,rm=2.	
+#HD 94705
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=164.006121+06.185369,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=309.478034+18.268581,rm=2.	
+#HD 196610
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=309.478034+18.268581,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=043.952075+18.331640,rm=2.	
+#HD 18191
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=043.952075+18.331640,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=164.120271+07.014658,rm=2.	
+#Gl 406
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=164.120271+07.014658,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|164.12027|+07.01466|Gl 406      | 2.4|13.54| 6.084|2009-12-24|1860| 7.994| 0.015| 1.977| 0.015| 0.794| 0.001|6|2887| 20| 0.14| 0.12| 0.18| 0.17|Gl 406                 |164.12027|+07.01466
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=127.455604+26.776039,rm=2.	
+#GJ 1111
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=127.455604+26.776039,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|127.45560|+26.77604|GJ 1111     | 3.6|14.81| 7.260|2008-02-16| 746| 5.661| 0.039| 1.039| 0.038| 0.758| 0.002|7|2769| 26|-0.12| 0.12|-0.19| 0.17|GJ 1111                |127.45560|+26.77604
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=034.836634-02.977638,rm=2.	
+#HD 14386
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=034.836634-02.977638,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=187.587551+04.416434,rm=2.	
+#HD 108849
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=187.587551+04.416434,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=326.632698-02.212759,rm=2.	
+#HD 207076
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=326.632698-02.212759,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=253.897054-08.394475,rm=2.	
+#Gl 644C
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=253.897054-08.394475,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|253.89705|-08.39447|Gl 644 C    | 6.5|16.70| 8.816|2009-07-19| 542| 5.117| 0.054| 0.571| 0.051| 0.745| 0.002|7|2727| 29|-0.21| 0.12|-0.32| 0.17|Gl 644 C               |253.89705|-08.39447
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=343.632137+60.827469,rm=2.	
+#MY Cep
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=343.632137+60.827469,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=124.140950+11.726238,rm=2.	
+#HD 69243
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=124.140950+11.726238,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=355.511458-04.518022,rm=2.	
+#BRI B2339-0447
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=355.511458-04.518022,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=016.608267+12.598069,rm=2.	
+#IRAS 01037+1219
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=016.608267+12.598069,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=289.240092+05.150606,rm=2.	
+#Gl 752B
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=289.240092+05.150606,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+1.2462|289.23025|+05.16892|Gl 752 AB   | 5.9| 9.12| 4.673|2009-07-19| 416| 5.626| 0.074| 4.018| 0.068| 1.003| 0.003|1|3789| 20|-0.03| 0.12|-0.05| 0.17|Gl 752                 |289.23025|+05.16892
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=050.248554+18.906475,rm=2.	
+#LP 412-31
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=050.248554+18.906475,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=322.777125-07.572361,rm=2.	
+#IRAS 21284-0747
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=322.777125-07.572361,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=221.576708-07.263833,rm=2.	
+#IRAS 14436-0703
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=221.576708-07.263833,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=218.249525-10.934333,rm=2.	
+#IRAS 14303-1042
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=218.249525-10.934333,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=227.107358+09.605053,rm=2.	
+#IRAS 15060+0947
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=227.107358+09.605053,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=054.896750-35.428914,rm=2.	
+#LP 944-20
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=054.896750-35.428914,rm=2.	
+#      MatchedRows=0
+#
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=133.400817-03.492253,rm=2.	
+#LHS 2065
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=133.400817-03.492253,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|133.40082|-03.49225|LHS 2065    | 8.5|18.80| 9.942|2008-02-16| 264| 7.252| 0.104| 1.316| 0.099| 0.687| 0.003|8|2564| 40| 0.12| 0.12| 0.16| 0.17|LHS 2065               |133.40082|-03.49225
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=217.180138+33.177539,rm=2.	
+#LHS 2924
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=217.180138+33.177539,rm=2.	
+#      MatchedRows=1
+#
+_r|_RAJ2000|_DEJ2000|Name|Dist|Vmag|Ksmag|Date|S/N|EWNaI|e_EWNaI|EWCaI|e_EWCaI|H2O-K2|e_H2O-K2|SpT|Teff|e_Teff|[M/H]|e_[M/H]|[Fe/H]|e_[Fe/H]|SimbadName|_RA|_DE
+arcmin|deg|deg| |pc|mag|mag|"Y:M:D"| |0.1nm|0.1nm|0.1nm|0.1nm| | | |K|K|[Sun]|[Sun]|[Sun]|[Sun]| |deg|deg
+------|---------|---------|------------|----|-----|------|----------|----|------|------|------|------|------|------|-|----|---|-----|-----|-----|-----|-----------------------|---------|---------
+0.0000|217.18014|+33.17754|LHS 2924    |10.8|19.74|10.744|2008-02-17| 560| 4.995| 0.049| 0.845| 0.053| 0.661| 0.002|9|2492| 43|-0.13| 0.12|-0.19| 0.17|LHS 2924               |217.18014|+33.17754
+
+
+#RESOURCE=
+#Name:
+#Title:
+#INFO	-c=006.102650-01.972261,rm=2.	
+#BRI B0021-0214
+#
+#Table	J_ApJ_748_93_stars:J_ApJ_748_93_stars
+#Name: J/ApJ/748/93/stars
+#Title:
+#INFO	Target=006.102650-01.972261,rm=2.	
+#      MatchedRows=0
+#
