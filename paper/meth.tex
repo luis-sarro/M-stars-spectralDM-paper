@@ -104,17 +104,14 @@ metalicity.}
 Here, a feature $F$ is defined as
 
 \begin{equation}\label{eq:feature}
-  F = \frac{ \int_{\lambda_{1}}^{\lambda_{2}}f(\lambda) \cdot {\rm d}{\lambda}}
-               {\int_{\lambda_{3}}^{\lambda_{4}} f(\lambda) \cdot {\rm d}{\lambda}} 
+  F = \int_{\lambda_{1}}^{\lambda_{2}} (1-\frac{f(\lambda)}{F_{cont}} \cdot {\rm d}{\lambda})
 \end{equation}
 
 where $f(\lambda)$ denotes the normalized flux from the star at
-wavelength $\lambda$, and $\lambda_1, \lambda_2, \lambda_3$, and
-$lambda_4$ delimit two spectral bands such that the quotient of the
-integrated fluxes in the two bands is hoped to be a good predictor
-(alone or in combination with other features) of the star atmospheric
-physical parameters. We will search for the band boundaries that
-produce physical parameter predictions with the smallest errors.
+wavelength $\lambda$, and where $F_{cont}$ is the average flux in a
+spectral band between $\lambda_{cont;1}$ and $\lambda_{cont;2}$. We
+explain below how we search for the band definitions that produce
+physical parameter predictions with the smallest errors.
 
 {\bf Aquí he omitido los detalles sobre las restricciones a las bandas
 porque no lo entiendo bien. ¿Podrías explicarlo con palabras en lugar
@@ -131,18 +128,24 @@ de items?}
 %which become a guarantee avoiding any overlap 
 %and a minimum size for both signal and continuum bandpasses.
 
-Other types of features defined as
+Another type of features defined as
 
 \begin{equation}\label{eq:feature2}
-  F' = \int_{\lambda'_{1}}^{\lambda'_{2}} (1-\frac{f(\lambda)}{F_{cont}} \cdot {\rm d}{\lambda})
+  F' = \frac{ \int_{\lambda_{1}}^{\lambda_{2}}f(\lambda) \cdot {\rm d}{\lambda}}
+               {\int_{\lambda_{3}}^{\lambda_{4}} f(\lambda) \cdot {\rm d}{\lambda}} 
 \end{equation}
 
-where considered, where $F_{cont}$ is the average flux in a spectral
-band between $\lambda_{cont;1}$ and $\lambda_{cont;2}$. This
-definition produced somewhat poorer results at least when applied to
-the lower resolution IPAC spectra (see below). We interpret this as a
-result of the difficulty in defining a continuum in very late-type
-spectra. 
+was considered, where $\lambda_1, \lambda_2, \lambda_3$, and
+$lambda_4$ delimit two spectral bands such that the ratio of the
+integrated fluxes in the two bands is hoped to be a good predictor
+(alone or in combination with other features) of the star atmospheric
+physical parameters. The results obtained with this alternative
+feature definition did not differ significantly on average from the
+ones observed with the one adopted in Eq. \ref{eq:feature}, and
+including them here would result in an excessively lengthy paper. In
+view of the equivalent global performances, we prefered the former
+because it allows direct comparison with the features proposed
+by \cite{2013A&A...549A.129C}.
 
 We used Genetic Algorithms to solve the optimization problem described
 above, that is, the problem of finding the features (band boundaries)
@@ -156,7 +159,7 @@ publicly available as the R \citep{R2013} ???  package.
 %conceptual limitation of univariate approaches is also the lack of
 %consideration that features works in the contexts of interconnected
 %pathways and therefore it is their behavior as a group that may be
-predictive of the phenotypic variables. Multivariate selection methods
+%predictive of the phenotypic variables. Multivariate selection methods
 %%may seem to be more suitable for the analysis of data since variables
 %are tested in combination to identify interactions between
 %features. However, the extremely large number of models that can be
