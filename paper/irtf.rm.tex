@@ -1,49 +1,7 @@
-{
-After producing the suitable set of features for each of the 
-physical parameters we are interested in, the next step will be
-to produce the effective model becoming useful to predict those 
-parameters. 
-The researcher will decide how many features will be used in the 
-multivarite model proposed to explain the physical parameter for 
-the learning dataset (BT\_Settl). 
-The models produced by this way will be used to forecast the 
-physical parameters for the IRTF library.
 
-As a matter of analysis different cross-comparison tests
-were performed, like performance against the parameters
-infered from the closer BT\_Settl by using the $\chi^2$ distance 
-with different SNR. Comparisons were indeed performed against 
-other inductive Machine Learning strategies, like project 
-the spectra in a smaller feature dimensional space by using
-Independent Component Analysis (ICA) and then, developping 
-a regression model based on such features (see \ref{ssub:GM_BPG}).
-For the special case of temperature a comparison between the
-temperature and the known spectral subclase makes possible to 
-analyze the quality of the forecasted estimations (see \ref{ssub:TLSB}).
-}
 
-\subsection{Models considered.}
-\label {ssub:models}
-{
-For the models to be built, the same strategy was used for all the 
-three physical parameters $(T_{eff}, log(g), met)$ 
-and it was to use non linear methods for modellization.
-As a classical regression problem several linear and non-linear
-modelling techniques with specific research for 
-adequate parameters per method when required, were considered:
-\begin{itemize}
- \item {Generalized Additive Models \emph{(GAM)}.}
- \item {Bagging with Multiadaptative Spline Regression Models \emph{(MARS)}.}
- \item {Random Forest Regression Models \emph{(RF)}.} 
- \item {Gradient Boosting with Regression Trees \emph{(BOOSTING)}.}
- \item {Generalized Boosted Regression Models \emph{(GBM)}.}
- \item {Support Vector Machine Models with Gaussian Kernel \emph{(SVM)}.}
- \item {MLP Nerural Networks \emph{(NNET)}.}
-\end{itemize}
 
-}
 
-{
 Comparison of performance between sets of features for temperature 
 derived from the GA based strategy can be analyzed, 
 over the same testing dataset of BT\_Settl and it was depicted 
@@ -75,11 +33,11 @@ that quality of features from both sources are equivalent
 regarding modeling capability, even when GA only has proposed five
 features and Cesetti et al. requires seven features.
 
-}
+
 
 \subsection{Full Spectra Oriented Models}
 \label {ssub:GM_BPG}
-{
+
 As an alternative to build modles based on bandpasses, 
 a similiar methodology to the one depicted in (\cite{2013A&A...550A.120S})
 was implemented.
@@ -104,17 +62,17 @@ under analysis is identified by a $\chi^2$ distance.
 This becomes possible as interpolation between labeled spectra can be
 easily performed.
 
-}
+
 
 \subsection{Temperature model based on Spectral Subtype.}
 \label {ssub:TLSB}
-{
+
 % Luis ¿esto lo explicas tu?
-}
+
 
 \subsection{Temperature Model for $T_{eff}$.}
 \label {ssub:teff_model}
-{
+
 After training the set of models by using labelled BT\_Settl dataset, those models 
 were used to predict the IRTF temperature.
 The authors were interested in understand how relevant the SNR factor 
@@ -296,11 +254,11 @@ in Figure~\ref{fig:T_ICA_10_SpT} and Figure~\ref{fig:T_ICA_50_SpT}.
 % No le añado más discusión de momento, hasta ver si tiene sentido poer toda esta
 % fila de gráficas o es mejor producir algo más condensado.
 %
-}
 
 
 
-{
+
+
 The same approach can become useful to produce $log(G)$ estimations. 
 Here comparisons can only be possible between GA based features, the 
 global spectra based approach with $\chi^2$ distance
@@ -392,9 +350,9 @@ and GA feature based estimation can be observed.
 
 % De nuevo las valoraciones deberían esperar a ver qué ponemos.
 
-}
 
-{ 
+
+ 
 
 Finally, the same analysis is performed for the Metalicty parameter, 
 again by considering Temperature as a fixed feature.
@@ -482,9 +440,9 @@ provided by \cite{2013A&A...549A.129C} can be observed.
    
 
 % De nuevo, el análisis y discusión, función de lo que queramos dejar
-}
 
-{
+
+
 It is possible to present relationships between $log(g)$ and $log(T_{eff})$
 as a matter of congruence analysis between predictions. In the Figure~\ref{fig:lt_lg_ga}
 such relationship is presented for models based on artificial intelligence selected features.
@@ -520,4 +478,4 @@ parameters are involved.
 
 % Se debe realizar una intepretación, pero dependerá 
 
-}
+
