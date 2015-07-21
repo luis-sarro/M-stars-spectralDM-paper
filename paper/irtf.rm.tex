@@ -1,92 +1,108 @@
 
+In the following, we will summarise the results obtained for the IRTF
+data set. We deal with the different physical paramenters in separate
+Sections. We start by reporting the cross validation Root Mean Square
+Errors (RMSE) for the ?-fold cross-validation strategy, and
+subsequently discuss the accuracy of the predictions with respect to
+literature values where available.
 
+\subsection{Effective temperature models}
 
-
-Comparison of performance between sets of features for temperature 
-derived from the GA based strategy can be analyzed, 
-over the same testing dataset of BT\_Settl and it was depicted 
-in Table~\ref{tab:model_TSD}.
+Table \ref{tab:model_TSD} summarises the cross-validation RMSE for the
+complete set of models: the minimum $\chi^2$ estimate based on the
+full spectrum ($\chi^2$), the projection pursuit regression base on
+the ICA components (PPR-ICA), the {\bf ???? Joaquín, fill here the
+details, and also in meth.tex} model trained of the spectral features
+by \cite{cesetti} (C-???), and the 8 models trained on the spectral
+features proposed by the GA (GA-GAM, GA-MARS, GA-RF, GA-BOOSTING,
+GA-GBM, GA-SVM, GA-SVM, GA-NNET, GA-KPLS). For each model, we report
+the RMSE obtained for several noise levels of the training and test
+sets. We use the following notation: RMSEab represents the RMSE
+obtained for a model tested on BT Settl spectra of SNR a, and trained
+with BT Settl spectra of SNR b. Both a and b have the following
+meaning: we use 0 to tag noiseless spectra (SNR=$\infty$), 1 for
+SNR=10 and 5 for SNR=50.
 
 \begin{table}
 \begin{center}
-\begin{tabular}{rrrrrrr}
+\begin{tabular}{rrrrrrrrrrrrr}
   \hline
-  SNR & Features & SVM & RF & GAM  & MARS  \\
-  \hline
-  \multirow{2}{*}{50}  &  Cesetti et al. & 81.6 &  83.3 & 163.5 & 91.9 \\
-      &  GA             & 91.4 & 82.2 & 161.1  & 91.9  \\
-  \multirow{2}{*}{10}  &  Cesetti et al. & 135.8 & 138.5 & 268.8 & 166.8  \\
-      &  GA             & 123.2 & 122.6 & 212.6 & 130.9  \\
-   \hline
+  
+  SNR & $\chi^2$ & PPR-ICA & C-??? & GA-GAM & GA-MARS & GA-RF &
+GA-BOOSTING & GA-GBM & GA-SVM & GA-SVM & GA-NNET & GA-KPLS \\
+
+\hline
+
+RMSE00 & & & & & & & & & & & & \\
+RMSE01 & & & & & & & & & & & & \\
+RMSE05 & & & & & & & & & & & & \\
+RMSE10 & & & & & & & & & & & & \\
+RMSE11 & & & & & & & & & & & & \\
+RMSE15 & & & & & & & & & & & & \\
+RMSE50 & & & & & & & & & & & & \\
+RMSE51 & & & & & & & & & & & & \\
+RMSE55 & & & & & & & & & & & & \\
+
+\hline
 \end{tabular}
 \caption { RSME for different models predicting $T_{eff}$ [K].} 
 \label{tab:model_TSD} 
 \end{center}
 \end{table}
 
-After calculating the bartlett test for both cases of SNR it was 
-seen that variances are homogeneous since p > 0.05, and 
-the Flinger-Killen shows that homkedascity is verified, 
-then F-ANOVA test makes clear that there is no significative 
-difference between models. Then, it is possible to conclude
-that quality of features from both sources are equivalent
-regarding modeling capability, even when GA only has proposed five
-features and Cesetti et al. requires seven features.
 
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{rrrrrrr}
+%  \hline
+%  SNR & Features & SVM & RF & GAM  & MARS  \\
+%  \hline
+%  \multirow{2}{*}{50}  &  Cesetti et al. & 81.6 &  83.3 & 163.5 & 91.9 \\
+%      &  GA             & 91.4 & 82.2 & 161.1  & 91.9  \\
+%  \multirow{2}{*}{10}  &  Cesetti et al. & 135.8 & 138.5 & 268.8 & 166.8  \\
+%      &  GA             & 123.2 & 122.6 & 212.6 & 130.9  \\
+%   \hline
+%\end{tabular}
+%\caption { RSME for different models predicting $T_{eff}$ [K].} 
+%\label{tab:model_TSD} 
+%\end{center}
+%\end{table}
 
+%After calculating the bartlett test for both cases of SNR it was 
+%seen that variances are homogeneous since p > 0.05, and 
+%the Flinger-Killen shows that homokedascity is verified, 
+%then F-ANOVA test makes clear that there is no significative 
+%difference between models. Then, it is possible to conclude
+%that quality of features from both sources are equivalent
+%regarding modeling capability, even when GA only has proposed five
+%features and Cesetti et al. requires seven features.
 
-\subsection{Full Spectra Oriented Models}
-\label {ssub:GM_BPG}
+%As an alternative to build modles based on bandpasses, 
+%a similiar methodology to the one depicted in (\cite{2013A&A...550A.120S})
+%was implemented.
 
-As an alternative to build modles based on bandpasses, 
-a similiar methodology to the one depicted in (\cite{2013A&A...550A.120S})
-was implemented.
+%For the projection an Independend Component Analysis (ICA) with ten dimensions
+%was used and for Temperature regression an optimized SVM 
+%with parameters of C=10 and $\epsilon$=0.001.
 
-For the projection an Independend Component Analysis (ICA) with ten dimensions
-was used and for Temperature regression an optimized SVM 
-with parameters of C=10 and $\epsilon$=0.001.
+%Considering the Gravity case, the most suitable ICA had twentysix dimensions and the 
+%best SVM parameters were C=1000 and $\epsilon = 0.001 $. This was the same case
+%for Metallicity.
 
-Considering the Gravity case, the most suitable ICA had twentysix dimensions and the 
-best SVM parameters were C=1000 and $\epsilon = 0.001 $. This was the same case
-for Metallicity.
+%In terms of interpretation, this methodology looks to predict the physical paramenters
+%by considering the whole star spectrum instead of information provided 
+%by specific bands. Thus it can be interesting to analyze suitability 
+%for prediction against the other approach.
 
-In terms of interpretation, this methodology looks to predict the physical paramenters
-by considering the whole star spectrum instead of information provided 
-by specific bands. Thus it can be interesting to analyze suitability 
-for prediction against the other approach.
-
-In the same sense it was decided to consider direct selection, which is
-also a technique based on the whole espectrum but, instead of regressing
-specific parameters, the closest labeled spectrum to the one 
-under analysis is identified by a $\chi^2$ distance.
-This becomes possible as interpolation between labeled spectra can be
-easily performed.
-
-
-
-\subsection{Temperature model based on Spectral Subtype.}
-\label {ssub:TLSB}
-
-% Luis ¿esto lo explicas tu?
-
+%In the same sense it was decided to consider direct selection, which is
+%also a technique based on the whole espectrum but, instead of regressing
+%specific parameters, the closest labeled spectrum to the one 
+%under analysis is identified by a $\chi^2$ distance.
+%This becomes possible as interpolation between labeled spectra can be
+%easily performed.
 
 \subsection{Temperature Model for $T_{eff}$.}
 \label {ssub:teff_model}
-
-After training the set of models by using labelled BT\_Settl dataset, those models 
-were used to predict the IRTF temperature.
-The authors were interested in understand how relevant the SNR factor 
-becomes in terms of model training and in terms of forecasting. Thus, 
-performance analysis between direct spectra comparison by means of $ \chi^2 $ and 
-models using bandpass features was carried out.
-Only the most five relevant features based of the exhibited fitness were considered.
-Comparisons between models trained with different SNR and tested against 
-features from other SNR were performed. Notation FTab will mean Forecasted temperature
-when a accounts for the SNR of the feature set considered for the forecast and b
-accounts for the SNR used for training the model. Both a and b have the 
-meaning of 0 for SNR of $\infty$, 1 for SNR=10 and 5 for SNR=50.
-Training was performed by 10 fold cross valdiation technique, making possible 
-to select de convenient model.
 
 Forecast quality of models was tested by the error against the temperature 
 estimated based on the Spectral Subtype for each of 
@@ -255,9 +271,7 @@ in Figure~\ref{fig:T_ICA_10_SpT} and Figure~\ref{fig:T_ICA_50_SpT}.
 % fila de gráficas o es mejor producir algo más condensado.
 %
 
-
-
-
+\subsection{Surface gravity models}
 
 The same approach can become useful to produce $log(G)$ estimations. 
 Here comparisons can only be possible between GA based features, the 
@@ -321,6 +335,42 @@ G\_chi2\_10 & 1.46 & 1.46 & 1.46 & 1.46 & 1.46 & 1.46 & 1.46 \\
 \end{table}
 
 
+
+It is possible to present relationships between $log(g)$ and $log(T_{eff})$
+as a matter of congruence analysis between predictions. In the Figure~\ref{fig:lt_lg_ga}
+such relationship is presented for models based on artificial intelligence selected features.
+In Figure~\ref{fig:lt_lg_chi2} the values for $log(T_{eff})$ and $log(G)$ are 
+inferred from the closest BT\_Settl spectra.
+
+\begin{figure}
+ \begin{center}
+ \includegraphics[width=12cm]{figs/LT_LG_ga.pdf}
+ \caption{Relationship between $log(T_{eff}) $ in the x axis 
+ and $log(g)$ in the y axis for models based on bandpass features }
+ \label{fig:lt_lg_ga}
+ \end{center}
+\end{figure}
+
+And, for sure, it is possible to do it for estimations based on 
+parameters from nearest labeled BT-Settl spectra.
+In this particular case, it is possible to see how 
+considering the global spectrum is positive for stronger 
+physical parameters like $T_{eff}$ but the approach
+reduces drastically its likelihood when other softer 
+parameters are involved.
+
+\begin{figure}
+ \begin{center}
+ \includegraphics[width=12cm]{figs/LT_LG_chi2.pdf}
+ \caption{Relationship between $log(T_{eff}) $ in the x axis 
+ and $log(g)$ in the y axis for SNR=50 when 
+ the nearest BT-Settl spectrum is used.}
+ \label{fig:lt_lg_chi2}
+ \end{center}
+\end{figure}
+
+% Se debe realizar una intepretación, pero dependerá 
+
 In Figure~\ref{fig:chi2_50_spt} and Figure~\ref{fig:ga_too50ga_spt} 
 relationships between $log(g)$ predicted by global espectrum estimation 
 and GA feature based estimation can be observed.
@@ -350,9 +400,7 @@ and GA feature based estimation can be observed.
 
 % De nuevo las valoraciones deberían esperar a ver qué ponemos.
 
-
-
- 
+\subsection{Metallicity models} 
 
 Finally, the same analysis is performed for the Metalicty parameter, 
 again by considering Temperature as a fixed feature.
@@ -440,42 +488,4 @@ provided by \cite{2013A&A...549A.129C} can be observed.
    
 
 % De nuevo, el análisis y discusión, función de lo que queramos dejar
-
-
-
-It is possible to present relationships between $log(g)$ and $log(T_{eff})$
-as a matter of congruence analysis between predictions. In the Figure~\ref{fig:lt_lg_ga}
-such relationship is presented for models based on artificial intelligence selected features.
-In Figure~\ref{fig:lt_lg_chi2} the values for $log(T_{eff})$ and $log(G)$ are 
-inferred from the closest BT\_Settl spectra.
-
-\begin{figure}
- \begin{center}
- \includegraphics[width=12cm]{figs/LT_LG_ga.pdf}
- \caption{Relationship between $log(T_{eff}) $ in the x axis 
- and $log(g)$ in the y axis for models based on bandpass features }
- \label{fig:lt_lg_ga}
- \end{center}
-\end{figure}
-
-And, for sure, it is possible to do it for estimations based on 
-parameters from nearest labeled BT-Settl spectra.
-In this particular case, it is possible to see how 
-considering the global spectrum is positive for stronger 
-physical parameters like $T_{eff}$ but the approach
-reduces drastically its likelihood when other softer 
-parameters are involved.
-
-\begin{figure}
- \begin{center}
- \includegraphics[width=12cm]{figs/LT_LG_chi2.pdf}
- \caption{Relationship between $log(T_{eff}) $ in the x axis 
- and $log(g)$ in the y axis for SNR=50 when 
- the nearest BT-Settl spectrum is used.}
- \label{fig:lt_lg_chi2}
- \end{center}
-\end{figure}
-
-% Se debe realizar una intepretación, pero dependerá 
-
 
