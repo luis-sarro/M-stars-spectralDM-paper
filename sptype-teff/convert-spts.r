@@ -60,26 +60,31 @@ sptn <- b
 raj <- read.table("rajpurohit.dat")
 load("boyajian.RData")
 
-x <- seq(5,10,0.1)
+data <- rbind(raj,boyajian.spt)
+y0 <- data[,2]
+x0 <- data[,1]
 
-plot(x,f2(x),ty="l",ylim=c(1000,6000),xlim=c(-15,10),xlab="Spectral Type (M0 = 0)", ylab=expression(T[eff]))
+xp <- seq(5,10,0.1)
+plot(xp,f2(xp),ty="l",ylim=c(2000,6000),xlim=c(-12,12),xlab="Spectral Type (M0 = 0)", ylab=expression(T[eff]),lwd=3)
 points(boyajian.spt[,1]-10,boyajian.spt[,2],col="orange",pch=16)
 points(raj[,1]-10,raj[,2],pch=16,col="blue")
 
-data <- rbind(raj,boyajian.spt)
-y <- data[,2]
-x <- data[,1]
-y <- y[x>7]
-x <- x[x>7]
+xtmp <- seq(0,20,0.1)
+# Parabolic model to Rajpurohit data only
+y <- y0[x0>7]
+x <- x0[x0>7]
 m <- lm(y~x)
-#m assumes sptype for M stars between 10 and 20
-
 new <- data.frame(x = sptn)
 teff <- predict.lm(m,new,se.fit=TRUE)
+lines(sptn-10,teff$fit,pch=16,col="green",lwd=3)
+# Smoothing spline
+m <- smooth.spline(x0,y0,df=8)
+spline <- predict(m,xtmp)
+lines(xtmp-10,spline$y,pch=16,col="red",lwd = 3)
+teff2 <- rep(NA,length(sptn))
+teff2[!is.na(sptn)] <- predict(m,sptn[!is.na(sptn)])$y
 
-lines(sptn-10,teff$fit,pch=16,col="red")
-
-legend(-10,2000,c("Stephens&Leggett&Cushing (2009)","Boyajian et al (2012)","Rajpurohit ey al (2013)","Our fit"),col=c("black","orange","blue","red"),pch=16,lty=1)
+legend(-5,6000,c("Stephens, Leggett & Cushing (2009)","Boyajian et al. (2012)","Rajpurohit et al. (2013)","Spline fit", "Linear Fit"),col=c("black","orange","blue","red", "green"),pch=16,lty=1)
 
 
 save.image("Teffs.RData")

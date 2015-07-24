@@ -70,7 +70,6 @@ dataset.{\bf Habría que delimitar exactamente donde se han utilizado
 535 y dónde 25912. Si la mayoria del analisis se ha realizado sobre
 535, no se si tiene sentido incluir la parte de interpolacion.}
 
-
 In order to avoid selecting spectral features that are good predictors
 only in the unrealistic SNR=$\infty$ regime, the search for optimal
 diagnostics of the atmopheric paramters of M stars was carried out for
@@ -265,12 +264,15 @@ compare their predictions with i) values of the physical parameters
 from the literature (when available); ii) the predictions from the
 popular $minimum \chi^2$ distance to spectra in the BT-Settl library;
 iii) parameter predictions based on a projection pursuit regression
-model {\bf Is this correct, Joaquín?} trained with projections of the
-BT-Settl spectra onto the set of vectors resulting from an Independent
-Component Analysis (ICA); and finally, iv) predictions from a
-regression model trained with the features proposed by \cite{cesetti}
-(only for the IRTF spectra) {\bf Joaquín, aquí necesitamos explicar
-qué tipo de modelo entrenamos con las features de cesetti.}.
+model {\bf Is this correct, Joaquín? Somewhere in your first version
+of the paper it was stated that the ICA components were fed to an SVM
+with C=10 and epsilon=0.001 for temperature, and different values for
+logg and metallicity} trained with projections of the BT-Settl spectra
+onto the set of vectors resulting from an Independent Component
+Analysis (ICA); and finally, iv) predictions from a regression model
+trained with the features proposed by \cite{cesetti} (only for the
+IRTF spectra) {\bf Joaquín, aquí necesitamos explicar qué tipo de
+modelo entrenamos con las features de cesetti.}.
 
 \subsection{Models considered.}
 \label {ssub:models}
