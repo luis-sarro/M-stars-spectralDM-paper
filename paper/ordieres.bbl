@@ -1,0 +1,45 @@
+\begin{thebibliography}{9}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Allard} {et~al.}(2013){Allard}, {Homeier}, {Freytag},
+  {Schaffenberger}, {}, \& {Rajpurohit}}]{2013MSAIS..24..128A}
+{Allard}, F., {Homeier}, D., {Freytag}, B., {et~al.} 2013, Memorie della
+  Societa Astronomica Italiana Supplementi, 24, 128
+
+\bibitem[{{Cesetti} {et~al.}(2013){Cesetti}, {Pizzella}, {Ivanov}, {Morelli},
+  {Corsini}, \& {Dalla Bont{\`a}}}]{cesetti}
+{Cesetti}, M., {Pizzella}, A., {Ivanov}, V.~D., {et~al.} 2013, \aap, 549, A129
+
+\bibitem[{Fuhrmeister {et~al.}(2005)Fuhrmeister, Schmitt, \&
+  Hauschildt}]{fuhrmeister2005phoenix}
+Fuhrmeister, B., Schmitt, J., \& Hauschildt, P. 2005, arXiv preprint
+  astro-ph/0505375
+
+\bibitem[{Goldberg {et~al.}(1989)}]{goldberg1989genetic}
+Goldberg, D.~E. {et~al.} 1989, Genetic algorithms in search, optimization, and
+  machine learning, Vol. 412 (Addison-wesley Reading Menlo Park)
+
+\bibitem[{{Heiter} {et~al.}(2015){Heiter}, {Jofr{\'e}}, {Gustafsson}, {Korn},
+  {Soubiran}, \& {Th{\'e}venin}}]{heiter}
+{Heiter}, U., {Jofr{\'e}}, P., {Gustafsson}, B., {et~al.} 2015, ArXiv e-prints
+
+\bibitem[{Holland(1975)}]{holland1975adaptation}
+Holland, J.~H. 1975, Adaptation in natural and artificial systems: An
+  introductory analysis with applications to biology, control, and artificial
+  intelligence. (U Michigan Press)
+
+\bibitem[{{Ness} {et~al.}(2015){Ness}, {Hogg}, {Rix}, {Ho}, \&
+  {Zasowski}}]{hoggCannon}
+{Ness}, M., {Hogg}, D.~W., {Rix}, H.-W., {Ho}, A.~Y.~Q., \& {Zasowski}, G.
+  2015, \apj, 808, 16
+
+\bibitem[{{R Core Team}(2013)}]{R2013}
+{R Core Team}. 2013, R: A Language and Environment for Statistical Computing, R
+  Foundation for Statistical Computing, Vienna, Austria
+
+\bibitem[{{Stephens} {et~al.}(2009){Stephens}, {Leggett}, {Cushing}, {Marley},
+  {Saumon}, {Geballe}, {Golimowski}, {Fan}, \& {Noll}}]{2009ApJ...702..154S}
+{Stephens}, D.~C., {Leggett}, S.~K., {Cushing}, M.~C., {et~al.} 2009, \apj,
+  702, 154
+
+\end{thebibliography}

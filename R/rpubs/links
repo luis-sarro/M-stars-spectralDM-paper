@@ -1,0 +1,23 @@
+http://rpubs.com/jbmere/GA_IPACrv_T_redef	(IPAC T      espectros_añadidos & Doppler compensated)
+http://rpubs.com/jbmere/GA_T_IPACrv_NT11F2_10	(IPAC T      espectros_añadidos & Doppler compensated)
+http://rpubs.com/jbmere/LG_GA_IPACrv     	(IPAC Log(g) espectros_añadidos & Doppler compensated)
+http://rpubs.com/jbmere/GA_IPACrv_Met    	(IPAC Met    espectros_añadidos & Doppler compensated)
+
+http://rpubs.com/jbmere/T_FeaCESSETI		(     T      comparison Cesseti)
+http://rpubs.com/jbmere/MET_COMPARA_NRA_v1	(     Met        )
+
+http://rpubs.com/jbmere/IRTF_Met		(IRTF Met    					)
+http://rpubs.com/jbmere/LG_11F2			(IRTF Log(g) 					)
+
+
+En RSTUDIO Local
+IRTF: /home/svo/git/M_prep_IRTF
+T		prep_GA_case01_NT11F2_v1.Rmd  (.html)
+Log(g)		prep_GA_case01_NG11F2_v1.Rmd  (.html)
+Met		prep_GA_case01_NM11F2_v1.Rmd  (.html)
+
+IPAC: /home/svo/git/M_prep_IPAC
+T		prep_GA_IPACrv_NT11F2_v2.Rmd   (.html)
+T-Cesseti	prep_GA_IPACrv_NT11F2_CES_v1.Rmd   (.html)
+Log(g)		prep_GA_IPACrv_NG11F2_v1.Rmd   (.html)
+Met   		prep_GA_IPACrv_NM11F2_v1.Rmd   (.html)
