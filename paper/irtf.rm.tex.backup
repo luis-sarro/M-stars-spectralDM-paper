@@ -276,7 +276,7 @@ The only difference with the methodology presented above is because
 Temperature has been considered a fixed feature in the estimation of 
 Gravity.
 
-In Tables~\ref{tab:models_G_rmse} and~\ref{tab:models_G_mae} 
+In Table~\ref{tab:models_G_rmse} 
 we can see the analysis of performance between
 the $\chi^2$ identificacion and the one based on features from the spectrum
 depending on several classes of features.
@@ -343,33 +343,33 @@ parameters are involved.
 \end{figure}
 
 % Se debe realizar una intepretación, pero dependerá 
-
-In Figure~\ref{fig:chi2_50_spt} and Figure~\ref{fig:ga_too50ga_spt} 
-relationships between $log(g)$ predicted by global espectrum estimation 
-and GA feature based estimation can be observed.
-
-\begin {figure}
- \centering
- \begin{subfigure}{.85\textwidth}
-  \centering
-  \includegraphics[width=12cm]{figs/G_chi2_50_cesetti.pdf}
-  \caption{Comparison between Gravity estimations from Spectral Subtype 
- in x axis and the closest BT\_Settl spectra by $\chi^2$ at SNR=$50$ on y-axis}
- \label{fig:chi2_50_spt}
- \end{subfigure}
-  \begin{subfigure}{.85\textwidth}
-  \centering
-  \includegraphics[width=12cm]{figs/G_gam_oo_cesetti.pdf}
-  \caption{Comparison between Gravity estimations from Spectral Subtype 
- in x axis and the Support Vector Machines for Ga based features trained with BT\_Settl 
- at SNR=$\infty$ and features for forecasting at SNR=$\infty$ on y-axis}
- \label{fig:ga_too50ga_spt}
- \end{subfigure}
- \label {fig:comp02}
- \caption{Performance comparison between the $chi^2$ based selection 
-          and the band oriented features to forecast Log(g)}
-\end {figure}
-%
+% 
+% In Figure~\ref{fig:chi2_50_spt} and Figure~\ref{fig:ga_too50ga_spt} 
+% relationships between $log(g)$ predicted by global espectrum estimation 
+% and GA feature based estimation can be observed.
+% 
+% \begin {figure}
+%  \centering
+%  \begin{subfigure}{.85\textwidth}
+%   \centering
+%   \includegraphics[width=12cm]{figs/G_chi2_50_cesetti.pdf}
+%   \caption{Comparison between Gravity estimations from Spectral Subtype 
+%  in x axis and the closest BT\_Settl spectra by $\chi^2$ at SNR=$50$ on y-axis}
+%  \label{fig:chi2_50_spt}
+%  \end{subfigure}
+%   \begin{subfigure}{.85\textwidth}
+%   \centering
+%   \includegraphics[width=12cm]{figs/G_gam_oo_cesetti.pdf}
+%   \caption{Comparison between Gravity estimations from Spectral Subtype 
+%  in x axis and the Support Vector Machines for Ga based features trained with BT\_Settl 
+%  at SNR=$\infty$ and features for forecasting at SNR=$\infty$ on y-axis}
+%  \label{fig:ga_too50ga_spt}
+%  \end{subfigure}
+%  \label {fig:comp02}
+%  \caption{Performance comparison between the $chi^2$ based selection 
+%           and the band oriented features to forecast Log(g)}
+% \end {figure}
+% %
 
 % De nuevo las valoraciones deberían esperar a ver qué ponemos.
 
@@ -377,7 +377,7 @@ and GA feature based estimation can be observed.
 
 Finally, the same analysis is performed for the Metalicty parameter, 
 again by considering Temperature as a fixed feature.
-In Tables~\ref{tab:models_M_rmse} and~\ref{tab:models_M_mae} 
+In Table~\ref{tab:models_M_rmse} 
 we can see the analysis of performance of different classes of
 models and cosidering a variety in features.
 
@@ -397,7 +397,7 @@ $rf $               & \bf{0.33} & 0.25    && 0.73   & 0.41      && 0.61       & 
 $gbm $              & \bf{0.27} & \bf{0.19} && 0.70  & 0.52      && 0.63      & 0.35 \\
 $ svr $             & \bf{0.33} & 0.22       && 0.45 & 0.32       && 0.92      & 0.89 \\
 $ nnet $            & \bf{0.37} & 0.30      && \bf{0.33} & 0.37    && 0.95    & 0.81 \\
-$ knn $             & 0.69      & 0.55     && \bf{0.23}   & \bf{0.15} && \bf{0.21} & \bf{0.15} \\ 
+$ knn $             & \bf{0.69}  & 0.55     && \bf{0.23}   & \bf{0.15} && \bf{0.21} & \bf{0.15} \\ 
 $ mars+ bagging $   & \bf{0.36}  & \bf{0.16} && 0.49     & 0.41      && 0.83    & 0.85 \\
 $Rule Regression $  & \bf{0.31} & \bf{0.17} && \bf{0.30} & 0.24  && 0.78 &  0.23 \\
 
@@ -410,32 +410,32 @@ $Rule Regression $  & \bf{0.31} & \bf{0.17} && \bf{0.30} & 0.24  && 0.78 &  0.23
 
  
 
-In Figure~\ref{fig:M_chi2_50_cesetti} and Figure~\ref{fig:M_GAM_1010_Cesetti} 
-relationships between metalicity predicted by global espectrum estimation 
-and GA feature based estimation against the real values
-provided by \cite{2013A&A...549A.129C} can be observed.
+% In Figure~\ref{fig:M_chi2_50_cesetti} and Figure~\ref{fig:M_GAM_1010_Cesetti} 
+% relationships between metalicity predicted by global espectrum estimation 
+% and GA feature based estimation against the real values
+% provided by \cite{2013A&A...549A.129C} can be observed.
 
-\begin {figure}
- \centering
- \begin{subfigure}{.85\textwidth}
-  \centering
-  \includegraphics[width=12cm]{figs/M_Chi2_50_Cesetti.pdf}
-  \caption{Comparison between Metalicity estimations from Spectral Subtype 
- in x axis and the closest BT\_Settl spectra by $\chi^2$ at SNR=$50$ on y-axis}
- \label{M_chi2_50_cesetti}
- \end{subfigure}
-  \begin{subfigure}{.85\textwidth}
-  \centering
-  \includegraphics[width=12cm]{figs/M_GAM_1010_Cesetti.pdf}
-  \caption{Comparison between Metalicity estimations from Spectral Subtype 
- in x axis and the Support Vector Machines for Ga based features trained with BT\_Settl 
- at SNR=$\infty$ and features for forecasting at SNR=$\infty$ on y-axis}
- \label{fig:M_GAM_1010_Cesetti}
- \end{subfigure}
- \label {fig:comp03}
- \caption{Performance comparison between the $chi^2$ based selection 
-          and the band oriented features to forecast Log(g)}
-\end {figure}
+% \begin {figure}
+%  \centering
+%  \begin{subfigure}{.85\textwidth}
+%   \centering
+%   \includegraphics[width=12cm]{figs/M_Chi2_50_Cesetti.pdf}
+%   \caption{Comparison between Metalicity estimations from Spectral Subtype 
+%  in x axis and the closest BT\_Settl spectra by $\chi^2$ at SNR=$50$ on y-axis}
+%  \label{M_chi2_50_cesetti}
+%  \end{subfigure}
+%   \begin{subfigure}{.85\textwidth}
+%   \centering
+%   \includegraphics[width=12cm]{figs/M_GAM_1010_Cesetti.pdf}
+%   \caption{Comparison between Metalicity estimations from Spectral Subtype 
+%  in x axis and the Support Vector Machines for Ga based features trained with BT\_Settl 
+%  at SNR=$\infty$ and features for forecasting at SNR=$\infty$ on y-axis}
+%  \label{fig:M_GAM_1010_Cesetti}
+%  \end{subfigure}
+%  \label {fig:comp03}
+%  \caption{Performance comparison between the $chi^2$ based selection 
+%           and the band oriented features to forecast Log(g)}
+% \end {figure}
 %
    
    
