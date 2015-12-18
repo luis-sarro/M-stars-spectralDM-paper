@@ -1,6 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ordieres.aux
+Case mismatch error between cite keys Cesetti and cesetti
+---line 63 of file ordieres.aux
+ : \citation{Cesetti
+ :                  }
+I'm skipping whatever remains of this command
 The style file: bibtex/aa.bst
 Database file #1: references_m.bib
 Warning--I didn't find a database entry for "dummy"
@@ -46,4 +51,4 @@ warning$ -- 0
 while$ -- 31
 width$ -- 0
 write$ -- 92
-(There were 2 warnings)
+(There was 1 error message)

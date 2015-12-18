@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.23)  6 NOV 2015 06:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.10.23)  16 DEC 2015 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,12 +734,6 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 LaTeX Warning: Label `tab:tab_SNR1050_G' multiply defined.
 
 
-LaTeX Warning: Label `fig:T_ICA_10_SpT' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:T_ICA_10_SpT' multiply defined.
-
-
 LaTeX Warning: Label `tab:tab_NC_T' multiply defined.
 
 
@@ -1014,7 +1008,7 @@ Package natbib Warning: Citation `dummy' on page 6 undefined on input line 343.
 
 
 [6]) (./irtf.fs.tex
-Overfull \hbox (25.0121pt too wide) in paragraph at lines 60--79
+Overfull \hbox (3.3521pt too wide) in paragraph at lines 60--79
  [] 
  []
 
@@ -1054,112 +1048,99 @@ LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 8 undefined on input line
 234.
 
 ) (./irtf.rm.tex [8]
-Underfull \vbox (badness 1838) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
 [10]
 
-LaTeX Warning: Reference `ssub:TLSB' on page 11 undefined on input line 176.
+LaTeX Warning: Reference `ssub:TLSB' on page 11 undefined on input line 196.
 
 
-LaTeX Warning: Reference `tab:model_Tvar' on page 11 undefined on input line 17
+LaTeX Warning: Reference `tab:model_Tvar' on page 11 undefined on input line 19
 8.
 
 
-Underfull \vbox (badness 6641) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
 
-Package caption Warning: \label without proper \caption on input line 214.
+Package caption Warning: \label without proper \caption on input line 234.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:comp01' on page 12 undefined on input line 192.
-
-<figs/T_chi50_Tst.pdf, id=51, 578.16pt x 578.16pt>
-File: figs/T_chi50_Tst.pdf Graphic file (type pdf)
- <use figs/T_chi50_Tst.pdf>
-Package pdftex.def Info: figs/T_chi50_Tst.pdf used on input line 201.
-(pdftex.def)             Requested size: 369.88582pt x 369.87997pt.
-
-Overfull \hbox (36.13261pt too wide) in paragraph at lines 201--203
- [][] 
- []
-
-<figs/T_svm_10_TsP.pdf, id=52, 578.16pt x 433.62pt>
-File: figs/T_svm_10_TsP.pdf Graphic file (type pdf)
-
-<use figs/T_svm_10_TsP.pdf>
-Package pdftex.def Info: figs/T_svm_10_TsP.pdf used on input line 208.
-(pdftex.def)             Requested size: 369.88582pt x 277.40999pt.
-
-Overfull \hbox (36.13261pt too wide) in paragraph at lines 208--211
- [][] 
- []
+LaTeX Warning: Reference `fig:comp01' on page 12 undefined on input line 212.
 
 
-LaTeX Warning: Float too large for page by 26.90297pt on input line 217.
+Package caption Warning: \label without proper \caption on input line 258.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:T_ICA_50_SpT' on page 12 undefined on input line 
-240.
+LaTeX Warning: Reference `fig:comp02' on page 12 undefined on input line 212.
 
-<figs/T_ICA_10_SpT.pdf, id=53, 578.16pt x 578.16pt>
-File: figs/T_ICA_10_SpT.pdf Graphic file (type pdf)
+<figs/irtf_T_chi250_Cesetti.pdf, id=51, 794.97pt x 867.24pt>
+File: figs/irtf_T_chi250_Cesetti.pdf Graphic file (type pdf)
 
-<use figs/T_ICA_10_SpT.pdf>
-Package pdftex.def Info: figs/T_ICA_10_SpT.pdf used on input line 246.
-(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
+<use figs/irtf_T_chi250_Cesetti.pdf>
+Package pdftex.def Info: figs/irtf_T_chi250_Cesetti.pdf used on input line 221.
 
-Overfull \hbox (7.67986pt too wide) in paragraph at lines 246--249
- [][] 
- []
+(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
 
-<figs/T_ICA_50_SpT.pdf, id=54, 578.16pt x 578.16pt>
-File: figs/T_ICA_50_SpT.pdf Graphic file (type pdf)
+<figs/irtf_T_knnoo_Cesetti.pdf, id=52, 794.97pt x 867.24pt>
+File: figs/irtf_T_knnoo_Cesetti.pdf Graphic file (type pdf)
 
-<use figs/T_ICA_50_SpT.pdf>
-Package pdftex.def Info: figs/T_ICA_50_SpT.pdf used on input line 254.
-(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
-
-Overfull \hbox (7.67986pt too wide) in paragraph at lines 254--257
- [][] 
- []
+<use figs/irtf_T_knnoo_Cesetti.pdf>
+Package pdftex.def Info: figs/irtf_T_knnoo_Cesetti.pdf used on input line 228.
+(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
 
 
-LaTeX Warning: Float too large for page by 50.85806pt on input line 261.
+LaTeX Warning: Float too large for page by 52.48874pt on input line 237.
+
+<figs/irtf_T_rregoo_Cesetti.pdf, id=53, 794.97pt x 867.24pt>
+File: figs/irtf_T_rregoo_Cesetti.pdf Graphic file (type pdf)
+
+<use figs/irtf_T_rregoo_Cesetti.pdf>
+Package pdftex.def Info: figs/irtf_T_rregoo_Cesetti.pdf used on input line 244.
+
+(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
+
+<figs/irtf_T_rreg50_Cesetti.pdf, id=54, 794.97pt x 867.24pt>
+File: figs/irtf_T_rreg50_Cesetti.pdf Graphic file (type pdf)
+
+<use figs/irtf_T_rreg50_Cesetti.pdf>
+Package pdftex.def Info: figs/irtf_T_rreg50_Cesetti.pdf used on input line 252.
+
+(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
+
+
+LaTeX Warning: Float too large for page by 51.87573pt on input line 260.
 
 
 Package natbib Warning: Citation `2013A&A...549A.129C' on page 12 undefined on 
-input line 273.
+input line 291.
 
-[12] [13 <./figs/T_chi50_Tst.pdf> <./figs/T_svm_10_TsP.pdf>] [14 <./figs/T_ICA_
-10_SpT.pdf> <./figs/T_ICA_50_SpT.pdf>]
-<figs/LT_LG_ga.pdf, id=89, 578.16pt x 433.62pt>
-File: figs/LT_LG_ga.pdf Graphic file (type pdf)
- <use figs/LT_LG_ga.pdf>
-Package pdftex.def Info: figs/LT_LG_ga.pdf used on input line 321.
-(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
-<figs/LT_LG_chi2.pdf, id=90, 578.16pt x 433.62pt>
-File: figs/LT_LG_chi2.pdf Graphic file (type pdf)
- <use figs/LT_LG_chi2.pdf>
-Package pdftex.def Info: figs/LT_LG_chi2.pdf used on input line 338.
-(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
-)
-[15 <./figs/LT_LG_ga.pdf>] (./ipac.fs.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package natbib Warning: Citation `Cesetti' on page 12 undefined on input line 3
+01.
 
- [16 <./figs/LT_LG_chi2.pdf>]
+<figs/irtf-logg-knn-oo.pdf, id=55, 794.97pt x 867.24pt>
+File: figs/irtf-logg-knn-oo.pdf Graphic file (type pdf)
+
+<use figs/irtf-logg-knn-oo.pdf>
+Package pdftex.def Info: figs/irtf-logg-knn-oo.pdf used on input line 341.
+(pdftex.def)             Requested size: 341.43306pt x 372.48248pt.
+ [12] [13 <./figs/irtf_T_chi250_Cesetti.pdf> <./figs/irtf_T_knnoo_Cesetti.pdf>]
+ [14 <./figs/irtf_T_rregoo_Cesetti.pdf> <./figs/irtf_T_rreg50_Cesetti.pdf>]) [1
+5 <./figs/irtf-logg-knn-oo.pdf>] (./ipac.fs.tex
+[16]
 
 LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 17 undefined on input line
- 138.
+ 141.
 
 
 LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 17 undefined on input line
- 165.
+ 168.
 
-) [17] [18] (./ordieres.bbl [19] (./ordieres.obj)
+) [17] [18] (./ordieres.bbl (./ordieres.obj)
 \tf@obj=\write4
 \openout4 = `ordieres.obj'.
 
@@ -1167,7 +1148,9 @@ LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 17 undefined on input line
 
 Package natbib Warning: There were undefined citations.
 
-[20] (./ordieres.aux)
+[19
+
+] (./ordieres.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1176,10 +1159,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7426 strings out of 493085
- 102621 string characters out of 6136916
- 210022 words of memory out of 5000000
- 10656 multiletter control sequences out of 15000+600000
+ 7423 strings out of 493085
+ 102760 string characters out of 6136916
+ 210034 words of memory out of 5000000
+ 10654 multiletter control sequences out of 15000+600000
  87671 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,45p,286b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1196,10 +1179,10 @@ rw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ordieres.pdf (20 pages, 178299 bytes).
+Output written on ordieres.pdf (19 pages, 172826 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 159 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

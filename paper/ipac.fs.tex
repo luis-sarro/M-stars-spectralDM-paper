@@ -11,8 +11,8 @@ order to factor out the stellar distance.
 \subsection{Spectral features for estimation of effective temperatures.}
 
 The application of the GAs to the selection of features for the
-prediction of effective temperature from noiseless spectra with the
-IRTF wavelength range and resolution results in the features included
+prediction of effective temperature from noiseless spectra within the
+IPAC wavelength range and resolution results in the features included
 in Table~\ref{tab:tab_NC_T}. Features are ordered by the fitness value
 (the AIC) and we only consider features that are present in at least 5
 sets.
@@ -22,7 +22,8 @@ sets.
 \begin{tabular}{rrrr}
   \hline
   $\lambda_1$ & $\lambda_2$ & $\lambda_{cont;1}$ & $\lambda_{cont;2} $ \\ 
-  \hline
+  \hline 
+  
 7062 & 7094.4 &	7314 & 7346.4 \\
 7116 & 7148.4 &	7782 & 7814.4 \\
 7134 & 7166.4 &	7872 & 7904.4 \\
@@ -33,6 +34,7 @@ sets.
 7800 & 7832.4 &	7962 & 7994.4 \\
 6990 & 7022.4 &	7008 & 7040.4 \\
 7026 & 7058.4 &	6990 & 7022.4 \\
+
 \hline
 \end{tabular}
 \caption {Features selected by the GA for predicting $T_{eff}$ 
@@ -67,6 +69,7 @@ $\lambda_1$ & $\lambda_2$ & $\lambda_{cont;1}$ & $\lambda_{cont;2} $ & $\lambda_
 7134 & 7166.4 	7764 & 7796.4  & 6972 & 7004.4   6900 & 6932.4 \\
 6918 & 6950.4 	6900 & 6932.4  & 6990 & 7022.4   7944 & 7976.4 \\
 7224 & 7256.4 	7962 & 7994.4  & 6918 & 6950.4   7782 & 7814.4 \\
+
 \hline
 \end{tabular}
 \caption {Recommended features and Continuum bandpass for predicting $ T_{eff} $ 

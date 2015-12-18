@@ -2,7 +2,7 @@
 In the following, we will summarise the results obtained for the IRTF
 data set. We deal with the different physical paramenters in separate
 Sections. We start by reporting the cross validation Root Mean Square
-Errors (RMSE) for the ?-fold cross-validation strategy, and
+Errors (RMSE) for the five-fold cross-validation strategy, and
 subsequently discuss the accuracy of the predictions with respect to
 literature values where available.
 
@@ -11,17 +11,15 @@ literature values where available.
 Table \ref{tab:model_TSD} summarises the RMSE for the complete set of
 models: the minimum $\chi^2$ estimate based on the full spectrum
 ($\chi^2$), the projection pursuit regression based on the ICA
-components (PPR-ICA), the {\bf ???? Joaquín, fill here the details,
-and also in meth.tex} model trained of the spectral features
-by \cite{cesetti} (C-???), and the 8 models trained on the spectral
-features proposed by the GA (GA-GAM, GA-MARS, GA-RF, GA-BOOSTING,
-GA-GBM, GA-SVM, GA-SVM, GA-NNET, GA-KPLS). For each model, we report
-the RMSE obtained for several noise levels of the training and test
-sets. We use the following notation: RMSEaa represents the RMSE
-obtained for a model trained and tested on BT Settl spectra of
-SNR=aa. SNR=$\infty$ corresponds to noiseless spectra. The prefix CV-
-corresponds to cross-validation RMSE, and LI- to RMSE derived by
-comparison with the literature values gathered by \cite{cesetti}.
+components (PPR-ICA) and some models trained on the spectral
+features proposed by the GA (GA-RF, 
+GA-GBM, GA-SVR, GA-NNET, GA-MARS, GA-KPLS). For each model, we report
+the RMSE obtained for several noise levels of the training sets. 
+We use the following notation: RMSE represents the RMSE
+obtained for a model trained and tested on BT Settl spectra. 
+SNR=$\infty$ corresponds to noiseless spectra. 
+The RMDSE means the root median square error, as a way to provide 
+robust estimation against outliers.
 
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
 \begin{table*}\centering
@@ -34,7 +32,7 @@ $Regression Models$ & $RMSE$ & $RMDSE$ && $RMSE$ & $RMDSE$ && $RMSE$ & $RMDSE$ \
 $\chi^2 BTSettl$    &  232.55 & 100.00 && 235.25 & 120.00 && 232.45 & 100.00 \\
 $ ICA+ ppr$         & 241.93 & 127.75 && 241.83 & \bf{99.14} && 279.70 & 161.90 \\
 $rf $               & 308.46 & 183.03 && 247.65 & 136.48 && \bf{167.21} & 135.23 \\
-$gbm $              & 287.21 & 159.92 && 247.93 & 149.01 && 233.22 & 112.59 \\
+$ gbm $              & 287.21 & 159.92 && 247.93 & 149.01 && 233.22 & 112.59 \\
 $ svr $         & \bf{221.46} & 122.36 && 281.21 & 150.59 && 299.05 & 160.22 \\
 $ nnet $            & 283.44 & 191.58 && 264.16 & \bf{114.35} && 326.35 & 211.81 \\
 $ knn $             & 238.18 & 120.00 && \bf{232.36} & 137.50 && \bf{219.14} & \bf{100.00}  \\
@@ -70,24 +68,47 @@ $ kpls $            & 275.48 & 120.00 && 299.88 & \bf{118.61} && 387.06 & 217.53
 % \end{center}
 \end{table*}
 
-Table \ref{tab:model_TSD} shows that the performance of classifiers
-based on the full spectrum (or in a compressed version in the form of
-ICA components) and on features derived from limited spectral bands is
-equivalent. The difference between the performances of best classifier
-(GA-KNN; best on average over SNR), the minimum $\chi^2$ classifier,
-and the PPR-ICA classifiers are not statistically significant. We
-interpret these small differences as an indication that there is as
-much information spread over the entire spectrum shape as can be
-distilled from a few spectral bands. In any case, it is evident that
-the RMSE is significantly above the grid spacing in temperature ({\bf
-I think this is 100K but it depends on the answer to my questions
-whether the interpolated grid was used or not.})
+%Table \ref{tab:model_TSD} shows that the performance of classifiers
+%based on the full spectrum (or in a compressed version in the form of
+%ICA components) and on features derived from limited spectral bands is
+%equivalent. The difference between the performances of best classifier
+%(GA-KNN; best on average over SNR), the minimum $\chi^2$ classifier,
+%and the PPR-ICA classifiers are not statistically significant. We
+%interpret these small differences as an indication that there is as
+%much information spread over the entire spectrum shape as can be
+%distilled from a few spectral bands. In any case, it is evident that
+%the RMSE is significantly above the grid spacing in temperature ({\bf
+%I think this is 100K but it depends on the answer to my questions
+%whether the interpolated grid was used or not.})
 
 The comparison with the effective temperatures compiled
 by \cite{cesetti} does not show significant differences either. In
 general, all classifiers tend to predict lower effective temperatures
-than those in the literature.{\bf Joaquín: ¿podemos calcular el sesgo
-medio?} Most models show remarkably similar distributions of the
+than those in the literature.
+
+\begin{table*}\centering
+\ra{1.3}
+\begin{tabular}{@{}lrrr@{}}\toprule
+& {$SNR = 10$} & {$SNR = 50$} & {$SNR = \infty$}\\ \midrule
+$\chi^2 $    &  -77.45 & -86.88 & -85.00 \\
+$Rule Regression$ & -101.78 & -38.38 & 169.74 \\
+$rf $ & -172.61 & -127.12 & -5.32 \\
+$gbm $ & -140.87 & -108.53 & 31.70 \\
+$svr $ & -57.62 & -2.93 & 91.68 \\
+$nnet$ & -146.57 & -36.12 & 39.10 \\
+$knn $ & -75.57 & -109.85 & -66.60 \\
+$mars + bagging $& -56.96 & -87.88 & 98.22 \\
+$pls $ & -120.32 & -4.23 & 213.68 \\
+
+\bottomrule
+\end{tabular}
+\caption {Bias for $T_{eff}$ (K) over the Cesseti estimation.} 
+\label{tab:model_Tbias} 
+% \end{center}
+\end{table*}
+
+
+Most models show remarkably similar distributions of the
 predictions when trained with different SNR levels. In the cases of
 GA-MARS, GA-KNN, and GA-SVR this is the case even in the unrealistic
 scenario of SNR=$\infty$.
@@ -99,13 +120,12 @@ collection. We have found in previous studies that, at least for input
 spaces constructed from ICA compressions of the spectra, it is not
 necessary to adapt the training set SNR to match exactly that of the
 prediction set. On the contrary, we find that two regimes are
-sufficient to obtain optimal results. The two regimes are separated at
+sufficient to obtain proper results. The two regimes are separated at
 SNR=10. The model trained with SNR=50 spectra gives close to optimal
 results for spectra with SNRs above 10, while below that limit the
 same situation applies holds for the model trained with SNR=10
 spectra. {\bf I should move this explanation to the beginning of the
-section or to the methodology section. Joaquín: can you check that
-what I am saying about Ana's results is correct?}
+section or to the methodology section.}
 
 
 
@@ -163,7 +183,7 @@ what I am saying about Ana's results is correct?}
 We then compare the predicted effective temperatures with the spectral
 types listed in the IRTF spectral library. We attempted a direct
 comparison with the literature values gathered in \cite{cesetti} but
-it only returns {\bf ???? Joaquín, rellena este valor por favor}
+it only returns 57 
 estimates of effective temperature for M stars. We converted the
 spectral types into effective temperatures using the calibration
 of \cite{2009ApJ...702..154S}.
@@ -189,31 +209,54 @@ From this comparison several things arise:
  \item {As a conclusion the better performance was produced by FT01, followed by the FT51.}
 \end{itemize}
 
-In Figure~\ref{fig:comp01} the relationship between Temperature
-estimated from the GA model proposed features with SNR=50 and features
-from SNR=$\infty$ and the Temperature estimation from spectral subtype
-in comparison with the $chi^2$ with SNR=50 can be seen.
+In Figures~\ref{fig:comp01}~\ref{fig:comp02} the relationship between Temperature
+estimated from the GA technique proposed features and modeled with different 
+technqiues and the $chi^2$ with SNR=50 against the 
+estimations provided by \cite{cesetti} can be seen.
 
 \begin {figure}
  \centering
  \begin{subfigure}{.85\textwidth}
   \centering
-  \includegraphics[width=13cm]{figs/T_chi50_Tst.pdf}
-  \caption{Comparison between Temperature estimations from Spectral Subtype 
- in x axis and the closest BT\_Settl spectra by $\chi^2$ at SNR=$50$ on y-axis}
+  \includegraphics[width=11cm]{figs/irtf_T_chi250_Cesetti.pdf}
+  \caption{Comparison between Temperature estimations from Cesetti 
+  in x axis and the closest BT\_Settl spectra by $\chi^2$ at SNR=$50$ on y-axis}
  \label{fig:chi2_50_spt}
  \end{subfigure}
   \begin{subfigure}{.85\textwidth}
   \centering
-  \includegraphics[width=13cm]{figs/T_svm_10_TsP.pdf}
-  \caption{Comparison between Temperature estimations from Spectral Subtype 
- in x axis and the Support Vector Machines for Ga based features trained with BT\_Settl 
- at SNR=$\infty$ and features for forecasting at SNR=10 on y-axis}
+  \includegraphics[width=11cm]{figs/irtf_T_knnoo_Cesetti.pdf}
+  \caption{Comparison between Temperature estimations from Cesetti 
+ in x axis and the KNN model for GA based features 
+ at SNR=$\infty$ on y-axis}
  \label{fig:ga_too50ga_spt}
  \end{subfigure}
  \label {fig:comp01}
- \caption{Performance comparison between the $chi^2$ based selection 
+ \caption{Performance comparison between the $\chi^2$ based selection 
           and the band oriented features}
+\end {figure}
+ 
+ 
+\begin {figure}
+ \centering 
+ \begin{subfigure}{.85\textwidth}
+  \centering
+  \includegraphics[width=11cm]{figs/irtf_T_rregoo_Cesetti.pdf}
+  \caption{Comparison between Temperature estimations from Cesetti 
+ in x axis and the Rule Regression model for GA based features 
+ at SNR=$\infty$ on y-axis}
+ \label{fig:ga_rr00ga_spt}
+ \end{subfigure}
+\begin{subfigure}{.85\textwidth}
+  \centering
+  \includegraphics[width=11cm]{figs/irtf_T_rreg50_Cesetti.pdf}
+  \caption{Comparison between Temperature estimations from Cesetti 
+ in x axis and the Rule Regression model for GA based features 
+ at SNR=$50$ on y-axis}
+ \label{fig:ga_rr50ga_spt}
+ \end{subfigure} 
+ \label {fig:comp02}
+ \caption{Performance comparison between two Rule regression based models with different SNR}
 \end {figure}
 %
 % No le añado más discusión porque habría que interpretar algunas estrellas.
@@ -235,31 +278,6 @@ in comparison with the $chi^2$ with SNR=50 can be seen.
 % \end {figure}
 
 
-The comparison against processing the whole spectrum by ICA projection 
-has been performed and the results for SNR=\{10,50\} can be seen 
-in Figure~\ref{fig:T_ICA_10_SpT} and Figure~\ref{fig:T_ICA_50_SpT}.
-
-\begin {figure}
- \centering
- \begin{subfigure}{.85\textwidth}
-  \centering
-  \includegraphics[width=12cm]{figs/T_ICA_10_SpT.pdf}
-  \caption{Comparison between Temperature estimations from Spectral Subtype 
- in x axis and the prediction based on SVM models over the ICA projection 
- with 10 components at SNR=$10$ on y-axis}
- \label{fig:T_ICA_10_SpT}
- \end{subfigure}
-  \begin{subfigure}{.85\textwidth}
-   \centering
-  \includegraphics[width=12cm]{figs/T_ICA_50_SpT.pdf}
-  \caption{Comparison between Temperature estimations from Spectral Subtype 
- in x axis and the prediction based on SVM models over the ICA projection 
- with 10 components at SNR=$50$ on y-axis}
- \label{fig:T_ICA_10_SpT}  
-  \end{subfigure}
- \label{fig:t_ica_1050_SpT}
-\end {figure}
-
 % No le añado más discusión de momento, hasta ver si tiene sentido poer toda esta
 % fila de gráficas o es mejor producir algo más condensado.
 %
@@ -279,7 +297,9 @@ Gravity.
 In Table~\ref{tab:models_G_rmse} 
 we can see the analysis of performance between
 the $\chi^2$ identificacion and the one based on features from the spectrum
-depending on several classes of features.
+depending on several classes of features. All of them have been carried out
+against the \cite{Cesetti} estimations but, unfortunatelly those authors 
+do not provide excessive number of IRTF class M stars to validate (just eight items).
 
 %
 % Gravedad teórica desde Cesseti para las IRTF
@@ -313,36 +333,36 @@ $Rule Regression $  & \bf{0.74} & 0.57    && \bf{0.50} & \bf{0.47}  && \bf{0.57}
 It is possible to present relationships between $log(g)$ and $log(T_{eff})$
 as a matter of congruence analysis between predictions. In the Figure~\ref{fig:lt_lg_ga}
 such relationship is presented for models based on artificial intelligence selected features.
-In Figure~\ref{fig:lt_lg_chi2} the values for $log(T_{eff})$ and $log(G)$ are 
-inferred from the closest BT\_Settl spectra.
+%In Figure~\ref{fig:lt_lg_chi2} the values for $log(T_{eff})$ and $log(G)$ are 
+%inferred from the closest BT\_Settl spectra.
 
 \begin{figure}
  \begin{center}
- \includegraphics[width=12cm]{figs/LT_LG_ga.pdf}
+ \includegraphics[width=12cm]{figs/irtf-logg-knn-oo.pdf}
  \caption{Relationship between $log(T_{eff}) $ in the x axis 
- and $log(g)$ in the y axis for models based on bandpass features }
+ and $log(g)$ in the y axis for KNN model based on the GA provided bandpass features with SNR=$\infty$}
  \label{fig:lt_lg_ga}
  \end{center}
 \end{figure}
 
-And, for sure, it is possible to do it for estimations based on 
-parameters from nearest labeled BT-Settl spectra.
-In this particular case, it is possible to see how 
-considering the global spectrum is positive for stronger 
-physical parameters like $T_{eff}$ but the approach
-reduces drastically its likelihood when other softer 
-parameters are involved.
-
-\begin{figure}
- \begin{center}
- \includegraphics[width=12cm]{figs/LT_LG_chi2.pdf}
- \caption{Relationship between $log(T_{eff}) $ in the x axis 
- and $log(g)$ in the y axis for SNR=50 when 
- the nearest BT-Settl spectrum is used.}
- \label{fig:lt_lg_chi2}
- \end{center}
-\end{figure}
-
+%And, for sure, it is possible to do it for estimations based on 
+%parameters from nearest labeled BT-Settl spectra.
+%In this particular case, it is possible to see how 
+%considering the global spectrum is positive for stronger 
+%physical parameters like $T_{eff}$ but the approach
+%reduces drastically its likelihood when other softer 
+%parameters are involved.
+%
+%\begin{figure}
+% \begin{center}
+% \includegraphics[width=12cm]{figs/LT_LG_chi2.pdf}
+% \caption{Relationship between $log(T_{eff}) $ in the x axis 
+% and $log(g)$ in the y axis for SNR=50 when 
+% the nearest BT-Settl spectrum is used.}
+% \label{fig:lt_lg_chi2}
+% \end{center}
+%\end{figure}
+%
 % Se debe realizar una intepretación, pero dependerá 
 % 
 % In Figure~\ref{fig:chi2_50_spt} and Figure~\ref{fig:ga_too50ga_spt} 
@@ -380,7 +400,8 @@ Finally, the same analysis is performed for the Metalicty parameter,
 again by considering Temperature as a fixed feature.
 In Table~\ref{tab:models_M_rmse} 
 we can see the analysis of performance of different classes of
-models and cosidering a variety in features.
+models and cosidering a variety in features, even though just six IRTF stars 
+where estimated by \cite{cesetti}, which strongly reduces the validation technique.
 
 %
 % Metalicidad teórica desde Cesseti para las IRTF
