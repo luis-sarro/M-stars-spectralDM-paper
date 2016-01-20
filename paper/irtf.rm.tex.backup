@@ -2,7 +2,7 @@
 In the following, we will summarise the results obtained for the IRTF
 data set. We deal with the different physical paramenters in separate
 Sections. We start by reporting the cross validation Root Mean Square
-Errors (RMSE) for the ?-fold cross-validation strategy, and
+Errors (RMSE) for the five-fold cross-validation strategy, and
 subsequently discuss the accuracy of the predictions with respect to
 literature values where available.
 
@@ -127,25 +127,6 @@ same situation applies holds for the model trained with SNR=10
 spectra. {\bf I should move this explanation to the beginning of the
 section or to the methodology section.}
 
-
-
-
-%\begin{table}
-%\begin{center}
-%\begin{tabular}{rrrrrrr}
-%  \hline
-%  SNR & Features & SVM & RF & GAM  & MARS  \\
-%  \hline
-%  \multirow{2}{*}{50}  &  Cesetti et al. & 81.6 &  83.3 & 163.5 & 91.9 \\
-%      &  GA             & 91.4 & 82.2 & 161.1  & 91.9  \\
-%  \multirow{2}{*}{10}  &  Cesetti et al. & 135.8 & 138.5 & 268.8 & 166.8  \\
-%      &  GA             & 123.2 & 122.6 & 212.6 & 130.9  \\
-%   \hline
-%\end{tabular}
-%\caption { RSME for different models predicting $T_{eff}$ [K].} 
-%\label{tab:model_TSD} 
-%\end{center}
-%\end{table}
 
 %After calculating the bartlett test for both cases of SNR it was 
 %seen that variances are homogeneous since p > 0.05, and 
@@ -299,7 +280,7 @@ we can see the analysis of performance between
 the $\chi^2$ identificacion and the one based on features from the spectrum
 depending on several classes of features. All of them have been carried out
 against the \cite{Cesetti} estimations but, unfortunatelly those authors 
-do not provide excessive number of samples to validate (j
+do not provide excessive number of IRTF class M stars to validate (just eight items).
 
 %
 % Gravedad teórica desde Cesseti para las IRTF
@@ -333,36 +314,36 @@ $Rule Regression $  & \bf{0.74} & 0.57    && \bf{0.50} & \bf{0.47}  && \bf{0.57}
 It is possible to present relationships between $log(g)$ and $log(T_{eff})$
 as a matter of congruence analysis between predictions. In the Figure~\ref{fig:lt_lg_ga}
 such relationship is presented for models based on artificial intelligence selected features.
-In Figure~\ref{fig:lt_lg_chi2} the values for $log(T_{eff})$ and $log(G)$ are 
-inferred from the closest BT\_Settl spectra.
+%In Figure~\ref{fig:lt_lg_chi2} the values for $log(T_{eff})$ and $log(G)$ are 
+%inferred from the closest BT\_Settl spectra.
 
 \begin{figure}
  \begin{center}
- \includegraphics[width=12cm]{figs/LT_LG_ga.pdf}
+ \includegraphics[width=12cm]{figs/irtf-logg-knn-oo.pdf}
  \caption{Relationship between $log(T_{eff}) $ in the x axis 
- and $log(g)$ in the y axis for models based on bandpass features }
+ and $log(g)$ in the y axis for KNN model based on the GA provided bandpass features with SNR=$\infty$}
  \label{fig:lt_lg_ga}
  \end{center}
 \end{figure}
 
-And, for sure, it is possible to do it for estimations based on 
-parameters from nearest labeled BT-Settl spectra.
-In this particular case, it is possible to see how 
-considering the global spectrum is positive for stronger 
-physical parameters like $T_{eff}$ but the approach
-reduces drastically its likelihood when other softer 
-parameters are involved.
-
-\begin{figure}
- \begin{center}
- \includegraphics[width=12cm]{figs/LT_LG_chi2.pdf}
- \caption{Relationship between $log(T_{eff}) $ in the x axis 
- and $log(g)$ in the y axis for SNR=50 when 
- the nearest BT-Settl spectrum is used.}
- \label{fig:lt_lg_chi2}
- \end{center}
-\end{figure}
-
+%And, for sure, it is possible to do it for estimations based on 
+%parameters from nearest labeled BT-Settl spectra.
+%In this particular case, it is possible to see how 
+%considering the global spectrum is positive for stronger 
+%physical parameters like $T_{eff}$ but the approach
+%reduces drastically its likelihood when other softer 
+%parameters are involved.
+%
+%\begin{figure}
+% \begin{center}
+% \includegraphics[width=12cm]{figs/LT_LG_chi2.pdf}
+% \caption{Relationship between $log(T_{eff}) $ in the x axis 
+% and $log(g)$ in the y axis for SNR=50 when 
+% the nearest BT-Settl spectrum is used.}
+% \label{fig:lt_lg_chi2}
+% \end{center}
+%\end{figure}
+%
 % Se debe realizar una intepretación, pero dependerá 
 % 
 % In Figure~\ref{fig:chi2_50_spt} and Figure~\ref{fig:ga_too50ga_spt} 
@@ -400,7 +381,8 @@ Finally, the same analysis is performed for the Metalicty parameter,
 again by considering Temperature as a fixed feature.
 In Table~\ref{tab:models_M_rmse} 
 we can see the analysis of performance of different classes of
-models and cosidering a variety in features.
+models and cosidering a variety in features, even though just six IRTF stars 
+where estimated by \cite{cesetti}, which strongly reduces the validation technique.
 
 %
 % Metalicidad teórica desde Cesseti para las IRTF

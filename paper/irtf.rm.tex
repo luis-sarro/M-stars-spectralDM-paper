@@ -91,7 +91,7 @@ than those in the literature.
 \begin{tabular}{@{}lrrr@{}}\toprule
 & {$SNR = 10$} & {$SNR = 50$} & {$SNR = \infty$}\\ \midrule
 $\chi^2 $    &  -77.45 & -86.88 & -85.00 \\
-$Rule Regression$ & -101.78 & -38.38 & 169.74 \\
+$ICA+ppr$ & -104.08 & -54.9 & -130.06 \\
 $rf $ & -172.61 & -127.12 & -5.32 \\
 $gbm $ & -140.87 & -108.53 & 31.70 \\
 $svr $ & -57.62 & -2.93 & 91.68 \\
@@ -128,33 +128,15 @@ spectra. {\bf I should move this explanation to the beginning of the
 section or to the methodology section.}
 
 
+After calculating the bartlett test for both cases of SNR it was 
+seen that variances are homogeneous with a Bartlett\textquoteright s K-squared = 8.5 with df=2
+and p-value=0.01426, and 
+the Flinger-Killen shows that homokedascity is verified with p=0.005886, 
+then F-ANOVA test makes clear that there is no significative 
+difference between models. Then, it is possible to conclude
+that quality of features from both sources are equivalent
+regarding the modeling capability.
 
-
-%\begin{table}
-%\begin{center}
-%\begin{tabular}{rrrrrrr}
-%  \hline
-%  SNR & Features & SVM & RF & GAM  & MARS  \\
-%  \hline
-%  \multirow{2}{*}{50}  &  Cesetti et al. & 81.6 &  83.3 & 163.5 & 91.9 \\
-%      &  GA             & 91.4 & 82.2 & 161.1  & 91.9  \\
-%  \multirow{2}{*}{10}  &  Cesetti et al. & 135.8 & 138.5 & 268.8 & 166.8  \\
-%      &  GA             & 123.2 & 122.6 & 212.6 & 130.9  \\
-%   \hline
-%\end{tabular}
-%\caption { RSME for different models predicting $T_{eff}$ [K].} 
-%\label{tab:model_TSD} 
-%\end{center}
-%\end{table}
-
-%After calculating the bartlett test for both cases of SNR it was 
-%seen that variances are homogeneous since p > 0.05, and 
-%the Flinger-Killen shows that homokedascity is verified, 
-%then F-ANOVA test makes clear that there is no significative 
-%difference between models. Then, it is possible to conclude
-%that quality of features from both sources are equivalent
-%regarding modeling capability, even when GA only has proposed five
-%features and Cesetti et al. requires seven features.
 
 %As an alternative to build modles based on bandpasses, 
 %a similiar methodology to the one depicted in (\cite{2013A&A...550A.120S})
