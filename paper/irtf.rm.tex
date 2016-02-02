@@ -141,6 +141,35 @@ both sources are equivalent regarding the modeling capability.
 % TBD: Comparison with Cesetti temperatures in Table 3
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+We then compare the predicted effective temperatures with the spectral
+types listed in the IRTF spectral library. We attempted a direct
+comparison with the literature values gathered in \cite{cesetti} but
+it only returns 57 
+estimates of effective temperature for M stars. We converted the
+spectral types into effective temperatures using the calibration
+of \cite{2009ApJ...702..154S}.
+
+{\bf TODO: Luis, cambiar spectral libraries por stellar atmosphere
+models o synthetic spectral libraries}.
+
+Forecast quality of models was tested by the error against the
+temperature estimated based on the Spectral Subtype for each of the
+IRTF available spectra (see \ref{ssub:TLSB}).  Both Root Mean Squared
+Error (RMSE) and Mean Absolute Error (MAE) where calculated and it is
+presented in the table~\ref{tab:model_Tvar}.
+
+From this comparison several things arise:
+\begin{itemize}
+ \item {The behavior of $\chi^2$ distance is quite stable against SNR 
+	in the original dataset (BT\_Settl) with a slightly better global 
+	performace in fovour of SNR=50.}
+ \item {Models trained with different SNR=$\infty$ have similar performance but heavy 
+	differences appear when SNR features are considered.}
+ \item {When synchronous behavior is observed FT00, FT11, FT55, the better SNR is 10.}
+ \item {Best set of features to be used for forecast are those from SNR=$\infty$ (FT0b).}
+ \item {As a conclusion the better performance was produced by FT01, followed by the FT51.}
+\end{itemize}
+
 In Figures~\ref{fig:comp01}~\ref{fig:comp02} the relationship between Temperature
 estimated from the GA technique proposed features and modeled with different 
 techniques and the $chi^2$ with SNR=50 against the 
@@ -211,6 +240,7 @@ temperature estimated based on the Spectral Subtype for each of the
 IRTF available spectra (see \ref{ssub:TLSB}).  Both Root Mean Squared
 Error (RMSE) and Mean Absolute Error (MAE) where calculated and it is
 presented in the table~\ref{tab:model_Tvar}.
+
 
 
 We have applied the non linear oriented methodology but usin the suggested features from Cesseti et al.
