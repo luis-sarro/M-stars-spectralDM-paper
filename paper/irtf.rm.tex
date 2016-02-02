@@ -92,6 +92,7 @@ than those in the literature.
 & {$SNR = 10$} & {$SNR = 50$} & {$SNR = \infty$}\\ \midrule
 $\chi^2 $    &  -77.45 & -86.88 & -85.00 \\
 $ICA+ppr$ & -104.08 & -54.9 & -130.06 \\
+$Rule Regression$ & -101.78 & -38.38 & 169.74 \\
 $rf $ & -172.61 & -127.12 & -5.32 \\
 $gbm $ & -140.87 & -108.53 & 31.70 \\
 $svr $ & -57.62 & -2.93 & 91.68 \\
@@ -127,7 +128,6 @@ same situation applies holds for the model trained with SNR=10
 spectra. {\bf I should move this explanation to the beginning of the
 section or to the methodology section.}
 
-
 After calculating the bartlett test for both cases of SNR it was 
 seen that variances are homogeneous with a Bartlett\textquoteright s K-squared = 8.5 with df=2
 and p-value=0.01426, and 
@@ -137,6 +137,14 @@ difference between models. Then, it is possible to conclude
 that quality of features from both sources are equivalent
 regarding the modeling capability.
 
+%After calculating the bartlett test for both cases of SNR it was 
+%seen that variances are homogeneous since p > 0.05, and 
+%the Flinger-Killen shows that homokedascity is verified, 
+%then F-ANOVA test makes clear that there is no significative 
+%difference between models. Then, it is possible to conclude
+%that quality of features from both sources are equivalent
+%regarding modeling capability, even when GA only has proposed five
+%features and Cesetti et al. requires seven features.
 
 %As an alternative to build modles based on bandpasses, 
 %a similiar methodology to the one depicted in (\cite{2013A&A...550A.120S})
@@ -264,6 +272,7 @@ estimations provided by \cite{cesetti} can be seen.
 % fila de gráficas o es mejor producir algo más condensado.
 %
 
+
 We have applied the non linear oriented methodology but usin the suggested features from Cesseti et al.
 The performace for the models based on usch features are:
 
@@ -288,7 +297,6 @@ $ kpls $            & 351.17 & 161.88 && 856.02 & 455.74 && 1086.03 & 534.89 \\
 \label{tab:tab_CS_Model}
 %\end{center}
 \end{table}
-
 
 
 
