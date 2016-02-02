@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.10.6)  19 JAN 2016 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.29)  17 JUL 2015 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **ordieres.tex
 (./ordieres.tex
 LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 2 languages loaded.
+Babel <3.9l> and hyphenation patterns for 5 languages loaded.
 (./aa.cls
 Document Class: aa 2012/05/22{} v8.2{} Class for AA journal
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -706,28 +706,27 @@ Package: placeins 2005/04/18  v 2.2
 Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
 \c@mn@abspage=\count128
 )
-(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen136
-\lightrulewidth=\dimen137
-\cmidrulewidth=\dimen138
-\belowrulesep=\dimen139
-\belowbottomsep=\dimen140
-\aboverulesep=\dimen141
-\abovetopsep=\dimen142
-\cmidrulesep=\dimen143
-\cmidrulekern=\dimen144
-\defaultaddspace=\dimen145
-\@cmidla=\count129
-\@cmidlb=\count130
-\@aboverulesep=\dimen146
-\@belowrulesep=\dimen147
-\@thisruleclass=\count131
-\@lastruleclass=\count132
-\@thisrulewidth=\dimen148
-) (./ordieres.aux
+(./ordieres.aux
 
 LaTeX Warning: Label `tab:tab_SNR1050_G' multiply defined.
+
+
+LaTeX Warning: Label `fig:T_ICA_10_SpT' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:T_ICA_10_SpT' multiply defined.
+
+
+LaTeX Warning: Label `fig:chi2_50_spt' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:chi2_50_spt' multiply defined.
+
+
+LaTeX Warning: Label `fig:ga_too50ga_spt' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:ga_too50ga_spt' multiply defined.
 
 
 LaTeX Warning: Label `tab:tab_NC_T' multiply defined.
@@ -745,61 +744,46 @@ LaTeX Warning: Label `tab:tab_SNR1050_G' multiply defined.
 LaTeX Warning: Label `tab:tab_SNRoo_M' multiply defined.
 
 
-LaTeX Warning: Label `fig:comp01' multiply defined.
-
-
 LaTeX Warning: Label `tab:tab_SNR1050_G' multiply defined.
-
-
-LaTeX Warning: Label `tab:model_TSD' multiply defined.
-
-
-LaTeX Warning: Label `tab:models_G_rmse' multiply defined.
-
-
-LaTeX Warning: Label `fig:lt_lg_ga' multiply defined.
-
-
-LaTeX Warning: Label `tab:models_M_rmse' multiply defined.
 
 )
 \openout1 = `ordieres.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 40.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 40.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 39.
 
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 39.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 39.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 40.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 40.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
@@ -839,16 +823,16 @@ File: t1txr.fd 2000/12/15 v3.1
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen149
+\scratchcounter=\count129
+\scratchdimen=\dimen136
 \scratchbox=\box40
-\nofMPsegments=\count134
-\nofMParguments=\count135
+\nofMPsegments=\count130
+\nofMParguments=\count131
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen150
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen137
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -898,64 +882,64 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 122.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 122.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 122.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 121.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 122.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 122.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 122.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 122.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for T1+txss on input line 122.
+LaTeX Font Info:    Try loading font information for T1+txss on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 122.
+(Font)              scaled to size 16.41594pt on input line 121.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 16.41594pt on input line 122.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 122.
+(Font)              scaled to size 16.41594pt on input line 121.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 121.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 122.
+(Font)              scaled to size 8.54997pt on input line 121.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 8.54997pt on input line 122.
+(Font)              scaled to size 8.54997pt on input line 121.
 
 
 
@@ -964,7 +948,7 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 
 Class aa Warning: The running head built automatically from \author and \titlee
 xceeds the pagewidth, please supply a shorter form with \authorrunning and/or \
-titlerunning prior to \maketitle on input line 122.
+titlerunning prior to \maketitle on input line 121.
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  
@@ -974,9 +958,9 @@ Output from handle ordieres going to ordieres.llt
 \openout3 = `ordieres.llt'.
 
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 125.
+(Font)              scaled to size 10.40245pt on input line 124.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 10.40245pt on input line 125.
+(Font)              scaled to size 10.40245pt on input line 124.
 (./meth.tex
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
@@ -986,263 +970,235 @@ less on input line 19.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 20.
+(Font)              scaled to size 9.49997pt on input line 82.
 LaTeX Font Info:    Font shape `T1/txss/m/it' in size <10> not available
-(Font)              Font shape `T1/txss/m/sl' tried instead on input line 20.
+(Font)              Font shape `T1/txss/m/sl' tried instead on input line 82.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 20.
+(Font)              scaled to size 9.49997pt on input line 82.
+ [2] [3] [4])
+(./irtf.fs.tex
+Overfull \hbox (3.3521pt too wide) in paragraph at lines 54--73
+ [] 
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-[3] [4]
-Underfull \vbox (badness 3601) has occurred while \output is active []
+Overfull \hbox (56.81204pt too wide) in paragraph at lines 83--118
+ [] 
+ []
 
- [5]
-Overfull \hbox (33.11996pt too wide) in paragraph at lines 279--288
+[5]
+Overfull \hbox (3.3521pt too wide) in paragraph at lines 155--175
+ [] 
+ []
+
+
+LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 6 undefined on input line 
+182.
+
+
+LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 6 undefined on input line 
+209.
+
+) (./irtf.rm.tex
+Underfull \vbox (badness 7722) has occurred while \output is active []
+
+ [6]
+[7]
+Overfull \hbox (33.11996pt too wide) in paragraph at lines 28--34
 \T1/txr/m/n/10 For the mod-els to be built, the same strat-egy was used for all
  the three phys-i-cal pa-ram-e-ters $\OT1/txr/m/n/10 (\OML/txmi/m/it/10 T[]; lo
 g\OT1/txr/m/n/10 (\OML/txmi/m/it/10 g\OT1/txr/m/n/10 )\OML/txmi/m/it/10 ; met\O
 T1/txr/m/n/10 )$
  []
 
+[8] [9]
 
-Package natbib Warning: Citation `dummy' on page 6 undefined on input line 343.
-
-
-
-Package natbib Warning: Citation `dummy' on page 6 undefined on input line 343.
+Package caption Warning: \label without proper \caption on input line 247.
+See the caption package documentation for explanation.
 
 
+LaTeX Warning: Reference `fig:comp01' on page 10 undefined on input line 225.
 
-Package natbib Warning: Citation `dummy' on page 6 undefined on input line 343.
+<figs/T_chi50_Tst.pdf, id=45, 578.16pt x 578.16pt>
+File: figs/T_chi50_Tst.pdf Graphic file (type pdf)
+ <use figs/T_chi50_Tst.pdf>
+Package pdftex.def Info: figs/T_chi50_Tst.pdf used on input line 234.
+(pdftex.def)             Requested size: 369.88582pt x 369.87997pt.
 
+Overfull \hbox (36.13261pt too wide) in paragraph at lines 234--236
+ [][] 
+ []
 
-[6]) (./irtf.fs.tex
-Overfull \hbox (3.3521pt too wide) in paragraph at lines 58--77
- [] 
+<figs/T_svm_10_TsP.pdf, id=46, 578.16pt x 433.62pt>
+File: figs/T_svm_10_TsP.pdf Graphic file (type pdf)
+
+<use figs/T_svm_10_TsP.pdf>
+Package pdftex.def Info: figs/T_svm_10_TsP.pdf used on input line 241.
+(pdftex.def)             Requested size: 369.88582pt x 277.40999pt.
+
+Overfull \hbox (36.13261pt too wide) in paragraph at lines 241--244
+ [][] 
  []
 
 
-LaTeX Warning: Reference `tab:tab_SNR1050_t' on page 7 undefined on input line 
-81.
+LaTeX Warning: Float too large for page by 26.90297pt on input line 250.
 
-[7]
-Overfull \hbox (56.81204pt too wide) in paragraph at lines 96--131
- [] 
- []
-
-
-Overfull \hbox (3.3521pt too wide) in paragraph at lines 174--194
- [] 
- []
-
-
-LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 8 undefined on input line 
-202.
-
-
-LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 8 undefined on input line 
-234.
-
-) (./irtf.rm.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
 [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `fig:T_ICA_50_SpT' on page 11 undefined on input line 
+273.
+
+<figs/T_ICA_10_SpT.pdf, id=50, 578.16pt x 578.16pt>
+File: figs/T_ICA_10_SpT.pdf Graphic file (type pdf)
+
+<use figs/T_ICA_10_SpT.pdf>
+Package pdftex.def Info: figs/T_ICA_10_SpT.pdf used on input line 279.
+(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
+
+Overfull \hbox (7.67986pt too wide) in paragraph at lines 279--282
+ [][] 
+ []
+
+<figs/T_ICA_50_SpT.pdf, id=51, 578.16pt x 578.16pt>
+File: figs/T_ICA_50_SpT.pdf Graphic file (type pdf)
+
+<use figs/T_ICA_50_SpT.pdf>
+Package pdftex.def Info: figs/T_ICA_50_SpT.pdf used on input line 287.
+(pdftex.def)             Requested size: 341.43306pt x 341.42903pt.
+
+Overfull \hbox (7.67986pt too wide) in paragraph at lines 287--290
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 50.85806pt on input line 294.
+
+<figs/G_chi2_50_cesetti.pdf, id=52, 578.16pt x 433.62pt>
+File: figs/G_chi2_50_cesetti.pdf Graphic file (type pdf)
+
+<use figs/G_chi2_50_cesetti.pdf>
+Package pdftex.def Info: figs/G_chi2_50_cesetti.pdf used on input line 374.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+Overfull \hbox (7.67986pt too wide) in paragraph at lines 374--376
+ [][] 
+ []
+
+<figs/G_gam_oo_cesetti.pdf, id=53, 578.16pt x 433.62pt>
+File: figs/G_gam_oo_cesetti.pdf Graphic file (type pdf)
+
+<use figs/G_gam_oo_cesetti.pdf>
+Package pdftex.def Info: figs/G_gam_oo_cesetti.pdf used on input line 381.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+Overfull \hbox (7.67986pt too wide) in paragraph at lines 381--384
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:M_chi2_50_cesetti' on page 11 undefined on input 
+line 454.
+
+<figs/M_Chi2_50_Cesetti.pdf, id=54, 578.16pt x 433.62pt>
+File: figs/M_Chi2_50_Cesetti.pdf Graphic file (type pdf)
+
+<use figs/M_Chi2_50_Cesetti.pdf>
+Package pdftex.def Info: figs/M_Chi2_50_Cesetti.pdf used on input line 463.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+Overfull \hbox (7.67986pt too wide) in paragraph at lines 463--465
+ [][] 
+ []
+
+<figs/M_GAM_1010_Cesetti.pdf, id=55, 578.16pt x 433.62pt>
+File: figs/M_GAM_1010_Cesetti.pdf Graphic file (type pdf)
+
+<use figs/M_GAM_1010_Cesetti.pdf>
+Package pdftex.def Info: figs/M_GAM_1010_Cesetti.pdf used on input line 470.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+Overfull \hbox (7.67986pt too wide) in paragraph at lines 470--473
+ [][] 
+ []
+
+
+Underfull \vbox (badness 5331) has occurred while \output is active []
 
  [11]
-
-Package caption Warning: \label without proper \caption on input line 87.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:comp01' on page 12 undefined on input line 133.
-
-
-Package caption Warning: \label without proper \caption on input line 179.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:comp02' on page 12 undefined on input line 133.
-
-<figs/irtf_T_chi250_Cesetti.pdf, id=52, 794.97pt x 867.24pt>
-File: figs/irtf_T_chi250_Cesetti.pdf Graphic file (type pdf)
-
-<use figs/irtf_T_chi250_Cesetti.pdf>
-Package pdftex.def Info: figs/irtf_T_chi250_Cesetti.pdf used on input line 142.
-
-(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
-
-<figs/irtf_T_knnoo_Cesetti.pdf, id=53, 794.97pt x 867.24pt>
-File: figs/irtf_T_knnoo_Cesetti.pdf Graphic file (type pdf)
-
-<use figs/irtf_T_knnoo_Cesetti.pdf>
-Package pdftex.def Info: figs/irtf_T_knnoo_Cesetti.pdf used on input line 149.
-(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
-
-
-LaTeX Warning: Float too large for page by 52.48874pt on input line 158.
-
-<figs/irtf_T_rregoo_Cesetti.pdf, id=54, 794.97pt x 867.24pt>
-File: figs/irtf_T_rregoo_Cesetti.pdf Graphic file (type pdf)
-
-<use figs/irtf_T_rregoo_Cesetti.pdf>
-Package pdftex.def Info: figs/irtf_T_rregoo_Cesetti.pdf used on input line 165.
-
-(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
-
-<figs/irtf_T_rreg50_Cesetti.pdf, id=55, 794.97pt x 867.24pt>
-File: figs/irtf_T_rreg50_Cesetti.pdf Graphic file (type pdf)
-
-<use figs/irtf_T_rreg50_Cesetti.pdf>
-Package pdftex.def Info: figs/irtf_T_rreg50_Cesetti.pdf used on input line 173.
-
-(pdftex.def)             Requested size: 312.9803pt x 341.43787pt.
-
-
-LaTeX Warning: Float too large for page by 51.87573pt on input line 181.
-
-
-LaTeX Warning: Reference `ssub:TLSB' on page 12 undefined on input line 200.
-
-
-LaTeX Warning: Reference `tab:model_Tvar' on page 12 undefined on input line 20
-2.
-
-[12] [13 <./figs/irtf_T_chi250_Cesetti.pdf> <./figs/irtf_T_knnoo_Cesetti.pdf>]
-[14 <./figs/irtf_T_rregoo_Cesetti.pdf> <./figs/irtf_T_rreg50_Cesetti.pdf>]
-<figs/irtf-logg-knn-oo.pdf, id=90, 794.97pt x 867.24pt>
-File: figs/irtf-logg-knn-oo.pdf Graphic file (type pdf)
-
-<use figs/irtf-logg-knn-oo.pdf>
-Package pdftex.def Info: figs/irtf-logg-knn-oo.pdf used on input line 272.
-(pdftex.def)             Requested size: 341.43306pt x 372.48248pt.
-) [15] (./ipac.fs.tex
-Overfull \vbox (11.07445pt too high) has occurred while \output is active []
-
-
-[16 <./figs/irtf-logg-knn-oo.pdf>]
-
-LaTeX Warning: Reference `irtf' on page 17 undefined on input line 16.
-
-
-LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 17 undefined on input line
- 142.
-
-) (./ipac.rm.tex [17]
-
-LaTeX Warning: Reference `tab:model_IPAC_TSD' on page 18 undefined on input lin
-e 11.
-
-[18] <figs/ipac_T_ICAoo_LSB.pdf, id=109, 650.43pt x 722.7pt>
-File: figs/ipac_T_ICAoo_LSB.pdf Graphic file (type pdf)
-
-<use figs/ipac_T_ICAoo_LSB.pdf>
-Package pdftex.def Info: figs/ipac_T_ICAoo_LSB.pdf used on input line 68.
-(pdftex.def)             Requested size: 312.9803pt x 347.76323pt.
-
-<figs/ipac_T_RFoo_LSB.pdf, id=110, 650.43pt x 722.7pt>
-File: figs/ipac_T_RFoo_LSB.pdf Graphic file (type pdf)
-
-<use figs/ipac_T_RFoo_LSB.pdf>
-Package pdftex.def Info: figs/ipac_T_RFoo_LSB.pdf used on input line 75.
-(pdftex.def)             Requested size: 312.9803pt x 347.76323pt.
-
-<figs/ipac_T_RF50_LSB.pdf, id=111, 650.43pt x 722.7pt>
-File: figs/ipac_T_RF50_LSB.pdf Graphic file (type pdf)
-
-<use figs/ipac_T_RF50_LSB.pdf>
-Package pdftex.def Info: figs/ipac_T_RF50_LSB.pdf used on input line 82.
-(pdftex.def)             Requested size: 312.9803pt x 347.76323pt.
-
-
-LaTeX Warning: Float too large for page by 439.28969pt on input line 89.
-
-
+[12 <./figs/T_chi50_Tst.pdf> <./figs/T_svm_10_TsP.pdf>] [13 <./figs/T_ICA_10_Sp
+T.pdf> <./figs/T_ICA_50_SpT.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-[20 <./figs/ipac_T_ICAoo_LSB.pdf> <./figs/ipac_T_RFoo_LSB.pdf> <./figs/ipac_T_R
-F50_LSB.pdf>] [21] <figs/ipac_LG_T_Mars_10.pdf, id=140, 650.43pt x 722.7pt>
-File: figs/ipac_LG_T_Mars_10.pdf Graphic file (type pdf)
+ [14 <./figs/G_chi2_50_cesetti.pdf> <./figs/G_gam_oo_cesetti.pdf>]
+<figs/LT_LG_ga.pdf, id=105, 578.16pt x 433.62pt>
+File: figs/LT_LG_ga.pdf Graphic file (type pdf)
+ <use figs/LT_LG_ga.pdf>
+Package pdftex.def Info: figs/LT_LG_ga.pdf used on input line 496.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
-<use figs/ipac_LG_T_Mars_10.pdf>
-Package pdftex.def Info: figs/ipac_LG_T_Mars_10.pdf used on input line 209.
-(pdftex.def)             Requested size: 341.43306pt x 379.37907pt.
+<figs/LT_LG_chi2.pdf, id=106, 578.16pt x 433.62pt>
+File: figs/LT_LG_chi2.pdf Graphic file (type pdf)
+ <use figs/LT_LG_chi2.pdf>
+Package pdftex.def Info: figs/LT_LG_chi2.pdf used on input line 513.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+)
+[15] [16 <./figs/M_Chi2_50_Cesetti.pdf> <./figs/M_GAM_1010_Cesetti.pdf>]
+[17 <./figs/LT_LG_ga.pdf> <./figs/LT_LG_chi2.pdf>] (./ipac.fs.tex
 
-<figs/ipac_LG_T_PLS_10.pdf, id=141, 650.43pt x 650.43pt>
-File: figs/ipac_LG_T_PLS_10.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 18 undefined on input line
+ 138.
 
-<use figs/ipac_LG_T_PLS_10.pdf>
-Package pdftex.def Info: figs/ipac_LG_T_PLS_10.pdf used on input line 222.
-(pdftex.def)             Requested size: 341.43306pt x 341.44116pt.
 
-<figs/ipac_LG_Trojas_Tknn_10.pdf, id=142, 650.43pt x 650.43pt>
-File: figs/ipac_LG_Trojas_Tknn_10.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `tab:tab_SNR1050_M' on page 18 undefined on input line
+ 165.
 
-<use figs/ipac_LG_Trojas_Tknn_10.pdf>
-Package pdftex.def Info: figs/ipac_LG_Trojas_Tknn_10.pdf used on input line 233
-.
-(pdftex.def)             Requested size: 341.43306pt x 341.44116pt.
+) [18
 
-<figs/ipac_Met_10_NevesIII.pdf, id=143, 650.43pt x 686.565pt>
-File: figs/ipac_Met_10_NevesIII.pdf Graphic file (type pdf)
-
-<use figs/ipac_Met_10_NevesIII.pdf>
-Package pdftex.def Info: figs/ipac_Met_10_NevesIII.pdf used on input line 283.
-(pdftex.def)             Requested size: 341.43306pt x 360.41013pt.
-) [22] [23 <./figs/ipac_LG_T_Mars_10.pdf>]
-[24 <./figs/ipac_LG_T_PLS_10.pdf>] [25 <./figs/ipac_LG_Trojas_Tknn_10.pdf>]
-[26 <./figs/ipac_Met_10_NevesIII.pdf>] (./ordieres.bbl (./ordieres.obj)
+] [19] [20] (./ordieres.bbl (./ordieres.obj)
 \tf@obj=\write4
 \openout4 = `ordieres.obj'.
 
+ (./ordieres.llt)) [21
 
-(./ordieres.llt))
-
-Package natbib Warning: There were undefined citations.
-
-[27
-
-] (./ordieres.aux)
+]
+(./ordieres.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) 
+ )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 38 ({)
+### simple group (level 1) entered at line 20 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 7476 strings out of 495020
- 104008 string characters out of 6181324
- 205281 words of memory out of 5000000
- 10425 multiletter control sequences out of 15000+600000
- 89048 words of font info for 144 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 41i,12n,45p,280b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
-onts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
-uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on ordieres.pdf (27 pages, 275876 bytes).
+ 7398 strings out of 494958
+ 102599 string characters out of 6179386
+ 200605 words of memory out of 5000000
+ 10366 multiletter control sequences out of 15000+600000
+ 87671 words of font info for 142 fonts, out of 8000000 for 9000
+ 40 hyphenation exceptions out of 8191
+ 41i,11n,45p,286b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/t
+xfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xt
+t.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ordieres.pdf (21 pages, 192236 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
+ 200 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
