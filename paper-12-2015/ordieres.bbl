@@ -1,0 +1,36 @@
+\begin{thebibliography}{7}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Allard} {et~al.}(2013){Allard}, {Homeier}, {Freytag},
+  {Schaffenberger}, {}, \& {Rajpurohit}}]{2013MSAIS..24..128A}
+{Allard}, F., {Homeier}, D., {Freytag}, B., {et~al.} 2013, Memorie della
+  Societa Astronomica Italiana Supplementi, 24, 128
+
+\bibitem[{{Cesetti} {et~al.}(2013){Cesetti}, {Pizzella}, {Ivanov}, {Morelli},
+  {Corsini}, \& {Dalla Bont{\`a}}}]{2013A&A...549A.129C}
+{Cesetti}, M., {Pizzella}, A., {Ivanov}, V.~D., {et~al.} 2013, \aap, 549, A129
+
+\bibitem[{Fuhrmeister {et~al.}(2005)Fuhrmeister, Schmitt, \&
+  Hauschildt}]{fuhrmeister2005phoenix}
+Fuhrmeister, B., Schmitt, J., \& Hauschildt, P. 2005, arXiv preprint
+  astro-ph/0505375
+
+\bibitem[{Goldberg {et~al.}(1989)}]{goldberg1989genetic}
+Goldberg, D.~E. {et~al.} 1989, Genetic algorithms in search, optimization, and
+  machine learning, Vol. 412 (Addison-wesley Reading Menlo Park)
+
+\bibitem[{Holland(1975)}]{holland1975adaptation}
+Holland, J.~H. 1975, Adaptation in natural and artificial systems: An
+  introductory analysis with applications to biology, control, and artificial
+  intelligence. (U Michigan Press)
+
+\bibitem[{{R Core Team}(2013)}]{R2013}
+{R Core Team}. 2013, R: A Language and Environment for Statistical Computing, R
+  Foundation for Statistical Computing, Vienna, Austria
+
+\bibitem[{{Sarro} {et~al.}(2013){Sarro}, {Debosscher}, {Neiner},
+  {Bello-Garc{\'{\i}}a}, {Gonz{\'a}lez-Marcos}, {Prendes-Gero}, {Ordieres},
+  {Le{\'o}n}, {Aerts}, \& {de Batz}}]{2013A&A...550A.120S}
+{Sarro}, L.~M., {Debosscher}, J., {Neiner}, C., {et~al.} 2013, \aap, 550, A120
+
+\end{thebibliography}
