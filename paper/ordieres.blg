@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ordieres.aux
+Case mismatch error between cite keys Cesetti and cesetti
+---line 63 of file ordieres.aux
+ : \citation{Cesetti
+ :                  }
+I'm skipping whatever remains of this command
+The style file: bibtex/aa.bst
+Database file #1: references_m.bib
+Warning--I didn't find a database entry for "dummy"
+Warning--I didn't find a database entry for "2013A&A...549A.129C"
+You've used 9 entries,
+            2947 wiz_defined-function locations,
+            705 strings with 6551 characters,
+and the built_in function-call counts, 4370 in all, are:
+= -- 351
+> -- 375
+< -- 4
++ -- 126
+- -- 117
+* -- 367
+:= -- 834
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 74
+chr.to.int$ -- 9
+cite$ -- 9
+duplicate$ -- 160
+empty$ -- 237
+format.name$ -- 137
+if$ -- 847
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 8
+newline$ -- 31
+num.names$ -- 36
+pop$ -- 76
+preamble$ -- 1
+purify$ -- 74
+quote$ -- 0
+skip$ -- 138
+stack$ -- 0
+substring$ -- 139
+swap$ -- 1
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 75
+warning$ -- 0
+while$ -- 31
+width$ -- 0
+write$ -- 92
+(There was 1 error message)
