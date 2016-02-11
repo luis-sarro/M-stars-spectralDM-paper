@@ -123,6 +123,7 @@ gaidos.m[idcs] <- gaidos[,34]
 
 avail <- !(is.na(df_M$M_teo))
 pdf("tmp.pdf")
+par(mar = c(6,6,1,1))
 for(i in 2:30)
 {
   plot(df_M$M_teo, df_M[,i],xlim=c(-1,1),ylim=c(-1,1))
@@ -141,7 +142,8 @@ dev.off()
 
 
 pdf("M-ICA10.pdf")
-  plot(df_M$M_teo, df_M[,30],xlim=c(-1,1),ylim=c(-1,1))
+par(mar = c(6,6,1,1))
+plot(df_M$M_teo, df_M[,30],xlim=c(-.8,.8),ylim=c(-.8,.8),xlab="Literature Fe/H or M/H",ylab="M/H",cex.axis=1.5,cex.lab=1.5)
   points(n3.m, df_M[,30],pch=16,col="orange") # Fe/H
   points(nt8.m[,1], df_M[,30],pch=15,col="green") # Fe/H 1
   points(nt8.m[,2], df_M[,30],pch=15,col="darkgreen") # Fe/H 2
@@ -150,7 +152,7 @@ pdf("M-ICA10.pdf")
   points(mann.m, df_M[,30],pch=18,col="red") # Fe/H
   points(new.m, df_M[,30],pch=19,col="yellow") # Fe/H
   points(gaidos.m, df_M[,30],pch=20,col="black") # Fe/H
-  text(0,0.2,paste(colnames(df_M)[30],sum(abs(df_M[avail,i]) < 0.4,na.rm=T)))
+#  text(0,0.2,paste(colnames(df_M)[30],sum(abs(df_M[avail,i]) < 0.4,na.rm=T)))
   abline(0,1)
 dev.off()
 
