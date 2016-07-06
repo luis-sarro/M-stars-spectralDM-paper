@@ -6,6 +6,22 @@ lc2 <- 15
 #############################################
 # Teffs Validation
 
+c1 <- apply(df_T_10[,c(2:9,18,19)],2,"-",df_T_10$T_teo)
+m1 <- apply(c1,2,median,na.rm=T)
+c1 <- apply(c1,1,"-",m1)
+c1 <- t(c1)
+c1 <- apply(c1,2,mad,na.rm=T)
+c2 <- apply(df_T_50[,c(2:9,18,19)],2,"-",df_T_50$T_teo)
+m2 <- apply(c2,2,median,na.rm=T)
+c2 <- apply(c2,1,"-",m2)
+c2 <- t(c2)
+c2 <- apply(c2,2,mad,na.rm=T)
+c3 <- apply(df_T_inf[,c(2:9,18,19)],2,"-",df_T_inf$T_teo)
+m3 <- apply(c3,2,median,na.rm=T)
+c3 <- apply(c3,1,"-",m3)
+c3 <- t(c3)
+c3 <- apply(c3,2,mad,na.rm=T)
+
 pdf("../ipac-teff.pdf",width=8,height=5)
 par(cex.axis=1.0)
 nrows = 2
@@ -19,41 +35,45 @@ nf = layout(layoutmat,respect=T,
             heights=c(windim[2],windim[2]+mardim)
 )
 
+xl <- c(2000,4500)
 par(mar = c(0,5,1,0))
-plot(log10(df_T_50$Chi2_50),df_T_50$T_teo,pch=lc2,cex=0.5,col="red",
-     axes=F,xlab="",ylab="log(g)",cex.lab=1.5, xlim=c(3.9,3.25), ylim=c(3.9,3.25))
+plot(df_T_50$T_teo,df_T_50$Chi2_50,pch=lc2,cex=0.5,col="red",
+     axes=F,xlab="",ylab="",cex.lab=1.5,xlim=xl,ylim=xl)
 box()
-text(3.4,0,paste("GA-",expression(chi^2),"-50",sep=""),pos=4,cex=0.7)
+text(2000,4000,expression(GA-chi^2-50),pos=4,cex=1.5)
 axis(2)
+abline(0,1)
 
 par(mar = c(0,0,1,4))
-plot(log10(df_T_50$PLS),df_T_50$T_teo,pch=lc2,cex=0.5,col="red",axes=F,xlab="",
-     ylab="log(g)",cex.lab=1.5, xlim=c(3.9,3.25), ylim=c(3.9,3.25))
+plot(df_T_50$T_teo,df_T_inf$RF,pch=lc2,cex=0.5,col="red",axes=F,xlab="",
+     cex.lab=1.5,xlim=xl,ylim=xl)
 box()
 axis(4)
-text(3.4,0,"GA-PLS-50",pos=4,cex=0.7)
+text(2000,4000,"GA-RF-inf",pos=4,cex=1.5)
+abline(0,1)
 
 par(mar = c(4,5,0,0))
-plot(df_T_50$T_teo,log10(df_T_50$RF),pch=lc2,cex=0.5,col="blue",axes=F,
-     xlab=expression(log(T[eff])),
-     ylab="log(g)",cex.lab=1.5, xlim=c(3.9,3.25), c(3.9,3.25))
+plot(df_T_50$T_teo,df_T_10$MARS,pch=lc2,cex=0.5,col="blue",axes=F,
+     xlab=expression(T[eff]),
+     cex.lab=1.5,xlim=xl,ylim=xl)
 box()
 axis(1)
 axis(2)
-text(3.4,0,"GA-RF-50",pos=4,cex=0.7)
+text(2000,4000,"GA-MARS-10",pos=4,cex=1.5)
 box()
+abline(0,1)
 #
 par(mar = c(4,0,0,4))
-#plot(df_T_50$T_teo,log10(df_T_10$RF_Ces),pch=lc2,cex=0.5,col="blue",axes=F,
-plot(df_T_50$T_teo,log10(df_T_10$GB_Ces),pch=lc2,cex=0.5,col="blue",axes=F,
+plot(df_T_50$T_teo,df_T_10$NNR,pch=lc2,cex=0.5,col="blue",axes=F,
           xlab=expression(log(T[eff-spt])),
-     ylab=expression(log(T[eff-GBM])),cex.lab=1.5, xlim=c(3.9,3.25), ylim=c(3.9,3.25))
+     ylab=expression(T[eff]),cex.lab=1.5,xlim=xl,ylim=xl)
 box()
 axis(1)
 axis(4)
-text(3.4,0,"ICA-10",pos=4,cex=0.7)
+text(2000,4000,"GA-NNR-10",pos=4,cex=1.5)
 box()
 axis(1)
+abline(0,1)
 
 dev.off()
 
